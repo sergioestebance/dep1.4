@@ -101,7 +101,7 @@ abstract class BaseControlseguimiento extends GxActiveRecord {
 		return array(
 			'id' => Yii::t('app', 'ID'),
 			'procesocompra_id' => null,
-			'tipo' => Yii::t('app', 'TipO'),
+			'tipo' => Yii::t('app', 'Tipo'),
 			'abogadasecretarias' => null,
 			'adjudicacions' => null,
 			'ajs' => null,
