@@ -32,7 +32,7 @@ public function filters() {
 		
 		if(Yii::app()->request->isAjaxRequest)
 		{
-			echo CJSON::encode(array('_crear'=>$this->renderPartial('_form', array('model' => $model,'model_procesocompra'=>$this->loadModel($id, 'Procesocompra')),true,true),));
+			echo CJSON::encode(array('_form'=>$this->renderPartial('_crear', array('model' => $model,'model_procesocompra'=>$this->loadModel($id, 'Procesocompra')),true,true),));
 			exit;
 		}
 		
