@@ -39,7 +39,7 @@
 		<?php echo $form->label($model, 'observacion2'); ?>
 		<?php echo $form->textField($model, 'observacion2', array('maxlength' => 100)); ?>
 	</div>
-/*Hola francisco*/
+
 	<div class="row buttons">
 		<?php echo GxHtml::submitButton(Yii::t('app', 'Buscar')); ?>
 	</div>
