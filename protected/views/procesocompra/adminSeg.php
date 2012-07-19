@@ -26,7 +26,6 @@ $('.search-form form').submit(function(){
 	'id' => 'procesocompra-grid',
 	'dataProvider' => $model->search(),
 	'pager' => array('cssFile' => Yii::app()->baseUrl . '/css/gridViewStyle/gridView.css'),
-	//'cssFile' => Yii::app()->baseUrl . '/css/gridViewStyle/gridView.css',
 	'summaryText' => 'Resultados :{start} - {end} de {count} ',
 	'filter' => $model,
 	'columns' => array(

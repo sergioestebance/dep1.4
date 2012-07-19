@@ -17,22 +17,22 @@ public function filters() {
 	public function actionCreaCS($id){
 	
 		$model = new Controlseguimiento;
+		$model_procesocompra = $this->loadModel($id, 'Procesocompra');
+		
 		if(isset($_POST['Controlseguimiento'])){
 			$model->attributes=$_POST['Controlseguimiento'];	
-			$model->procesocompra_id=$id;	
+			$model->procesocompra_id= $model_procesocompra->id;
+			$model->tipo = $model_procesocompra->sigla;
+			
 		
 			if ($model->save(true)){	
-				/*$this->PCService->asignarTipo($model);
-				$ServiceName=$model->tipo.'Services';
-				$this->PCService= new $ServiceName;		
-				$this->PCService->asignarEtapas($model);*/		
 				$this->redirect(array('view', 'id' => $model->id));
 			}
 		}
 		
 		if(Yii::app()->request->isAjaxRequest)
 		{
-			echo CJSON::encode(array('_form'=>$this->renderPartial('_form', array('model' => $model,'model_procesocompra'=>$this->loadModel($id, 'Procesocompra')),true,true),));
+			echo CJSON::encode(array('_crear'=>$this->renderPartial('_form', array('model' => $model,'model_procesocompra'=>$this->loadModel($id, 'Procesocompra')),true,true),));
 			exit;
 		}
 		
