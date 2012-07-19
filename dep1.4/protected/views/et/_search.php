@@ -40,11 +40,6 @@
 		<?php echo $form->textField($model, 'observacion2', array('maxlength' => 100)); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->label($model, 'tipo'); ?>
-		<?php echo $form->textField($model, 'tipo', array('maxlength' => 45)); ?>
-	</div>
-
 	<div class="row buttons">
 		<?php echo GxHtml::submitButton(Yii::t('app', 'Buscar')); ?>
 	</div>
