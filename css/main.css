@@ -151,6 +151,7 @@ div.search-form
 	padding: 10px;
 	margin: 10px 0;
 	background: #eee;
+	display: none;
 }
 
 .portlet

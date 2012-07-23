@@ -58,18 +58,6 @@ $('.search-form form').submit(function(){
 					'label'=>'Crear Control Seguimiento',
 					'url'=>'Yii::app()->createUrl("controlseguimiento/creaCS", array("id"=>$data->id))',
 					'imageUrl' => Yii::app()->request->baseUrl.'/images/new_cs.png',
-					'options' => array(
-						'onclick'=>"js:$('#dialog_cs').dialog('open')",
-						'ajax'=>array(
-							'url'=>"js:$(this).attr('href')",
-							'data'=> "js:$(this).serialize()",
-							'type'=>'post',
-							'dataType'=>'json',
-							'success'=>"function(data){							
-									$('#dialog_cs').html(data._form);
-							}",
-							),
-						),
 
 				)
 			),

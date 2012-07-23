@@ -19,23 +19,13 @@ public function filters() {
 		$model = new Controlseguimiento;
 		$model_procesocompra = $this->loadModel($id, 'Procesocompra');
 		
-		if(isset($_POST['Controlseguimiento'])){
-			$model->attributes=$_POST['Controlseguimiento'];	
-			$model->procesocompra_id= $model_procesocompra->id;
-			$model->tipo = $model_procesocompra->sigla;
+		$model->procesocompra_id= $model_procesocompra->id;
+		$model->tipo = $model_procesocompra->sigla;
 			
 		
-			if ($model->save(true)){	
+		$model->save(false);
 				$this->redirect(array('view', 'id' => $model->id));
-			}
-		}
-		
-		if(Yii::app()->request->isAjaxRequest)
-		{
-			echo CJSON::encode(array('_form'=>$this->renderPartial('_crear', array('model' => $model,'model_procesocompra'=>$this->loadModel($id, 'Procesocompra')),true,true),));
-			exit;
-		}
-		
+	
 	}
 	
 	public function actionCreate() {

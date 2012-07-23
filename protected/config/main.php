@@ -28,7 +28,7 @@ return array(
 		'rights'=>array( 			
 				'superuserName'=>'admin',
 				'enableBizRuleData'=>true,
-				
+				'install'=>true,				
 			 ),						
 		// FIN RIGHTS
 		'gii'=>array(

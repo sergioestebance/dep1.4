@@ -32,7 +32,7 @@
 				array('label'=>'Home', 'url'=>array('/site/index'),
 				),
 				
-				array('label'=>'Mantenedores', 'url'=>array('/site/mantenedores'),
+				array('label'=>'Mantenedores', 'url'=>array('#'),
                   'items'=>array(
                     array('label'=>'SubItem', 'url'=>array('/subitem/admin')),
 					array('label'=>'Item', 'url'=>array('/item/admin')),
@@ -60,7 +60,7 @@
 					),
 				),	
 
-			   array('label'=>'Informes', 'url'=>array('/grafica/'),
+			   array('label'=>'Informes', 'url'=>array('#'),
 				 'items'=>array(
 					array('label'=>'Graficas', 'url'=>array('/grafica/index')),
 					array('label'=>'Exportar','items'=>array( 
@@ -75,6 +75,10 @@
 						),
 				  ),
 			   ),
+			  
+			   array('label'=>'Entrar', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest), 
+			  array('label'=>'Salir ['.Yii::app()->user->name.']', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest),
+			
             ),
     )); ?>
 	</div><!-- mainmenu -->

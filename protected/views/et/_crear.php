@@ -34,11 +34,6 @@
 		<?php echo $form->textField($model, 'observacion2', array('maxlength' => 100)); ?>
 		<?php echo $form->error($model,'observacion2'); ?>
 		</div><!-- row -->
-		<div class="row">
-		<?php echo $form->labelEx($model,'estado'); ?>
-		<?php echo $form->textField($model, 'estado', array('maxlength' => 45)); ?>
-		<?php echo $form->error($model,'estado'); ?>
-		</div><!-- row -->
 
 
 <?php

@@ -42,7 +42,6 @@ function editET()
 			),
 'forma',
 'fecha',
-'estado',
 	),
 )); 
 

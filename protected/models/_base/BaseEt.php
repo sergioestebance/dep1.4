@@ -16,7 +16,6 @@
  * @property string $fecha
  * @property string $observacion1
  * @property string $observacion2
- * @property integer $estado
  * @property integer $alerta
  * @property integer $alertal1
  *
@@ -43,12 +42,12 @@ abstract class BaseEt extends GxActiveRecord {
 
 	public function rules() {
 		return array(
-			array('procesocompra_id, alerta_id, estado, alerta, alertal1', 'numerical', 'integerOnly'=>true),
+			array('procesocompra_id, alerta_id, alerta, alertal1', 'numerical', 'integerOnly'=>true),
 			array('forma', 'length', 'max'=>45),
 			array('observacion1, observacion2', 'length', 'max'=>100),
 			array('fecha', 'safe'),
-			array('procesocompra_id, alerta_id, forma, fecha, observacion1, observacion2, estado, alerta, alertal1', 'default', 'setOnEmpty' => true, 'value' => null),
-			array('id, procesocompra_id, alerta_id, forma, fecha, observacion1, observacion2, estado, alerta, alertal1', 'safe', 'on'=>'search'),
+			array('procesocompra_id, alerta_id, forma, fecha, observacion1, observacion2, alerta, alertal1', 'default', 'setOnEmpty' => true, 'value' => null),
+			array('id, procesocompra_id, alerta_id, forma, fecha, observacion1, observacion2, alerta, alertal1', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -73,7 +72,6 @@ abstract class BaseEt extends GxActiveRecord {
 			'fecha' => Yii::t('app', 'Fecha'),
 			'observacion1' => Yii::t('app', 'Observacion1'),
 			'observacion2' => Yii::t('app', 'Observacion2'),
-			'estado' => Yii::t('app', 'Estado'),
 			'alerta' => Yii::t('app', 'Alerta'),
 			'alertal1' => Yii::t('app', 'Alertal1'),
 			'alerta0' => null,
@@ -91,7 +89,6 @@ abstract class BaseEt extends GxActiveRecord {
 		$criteria->compare('fecha', $this->fecha, true);
 		$criteria->compare('observacion1', $this->observacion1, true);
 		$criteria->compare('observacion2', $this->observacion2, true);
-		$criteria->compare('estado', $this->estado);
 		$criteria->compare('alerta', $this->alerta);
 		$criteria->compare('alertal1', $this->alertal1);
 
