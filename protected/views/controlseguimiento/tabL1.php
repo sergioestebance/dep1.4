@@ -2,7 +2,7 @@
 		$this->widget('zii.widgets.jui.CJuiTabs', array(
 			'id'=> 'tabs_etapas',
 			'tabs' => array(
-				'Asesor juridico' => array('id' => 0,'content' => $this->renderPartial('//aj/ver_aj', array('model_pc' => $model,),$this),),
+				'Asesor juridico' => array('id' => 0,'content' => $this->renderPartial('//aj/ver_aj', array('model_pcs' => $model,),$this),),
 				'Director de proyecto' => array('id' => 1,'content' => 'TEST',),
 				'Oficio conductor' => array('id' => 2,'content' => 'TEST',),
 				'Resolucion oficializacion' => array('id' => 3,'content' => 'TEST',),
