@@ -70,7 +70,7 @@
 		<?php echo $form->checkBoxList($model, 'vafs', GxHtml::encodeEx(GxHtml::listDataEx(Vaf::model()->findAllAttributes(null, true)), false, true)); ?>
 
 <?php
-echo GxHtml::submitButton(Yii::t('app', 'Save'));
+echo GxHtml::submitButton(Yii::t('app', 'Guardar'));
 $this->endWidget();
 ?>
 </div><!-- form -->
