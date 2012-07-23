@@ -35,9 +35,6 @@
 	<?php echo GxHtml::encode($data->getAttributeLabel('observacionTD')); ?>:
 	<?php echo GxHtml::encode($data->observacionTD); ?>
 	<br />
-	<?php echo GxHtml::encode($data->getAttributeLabel('tipo')); ?>:
-	<?php echo GxHtml::encode($data->tipo); ?>
-	<br />
 	*/ ?>
 
 </div>

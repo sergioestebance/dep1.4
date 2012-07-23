@@ -24,7 +24,6 @@
  * @property Envinformeseva[] $envinformesevas
  * @property Enviocontratofirma[] $enviocontratofirmas
  * @property Oficioconductor[] $oficioconductors
- * @property Plantilla[] $plantillas
  * @property Procesoevaluacion[] $procesoevaluacions
  * @property Publicacion[] $publicacions
  * @property Recinformacionsup[] $recinformacionsups
@@ -77,8 +76,8 @@ abstract class BaseControlseguimiento extends GxActiveRecord {
 			'directorproyectos' => array(self::HAS_MANY, 'Directorproyecto', 'controlseguimiento_id'),
 			'envinformesevas' => array(self::HAS_MANY, 'Envinformeseva', 'controlseguimiento_id'),
 			'enviocontratofirmas' => array(self::HAS_MANY, 'Enviocontratofirma', 'controlseguimiento_id'),
-			'oficioconductors' => array(self::HAS_MANY, 'Oficioconductor', 'controlseguimiento_id'),
 			'plantillas' => array(self::HAS_MANY, 'Plantilla', 'controlseguimiento_id'),
+			'oficioconductors' => array(self::HAS_MANY, 'Oficioconductor', 'controlseguimiento_id'),
 			'procesoevaluacions' => array(self::HAS_MANY, 'Procesoevaluacion', 'controlseguimiento_id'),
 			'publicacions' => array(self::HAS_MANY, 'Publicacion', 'controlseguimiento_id'),
 			'recinformacionsups' => array(self::HAS_MANY, 'Recinformacionsup', 'controlseguimiento_id'),

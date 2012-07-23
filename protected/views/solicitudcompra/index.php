@@ -6,8 +6,8 @@ $this->breadcrumbs = array(
 );
 
 $this->menu = array(
-	array('label'=>Yii::t('app', 'Create') . ' ' . Solicitudcompra::label(), 'url' => array('create')),
-	array('label'=>Yii::t('app', 'Manage') . ' ' . Solicitudcompra::label(2), 'url' => array('admin')),
+	array('label'=>Yii::t('app', 'Crear') . ' ' . Solicitudcompra::label(), 'url' => array('create')),
+	array('label'=>Yii::t('app', 'Administrar') . ' ' . Solicitudcompra::label(2), 'url' => array('admin')),
 );
 ?>
 

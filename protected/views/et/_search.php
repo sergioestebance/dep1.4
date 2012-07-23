@@ -40,18 +40,8 @@
 		<?php echo $form->textField($model, 'observacion2', array('maxlength' => 100)); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->label($model, 'alerta'); ?>
-		<?php echo $form->textField($model, 'alerta'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model, 'alertal1'); ?>
-		<?php echo $form->textField($model, 'alertal1'); ?>
-	</div>
-
 	<div class="row buttons">
-		<?php echo GxHtml::submitButton(Yii::t('app', 'Search')); ?>
+		<?php echo GxHtml::submitButton(Yii::t('app', 'Buscar')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

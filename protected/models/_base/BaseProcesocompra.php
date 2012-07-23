@@ -64,7 +64,7 @@ abstract class BaseProcesocompra extends GxActiveRecord {
 			'adquisicions' => array(self::HAS_MANY, 'Adquisicion', 'procesocompra_id'),
 			'controlseguimientos' => array(self::HAS_MANY, 'Controlseguimiento', 'procesocompra_id'),
 			'enviobases' => array(self::HAS_MANY, 'Enviobase', 'procesocompra_id'),
-			'ets' => array(self::HAS_MANY, 'Et', 'procesocompra_id'),
+			'et' => array(self::HAS_ONE, 'Et', 'procesocompra_id'),
 			'peticionets' => array(self::HAS_MANY, 'Peticionet', 'procesocompra_id'),
 			'subitem' => array(self::BELONGS_TO, 'Subitem', 'subitem_id'),
 			'solicitudcompras' => array(self::HAS_MANY, 'Solicitudcompra', 'procesocompra_id'),

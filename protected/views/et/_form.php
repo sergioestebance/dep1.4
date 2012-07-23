@@ -8,7 +8,7 @@
 ?>
 
 	<p class="note">
-		<?php echo Yii::t('app', 'Fields with'); ?> <span class="required">*</span> <?php echo Yii::t('app', 'are required'); ?>.
+		<?php echo Yii::t('app', 'Campos con'); ?> <span class="required">*</span> <?php echo Yii::t('app', 'son obligatorios'); ?>.
 	</p>
 
 	<?php echo $form->errorSummary($model); ?>
@@ -17,11 +17,6 @@
 		<?php echo $form->labelEx($model,'procesocompra_id'); ?>
 		<?php echo $form->dropDownList($model, 'procesocompra_id', GxHtml::listDataEx(Procesocompra::model()->findAllAttributes(null, true))); ?>
 		<?php echo $form->error($model,'procesocompra_id'); ?>
-		</div><!-- row -->
-		<div class="row">
-		<?php echo $form->labelEx($model,'alerta_id'); ?>
-		<?php echo $form->dropDownList($model, 'alerta_id', GxHtml::listDataEx(Alerta::model()->findAllAttributes(null, true))); ?>
-		<?php echo $form->error($model,'alerta_id'); ?>
 		</div><!-- row -->
 		<div class="row">
 		<?php echo $form->labelEx($model,'forma'); ?>
@@ -44,19 +39,14 @@
 		<?php echo $form->error($model,'observacion2'); ?>
 		</div><!-- row -->
 		<div class="row">
-		<?php echo $form->labelEx($model,'alerta'); ?>
-		<?php echo $form->textField($model, 'alerta'); ?>
-		<?php echo $form->error($model,'alerta'); ?>
-		</div><!-- row -->
-		<div class="row">
-		<?php echo $form->labelEx($model,'alertal1'); ?>
-		<?php echo $form->textField($model, 'alertal1'); ?>
-		<?php echo $form->error($model,'alertal1'); ?>
+		<?php echo $form->labelEx($model,'tipo'); ?>
+		<?php echo $form->textField($model, 'tipo', array('maxlength' => 45)); ?>
+		<?php echo $form->error($model,'tipo'); ?>
 		</div><!-- row -->
 
 
 <?php
-echo GxHtml::submitButton(Yii::t('app', 'Save'));
+echo GxHtml::submitButton(Yii::t('app', 'Guardar'));
 $this->endWidget();
 ?>
 </div><!-- form -->

@@ -8,7 +8,7 @@
 ?>
 
 	<p class="note">
-		<?php echo Yii::t('app', 'Fields with'); ?> <span class="required">*</span> <?php echo Yii::t('app', 'are required'); ?>.
+		<?php echo Yii::t('app', 'Campos con'); ?> <span class="required">*</span> <?php echo Yii::t('app', 'son obligatorios'); ?>.
 	</p>
 
 	<?php echo $form->errorSummary($model); ?>
@@ -24,15 +24,8 @@
 		<?php echo $form->error($model,'nombre'); ?>
 		</div><!-- row -->
 
-		<label><?php echo GxHtml::encode($model->getRelationLabel('constancias')); ?></label>
-		<?php echo $form->checkBoxList($model, 'constancias', GxHtml::encodeEx(GxHtml::listDataEx(Constancia::model()->findAllAttributes(null, true)), false, true)); ?>
-		<label><?php echo GxHtml::encode($model->getRelationLabel('plantillas')); ?></label>
-		<?php echo $form->checkBoxList($model, 'plantillas', GxHtml::encodeEx(GxHtml::listDataEx(Plantilla::model()->findAllAttributes(null, true)), false, true)); ?>
-		<label><?php echo GxHtml::encode($model->getRelationLabel('subitems')); ?></label>
-		<?php echo $form->checkBoxList($model, 'subitems', GxHtml::encodeEx(GxHtml::listDataEx(Subitem::model()->findAllAttributes(null, true)), false, true)); ?>
-
 <?php
-echo GxHtml::submitButton(Yii::t('app', 'Save'));
+echo GxHtml::submitButton(Yii::t('app', 'Guardar'));
 $this->endWidget();
 ?>
 </div><!-- form -->

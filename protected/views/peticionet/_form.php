@@ -1,26 +1,20 @@
+
 <div class="form">
 
-
-<?php $form = $this->beginWidget('GxActiveForm', array(
+<?php 
+$form = $this->beginWidget('GxActiveForm', array(
 	'id' => 'peticionet-form',
 	'enableAjaxValidation' => false,
 ));
 ?>
-
-	<p class="note">
-		<?php echo Yii::t('app', 'Fields with'); ?> <span class="required">*</span> <?php echo Yii::t('app', 'are required'); ?>.
-	</p>
-
 	<?php echo $form->errorSummary($model); ?>
-
+		
 		<div class="row">
-		<?php echo $form->labelEx($model,'procesocompra_id'); ?>
-		<?php echo $form->dropDownList($model, 'procesocompra_id', GxHtml::listDataEx(Procesocompra::model()->findAllAttributes(null, true))); ?>
-		<?php echo $form->error($model,'procesocompra_id'); ?>
+		<?php echo $form->hiddenField($model,'procesocompra_id',array('size'=>45,'maxlength'=>45,'value'=>$model_pc->id)); ?>
 		</div><!-- row -->
 		<div class="row">
 		<?php echo $form->labelEx($model,'fecha'); ?>
-		<?php echo $form->textField($model, 'fecha'); ?>
+		<?php echo $form->textField($model, 'fecha',array('value'=>date("Y-m-d H:i:s"),)); ?>
 		<?php echo $form->error($model,'fecha'); ?>
 		</div><!-- row -->
 		<div class="row">
@@ -30,13 +24,13 @@
 		</div><!-- row -->
 		<div class="row">
 		<?php echo $form->labelEx($model,'estado'); ?>
-		<?php echo $form->textField($model, 'estado', array('maxlength' => 45)); ?>
+		<?php echo $form->dropDownList($model, 'estado', array('ESPERA'=>'ESPERA','FINALIZADO'=>'FINALIZADO', )); ?>
 		<?php echo $form->error($model,'estado'); ?>
 		</div><!-- row -->
-
+		
 
 <?php
-echo GxHtml::submitButton(Yii::t('app', 'Save'));
+echo GxHtml::submitButton(Yii::t('app', 'Guardar'));
 $this->endWidget();
 ?>
 </div><!-- form -->

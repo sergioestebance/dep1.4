@@ -13,8 +13,6 @@
  * @property string $codigo
  * @property string $nombre
  *
- * @property Constancia[] $constancias
- * @property Plantilla[] $plantillas
  * @property Subitem[] $subitems
  */
 abstract class BaseItem extends GxActiveRecord {

@@ -6,8 +6,8 @@ $this->breadcrumbs = array(
 );
 
 $this->menu = array(
-	array('label'=>Yii::t('app', 'Create') . ' ' . Centrocosto::label(), 'url' => array('create')),
-	array('label'=>Yii::t('app', 'Manage') . ' ' . Centrocosto::label(2), 'url' => array('admin')),
+	array('label'=>Yii::t('app', 'Crear') . ' ' . Centrocosto::label(), 'url' => array('create')),
+	array('label'=>Yii::t('app', 'Administrar') . ' ' . Centrocosto::label(2), 'url' => array('admin')),
 );
 ?>
 

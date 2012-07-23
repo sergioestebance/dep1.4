@@ -13,7 +13,7 @@
  * @property integer $procesogasto_id
  * @property integer $proyecto_id
  * @property integer $item_id
- * @property string $año
+ * @property string $agno
  * @property string $mes
  * @property string $detalleDocumento
  * @property string $valor
@@ -37,16 +37,16 @@ abstract class BaseConstancia extends GxActiveRecord {
 	}
 
 	public static function representingColumn() {
-		return 'año';
+		return 'agno';
 	}
 
 	public function rules() {
 		return array(
 			array('procesogasto_id, proyecto_id, item_id', 'numerical', 'integerOnly'=>true),
-			array('año, mes, valor', 'length', 'max'=>45),
+			array('agno, mes, valor', 'length', 'max'=>45),
 			array('detalleDocumento', 'length', 'max'=>200),
-			array('procesogasto_id, proyecto_id, item_id, año, mes, detalleDocumento, valor', 'default', 'setOnEmpty' => true, 'value' => null),
-			array('id, procesogasto_id, proyecto_id, item_id, año, mes, detalleDocumento, valor', 'safe', 'on'=>'search'),
+			array('procesogasto_id, proyecto_id, item_id, agno, mes, detalleDocumento, valor', 'default', 'setOnEmpty' => true, 'value' => null),
+			array('id, procesogasto_id, proyecto_id, item_id, agno, mes, detalleDocumento, valor', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -69,7 +69,7 @@ abstract class BaseConstancia extends GxActiveRecord {
 			'procesogasto_id' => null,
 			'proyecto_id' => null,
 			'item_id' => null,
-			'año' => Yii::t('app', 'A�o'),
+			'agno' => Yii::t('app', 'A�o'),
 			'mes' => Yii::t('app', 'Mes'),
 			'detalleDocumento' => Yii::t('app', 'Detalle Documento'),
 			'valor' => Yii::t('app', 'Valor'),
@@ -86,7 +86,7 @@ abstract class BaseConstancia extends GxActiveRecord {
 		$criteria->compare('procesogasto_id', $this->procesogasto_id);
 		$criteria->compare('proyecto_id', $this->proyecto_id);
 		$criteria->compare('item_id', $this->item_id);
-		$criteria->compare('año', $this->año, true);
+		$criteria->compare('agno', $this->agno, true);
 		$criteria->compare('mes', $this->mes, true);
 		$criteria->compare('detalleDocumento', $this->detalleDocumento, true);
 		$criteria->compare('valor', $this->valor, true);

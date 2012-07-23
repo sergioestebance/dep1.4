@@ -21,18 +21,13 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model, 'item_id'); ?>
-		<?php echo $form->dropDownList($model, 'item_id', GxHtml::listDataEx(Item::model()->findAllAttributes(null, true)), array('prompt' => Yii::t('app', 'All'))); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model, 'año'); ?>
-		<?php echo $form->textField($model, 'año', array('maxlength' => 45)); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->label($model, 'mes'); ?>
 		<?php echo $form->textField($model, 'mes', array('maxlength' => 45)); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model, 'item'); ?>
+		<?php echo $form->textField($model, 'item', array('maxlength' => 45)); ?>
 	</div>
 
 	<div class="row">

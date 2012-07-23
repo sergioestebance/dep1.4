@@ -1,13 +1,13 @@
 <?php
 
 $this->breadcrumbs = array(
-	$model->label(2) => array('index'),
-	Yii::t('app', 'Manage'),
+	$model->label(2) => array('admin'),
+	Yii::t('app', 'Administrar'),
 );
 
 $this->menu = array(
-		array('label'=>Yii::t('app', 'List') . ' ' . $model->label(2), 'url'=>array('index')),
-		array('label'=>Yii::t('app', 'Create') . ' ' . $model->label(), 'url'=>array('create')),
+		array('label'=>Yii::t('app', 'Listar') . ' ' . $model->label(2), 'url'=>array('index')),
+		array('label'=>Yii::t('app', 'Crear') . ' ' . $model->label(), 'url'=>array('create')),
 	);
 
 Yii::app()->clientScript->registerScript('search', "
@@ -24,13 +24,13 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1><?php echo Yii::t('app', 'Manage') . ' ' . GxHtml::encode($model->label(2)); ?></h1>
+<h1><?php echo Yii::t('app', 'Administrar') . ' ' . GxHtml::encode($model->label(2)); ?></h1>
 
 <p>
-You may optionally enter a comparison operator (&lt;, &lt;=, &gt;, &gt;=, &lt;&gt; or =) at the beginning of each of your search values to specify how the comparison should be done.
+Se pueden ocupar los operadores de comparacion (&lt;, &lt;=, &gt;, &gt;=, &lt;&gt; or =) al principio de cada valor de filtrado.
 </p>
 
-<?php echo GxHtml::link(Yii::t('app', 'Advanced Search'), '#', array('class' => 'search-button')); ?>
+<?php echo GxHtml::link(Yii::t('app', 'Busqueda Avanzada'), '#', array('class' => 'search-button')); ?>
 <div class="search-form">
 <?php $this->renderPartial('_search', array(
 	'model' => $model,
@@ -40,6 +40,9 @@ You may optionally enter a comparison operator (&lt;, &lt;=, &gt;, &gt;=, &lt;&g
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id' => 'proyecto-grid',
 	'dataProvider' => $model->search(),
+	'pager' => array('cssFile' => Yii::app()->baseUrl . '/css/gridViewStyle/gridView.css'),
+	'cssFile' => Yii::app()->baseUrl . '/css/gridViewStyle/gridView.css',
+	'summaryText' => 'Resultados :{start} - {end} de {count} ',
 	'filter' => $model,
 	'columns' => array(
 		'id',

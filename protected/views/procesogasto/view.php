@@ -31,31 +31,8 @@ array(
 	),
 )); ?>
 
-<h2><?php echo GxHtml::encode($model->getRelationLabel('constancias')); ?></h2>
+<br><br>
+
 <?php
-	echo GxHtml::openTag('ul');
-	foreach($model->constancias as $relatedModel) {
-		echo GxHtml::openTag('li');
-		echo GxHtml::link(GxHtml::encode(GxHtml::valueEx($relatedModel)), array('constancia/view', 'id' => GxActiveRecord::extractPkValue($relatedModel, true)));
-		echo GxHtml::closeTag('li');
-	}
-	echo GxHtml::closeTag('ul');
-?><h2><?php echo GxHtml::encode($model->getRelationLabel('honorarios')); ?></h2>
-<?php
-	echo GxHtml::openTag('ul');
-	foreach($model->honorarios as $relatedModel) {
-		echo GxHtml::openTag('li');
-		echo GxHtml::link(GxHtml::encode(GxHtml::valueEx($relatedModel)), array('honorario/view', 'id' => GxActiveRecord::extractPkValue($relatedModel, true)));
-		echo GxHtml::closeTag('li');
-	}
-	echo GxHtml::closeTag('ul');
-?><h2><?php echo GxHtml::encode($model->getRelationLabel('plantillas')); ?></h2>
-<?php
-	echo GxHtml::openTag('ul');
-	foreach($model->plantillas as $relatedModel) {
-		echo GxHtml::openTag('li');
-		echo GxHtml::link(GxHtml::encode(GxHtml::valueEx($relatedModel)), array('plantilla/view', 'id' => GxActiveRecord::extractPkValue($relatedModel, true)));
-		echo GxHtml::closeTag('li');
-	}
-	echo GxHtml::closeTag('ul');
+  $this->renderPartial('tab'.$model->tipo, array('model' => $model,));
 ?>
