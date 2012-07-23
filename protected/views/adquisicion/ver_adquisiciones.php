@@ -34,7 +34,8 @@ $this->widget('zii.widgets.grid.CGridView', array(
 	'id' => 'adquisicion-grid',
 	'dataProvider' => new CArrayDataProvider($model_pc->adquisicions,array()),
 	'columns' => array(
-		'fecha',
+		'fechaCreacion',
+		'fechaRespuesta',
 		'observacion',
 		'estado',
 		array(

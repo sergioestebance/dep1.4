@@ -2,6 +2,35 @@
 
 class AjController extends GxController {
 
+public function filters() {
+	return array(
+			'rights', 
+			);
+}
+
+
+	public function actionEditar($id){
+		$model = $this->loadModel($id, 'Aj');
+		
+		if (isset($_POST['Aj'])) {
+			$model->setAttributes($_POST['Aj']);
+			
+			if ($model->save()) {
+				if (Yii::app()->request->isAjaxRequest){
+				        echo CJSON::encode(array(
+                        'status'=>'success', 
+                        'div'=>"LISTA",
+                        ));
+                    exit;               
+                }
+			}			
+		}		
+		if (Yii::app()->request->isAjaxRequest)
+        {
+            echo CJSON::encode(array('status'=>'failure', 'div'=>$this->renderPartial('_crear', array('model' => $model,),true)));
+            exit;               
+        }
+	}
 
 	public function actionView($id) {
 		$this->render('view', array(
