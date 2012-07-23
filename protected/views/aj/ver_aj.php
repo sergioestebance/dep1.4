@@ -2,7 +2,7 @@
 function addPeticion()
 {
     <?php echo CHtml::ajax(array(
-            'url'=>Yii::app()->createUrl("aj/editar", array("id"=>$model_pc->id)),
+            'url'=>Yii::app()->createUrl("aj/editar", array("id"=>$model_pcs->id)),
             'data'=> "js:$(this).serialize()",
             'type'=>'post',
             'dataType'=>'json',
@@ -32,11 +32,12 @@ function addPeticion()
 <?php 
 $this->widget('zii.widgets.grid.CGridView', array(
 	'id' => 'peticionet-grid',
-	'dataProvider' => new CArrayDataProvider($model_pc->peticionets,array()),
+	'dataProvider' => new CArrayDataProvider($model_pcs->ajs,array()),
 	'columns' => array(
-		'fecha',
-		'observacion',
+		'tipo',
 		'estado',
+		'fechaCreacion',
+		'observacion',
 		array(
 			'class' => 'CButtonColumn',
 			'template'=>'{view} {update}',
