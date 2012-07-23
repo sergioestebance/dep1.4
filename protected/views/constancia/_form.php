@@ -24,14 +24,19 @@
 		<?php echo $form->error($model,'proyecto_id'); ?>
 		</div><!-- row -->
 		<div class="row">
+		<?php echo $form->labelEx($model,'item_id'); ?>
+		<?php echo $form->dropDownList($model, 'item_id', GxHtml::listDataEx(Item::model()->findAllAttributes(null, true))); ?>
+		<?php echo $form->error($model,'item_id'); ?>
+		</div><!-- row -->
+		<div class="row">
+		<?php echo $form->labelEx($model,'año'); ?>
+		<?php echo $form->textField($model, 'año', array('maxlength' => 45)); ?>
+		<?php echo $form->error($model,'año'); ?>
+		</div><!-- row -->
+		<div class="row">
 		<?php echo $form->labelEx($model,'mes'); ?>
 		<?php echo $form->textField($model, 'mes', array('maxlength' => 45)); ?>
 		<?php echo $form->error($model,'mes'); ?>
-		</div><!-- row -->
-		<div class="row">
-		<?php echo $form->labelEx($model,'item'); ?>
-		<?php echo $form->textField($model, 'item', array('maxlength' => 45)); ?>
-		<?php echo $form->error($model,'item'); ?>
 		</div><!-- row -->
 		<div class="row">
 		<?php echo $form->labelEx($model,'detalleDocumento'); ?>

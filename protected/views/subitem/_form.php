@@ -8,7 +8,7 @@
 ?>
 
 	<p class="note">
-		<?php echo Yii::t('app', 'Campos con'); ?> <span class="required">*</span> <?php echo Yii::t('app', 'son obligatorios'); ?>.
+		<?php echo Yii::t('app', 'Fields with'); ?> <span class="required">*</span> <?php echo Yii::t('app', 'are required'); ?>.
 	</p>
 
 	<?php echo $form->errorSummary($model); ?>
@@ -34,6 +34,11 @@
 		<?php echo $form->error($model,'centrocosto_id'); ?>
 		</div><!-- row -->
 		<div class="row">
+		<?php echo $form->labelEx($model,'codigo'); ?>
+		<?php echo $form->textField($model, 'codigo', array('maxlength' => 45)); ?>
+		<?php echo $form->error($model,'codigo'); ?>
+		</div><!-- row -->
+		<div class="row">
 		<?php echo $form->labelEx($model,'descripcion'); ?>
 		<?php echo $form->textField($model, 'descripcion', array('maxlength' => 200)); ?>
 		<?php echo $form->error($model,'descripcion'); ?>
@@ -53,9 +58,19 @@
 		<?php echo $form->textField($model, 'montos', array('maxlength' => 45)); ?>
 		<?php echo $form->error($model,'montos'); ?>
 		</div><!-- row -->
+		<div class="row">
+		<?php echo $form->labelEx($model,'correlativo'); ?>
+		<?php echo $form->textField($model, 'correlativo'); ?>
+		<?php echo $form->error($model,'correlativo'); ?>
+		</div><!-- row -->
+
+		<label><?php echo GxHtml::encode($model->getRelationLabel('procesocompras')); ?></label>
+		<?php echo $form->checkBoxList($model, 'procesocompras', GxHtml::encodeEx(GxHtml::listDataEx(Procesocompra::model()->findAllAttributes(null, true)), false, true)); ?>
+		<label><?php echo GxHtml::encode($model->getRelationLabel('procesogastos')); ?></label>
+		<?php echo $form->checkBoxList($model, 'procesogastos', GxHtml::encodeEx(GxHtml::listDataEx(Procesogasto::model()->findAllAttributes(null, true)), false, true)); ?>
 
 <?php
-echo GxHtml::submitButton(Yii::t('app', 'Guardar'));
+echo GxHtml::submitButton(Yii::t('app', 'Save'));
 $this->endWidget();
 ?>
 </div><!-- form -->

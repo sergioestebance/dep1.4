@@ -16,48 +16,28 @@
 	</div>
 
 	<div class="row">
+		<?php echo $form->label($model, 'controlseguimiento_id'); ?>
+		<?php echo $form->dropDownList($model, 'controlseguimiento_id', GxHtml::listDataEx(Controlseguimiento::model()->findAllAttributes(null, true)), array('prompt' => Yii::t('app', 'All'))); ?>
+	</div>
+
+	<div class="row">
 		<?php echo $form->label($model, 'proyecto_id'); ?>
 		<?php echo $form->dropDownList($model, 'proyecto_id', GxHtml::listDataEx(Proyecto::model()->findAllAttributes(null, true)), array('prompt' => Yii::t('app', 'All'))); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model, 'item'); ?>
-		<?php echo $form->textField($model, 'item', array('maxlength' => 45)); ?>
+		<?php echo $form->label($model, 'item_id'); ?>
+		<?php echo $form->dropDownList($model, 'item_id', GxHtml::listDataEx(Item::model()->findAllAttributes(null, true)), array('prompt' => Yii::t('app', 'All'))); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model, 'numDocumentoSC'); ?>
-		<?php echo $form->textField($model, 'numDocumentoSC', array('maxlength' => 45)); ?>
+		<?php echo $form->label($model, 'tipoDocumento'); ?>
+		<?php echo $form->textField($model, 'tipoDocumento', array('maxlength' => 45)); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model, 'fechaSC'); ?>
-		<?php echo $form->textField($model, 'fechaSC'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model, 'numDocumentoOC'); ?>
-		<?php echo $form->textField($model, 'numDocumentoOC', array('maxlength' => 45)); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model, 'fechaOC'); ?>
-		<?php echo $form->textField($model, 'fechaOC'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model, 'tipoDocumentoDP'); ?>
-		<?php echo $form->textField($model, 'tipoDocumentoDP', array('maxlength' => 45)); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model, 'numDocumentoDP'); ?>
-		<?php echo $form->textField($model, 'numDocumentoDP', array('maxlength' => 45)); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model, 'fechaDP'); ?>
-		<?php echo $form->textField($model, 'fechaDP'); ?>
+		<?php echo $form->label($model, 'numDocumento'); ?>
+		<?php echo $form->textField($model, 'numDocumento', array('maxlength' => 45)); ?>
 	</div>
 
 	<div class="row">
@@ -71,11 +51,6 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model, 'numOrdenPagoEI'); ?>
-		<?php echo $form->textField($model, 'numOrdenPagoEI'); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->label($model, 'tipoDocumentoFB'); ?>
 		<?php echo $form->textField($model, 'tipoDocumentoFB', array('maxlength' => 45)); ?>
 	</div>
@@ -86,38 +61,33 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model, 'rutProveedorFB'); ?>
-		<?php echo $form->textField($model, 'rutProveedorFB', array('maxlength' => 45)); ?>
+		<?php echo $form->label($model, 'rutProveedor'); ?>
+		<?php echo $form->textField($model, 'rutProveedor', array('maxlength' => 45)); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model, 'fechaFB'); ?>
-		<?php echo $form->textField($model, 'fechaFB'); ?>
+		<?php echo $form->label($model, 'fechaEmisionDoc'); ?>
+		<?php echo $form->textField($model, 'fechaEmisionDoc'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model, 'fechaCancelacionFB'); ?>
-		<?php echo $form->textField($model, 'fechaCancelacionFB'); ?>
+		<?php echo $form->label($model, 'fechaCancelacionDoc'); ?>
+		<?php echo $form->textField($model, 'fechaCancelacionDoc'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model, 'detalleDocumentoFB'); ?>
-		<?php echo $form->textField($model, 'detalleDocumentoFB', array('maxlength' => 200)); ?>
+		<?php echo $form->label($model, 'detalleDoc'); ?>
+		<?php echo $form->textField($model, 'detalleDoc', array('maxlength' => 200)); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model, 'valorCanceladoFB'); ?>
-		<?php echo $form->textField($model, 'valorCanceladoFB', array('maxlength' => 45)); ?>
+		<?php echo $form->label($model, 'valorTotal'); ?>
+		<?php echo $form->textField($model, 'valorTotal', array('maxlength' => 45)); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model, 'observacion1FB'); ?>
-		<?php echo $form->textField($model, 'observacion1FB', array('maxlength' => 200)); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model, 'procesosFB'); ?>
-		<?php echo $form->textField($model, 'procesosFB', array('maxlength' => 200)); ?>
+		<?php echo $form->label($model, 'observacion'); ?>
+		<?php echo $form->textField($model, 'observacion', array('maxlength' => 200)); ?>
 	</div>
 
 	<div class="row buttons">

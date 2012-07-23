@@ -8,7 +8,7 @@
 		<?php echo GxHtml::encode(GxHtml::valueEx($data->procesocompra)); ?>
 	<br />
 	<?php echo GxHtml::encode($data->getAttributeLabel('alerta_id')); ?>:
-		<?php echo GxHtml::encode(GxHtml::valueEx($data->alerta)); ?>
+		<?php echo GxHtml::encode(GxHtml::valueEx($data->alerta0)); ?>
 	<br />
 	<?php echo GxHtml::encode($data->getAttributeLabel('forma')); ?>:
 	<?php echo GxHtml::encode($data->forma); ?>
@@ -23,8 +23,11 @@
 	<?php echo GxHtml::encode($data->observacion2); ?>
 	<br />
 	<?php /*
-	<?php echo GxHtml::encode($data->getAttributeLabel('tipo')); ?>:
-	<?php echo GxHtml::encode($data->tipo); ?>
+	<?php echo GxHtml::encode($data->getAttributeLabel('alerta')); ?>:
+	<?php echo GxHtml::encode($data->alerta); ?>
+	<br />
+	<?php echo GxHtml::encode($data->getAttributeLabel('alertal1')); ?>:
+	<?php echo GxHtml::encode($data->alertal1); ?>
 	<br />
 	*/ ?>
 

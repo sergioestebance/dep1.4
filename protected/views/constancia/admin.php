@@ -53,10 +53,15 @@ You may optionally enter a comparison operator (&lt;, &lt;=, &gt;, &gt;=, &lt;&g
 				'value'=>'GxHtml::valueEx($data->proyecto)',
 				'filter'=>GxHtml::listDataEx(Proyecto::model()->findAllAttributes(null, true)),
 				),
+		array(
+				'name'=>'item_id',
+				'value'=>'GxHtml::valueEx($data->item)',
+				'filter'=>GxHtml::listDataEx(Item::model()->findAllAttributes(null, true)),
+				),
+		'año',
 		'mes',
-		'item',
-		'detalleDocumento',
 		/*
+		'detalleDocumento',
 		'valor',
 		*/
 		array(

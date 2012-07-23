@@ -11,28 +11,24 @@
  *
  * @property integer $id
  * @property integer $procesogasto_id
+ * @property integer $controlseguimiento_id
  * @property integer $proyecto_id
- * @property string $item
- * @property string $numDocumentoSC
- * @property string $fechaSC
- * @property string $numDocumentoOC
- * @property string $fechaOC
- * @property string $tipoDocumentoDP
- * @property string $numDocumentoDP
- * @property string $fechaDP
+ * @property integer $item_id
+ * @property string $tipoDocumento
+ * @property string $numDocumento
  * @property string $numComprobanteEI
  * @property string $fechaEI
- * @property integer $numOrdenPagoEI
  * @property string $tipoDocumentoFB
  * @property string $numDocumentoFB
- * @property string $rutProveedorFB
- * @property string $fechaFB
- * @property string $fechaCancelacionFB
- * @property string $detalleDocumentoFB
- * @property string $valorCanceladoFB
- * @property string $observacion1FB
- * @property string $procesosFB
+ * @property string $rutProveedor
+ * @property string $fechaEmisionDoc
+ * @property string $fechaCancelacionDoc
+ * @property string $detalleDoc
+ * @property string $valorTotal
+ * @property string $observacion
  *
+ * @property Controlseguimiento $controlseguimiento
+ * @property Item $item
  * @property Procesogasto $procesogasto
  * @property Proyecto $proyecto
  */
@@ -51,22 +47,24 @@ abstract class BasePlantilla extends GxActiveRecord {
 	}
 
 	public static function representingColumn() {
-		return 'item';
+		return 'tipoDocumento';
 	}
 
 	public function rules() {
 		return array(
-			array('procesogasto_id, proyecto_id, numOrdenPagoEI', 'numerical', 'integerOnly'=>true),
-			array('item, numDocumentoSC, numDocumentoOC, tipoDocumentoDP, numDocumentoDP, numComprobanteEI, tipoDocumentoFB, numDocumentoFB, rutProveedorFB, valorCanceladoFB', 'length', 'max'=>45),
-			array('detalleDocumentoFB, observacion1FB, procesosFB', 'length', 'max'=>200),
-			array('fechaSC, fechaOC, fechaDP, fechaEI, fechaFB, fechaCancelacionFB', 'safe'),
-			array('procesogasto_id, proyecto_id, item, numDocumentoSC, fechaSC, numDocumentoOC, fechaOC, tipoDocumentoDP, numDocumentoDP, fechaDP, numComprobanteEI, fechaEI, numOrdenPagoEI, tipoDocumentoFB, numDocumentoFB, rutProveedorFB, fechaFB, fechaCancelacionFB, detalleDocumentoFB, valorCanceladoFB, observacion1FB, procesosFB', 'default', 'setOnEmpty' => true, 'value' => null),
-			array('id, procesogasto_id, proyecto_id, item, numDocumentoSC, fechaSC, numDocumentoOC, fechaOC, tipoDocumentoDP, numDocumentoDP, fechaDP, numComprobanteEI, fechaEI, numOrdenPagoEI, tipoDocumentoFB, numDocumentoFB, rutProveedorFB, fechaFB, fechaCancelacionFB, detalleDocumentoFB, valorCanceladoFB, observacion1FB, procesosFB', 'safe', 'on'=>'search'),
+			array('procesogasto_id, controlseguimiento_id, proyecto_id, item_id', 'numerical', 'integerOnly'=>true),
+			array('tipoDocumento, numDocumento, numComprobanteEI, tipoDocumentoFB, numDocumentoFB, rutProveedor, valorTotal', 'length', 'max'=>45),
+			array('detalleDoc, observacion', 'length', 'max'=>200),
+			array('fechaEI, fechaEmisionDoc, fechaCancelacionDoc', 'safe'),
+			array('procesogasto_id, controlseguimiento_id, proyecto_id, item_id, tipoDocumento, numDocumento, numComprobanteEI, fechaEI, tipoDocumentoFB, numDocumentoFB, rutProveedor, fechaEmisionDoc, fechaCancelacionDoc, detalleDoc, valorTotal, observacion', 'default', 'setOnEmpty' => true, 'value' => null),
+			array('id, procesogasto_id, controlseguimiento_id, proyecto_id, item_id, tipoDocumento, numDocumento, numComprobanteEI, fechaEI, tipoDocumentoFB, numDocumentoFB, rutProveedor, fechaEmisionDoc, fechaCancelacionDoc, detalleDoc, valorTotal, observacion', 'safe', 'on'=>'search'),
 		);
 	}
 
 	public function relations() {
 		return array(
+			'controlseguimiento' => array(self::BELONGS_TO, 'Controlseguimiento', 'controlseguimiento_id'),
+			'item' => array(self::BELONGS_TO, 'Item', 'item_id'),
 			'procesogasto' => array(self::BELONGS_TO, 'Procesogasto', 'procesogasto_id'),
 			'proyecto' => array(self::BELONGS_TO, 'Proyecto', 'proyecto_id'),
 		);
@@ -81,27 +79,23 @@ abstract class BasePlantilla extends GxActiveRecord {
 		return array(
 			'id' => Yii::t('app', 'ID'),
 			'procesogasto_id' => null,
+			'controlseguimiento_id' => null,
 			'proyecto_id' => null,
-			'item' => Yii::t('app', 'Item'),
-			'numDocumentoSC' => Yii::t('app', 'Num Documento Sc'),
-			'fechaSC' => Yii::t('app', 'Fecha Sc'),
-			'numDocumentoOC' => Yii::t('app', 'Num Documento Oc'),
-			'fechaOC' => Yii::t('app', 'Fecha Oc'),
-			'tipoDocumentoDP' => Yii::t('app', 'Tipo Documento Dp'),
-			'numDocumentoDP' => Yii::t('app', 'Num Documento Dp'),
-			'fechaDP' => Yii::t('app', 'Fecha Dp'),
+			'item_id' => null,
+			'tipoDocumento' => Yii::t('app', 'Tipo Documento'),
+			'numDocumento' => Yii::t('app', 'Num Documento'),
 			'numComprobanteEI' => Yii::t('app', 'Num Comprobante Ei'),
 			'fechaEI' => Yii::t('app', 'Fecha Ei'),
-			'numOrdenPagoEI' => Yii::t('app', 'Num Orden Pago Ei'),
 			'tipoDocumentoFB' => Yii::t('app', 'Tipo Documento Fb'),
 			'numDocumentoFB' => Yii::t('app', 'Num Documento Fb'),
-			'rutProveedorFB' => Yii::t('app', 'Rut Proveedor Fb'),
-			'fechaFB' => Yii::t('app', 'Fecha Fb'),
-			'fechaCancelacionFB' => Yii::t('app', 'Fecha Cancelacion Fb'),
-			'detalleDocumentoFB' => Yii::t('app', 'Detalle Documento Fb'),
-			'valorCanceladoFB' => Yii::t('app', 'Valor Cancelado Fb'),
-			'observacion1FB' => Yii::t('app', 'Observacion1 Fb'),
-			'procesosFB' => Yii::t('app', 'Procesos Fb'),
+			'rutProveedor' => Yii::t('app', 'Rut Proveedor'),
+			'fechaEmisionDoc' => Yii::t('app', 'Fecha Emision Doc'),
+			'fechaCancelacionDoc' => Yii::t('app', 'Fecha Cancelacion Doc'),
+			'detalleDoc' => Yii::t('app', 'Detalle Doc'),
+			'valorTotal' => Yii::t('app', 'Valor Total'),
+			'observacion' => Yii::t('app', 'Observacion'),
+			'controlseguimiento' => null,
+			'item' => null,
 			'procesogasto' => null,
 			'proyecto' => null,
 		);
@@ -112,27 +106,21 @@ abstract class BasePlantilla extends GxActiveRecord {
 
 		$criteria->compare('id', $this->id);
 		$criteria->compare('procesogasto_id', $this->procesogasto_id);
+		$criteria->compare('controlseguimiento_id', $this->controlseguimiento_id);
 		$criteria->compare('proyecto_id', $this->proyecto_id);
-		$criteria->compare('item', $this->item, true);
-		$criteria->compare('numDocumentoSC', $this->numDocumentoSC, true);
-		$criteria->compare('fechaSC', $this->fechaSC, true);
-		$criteria->compare('numDocumentoOC', $this->numDocumentoOC, true);
-		$criteria->compare('fechaOC', $this->fechaOC, true);
-		$criteria->compare('tipoDocumentoDP', $this->tipoDocumentoDP, true);
-		$criteria->compare('numDocumentoDP', $this->numDocumentoDP, true);
-		$criteria->compare('fechaDP', $this->fechaDP, true);
+		$criteria->compare('item_id', $this->item_id);
+		$criteria->compare('tipoDocumento', $this->tipoDocumento, true);
+		$criteria->compare('numDocumento', $this->numDocumento, true);
 		$criteria->compare('numComprobanteEI', $this->numComprobanteEI, true);
 		$criteria->compare('fechaEI', $this->fechaEI, true);
-		$criteria->compare('numOrdenPagoEI', $this->numOrdenPagoEI);
 		$criteria->compare('tipoDocumentoFB', $this->tipoDocumentoFB, true);
 		$criteria->compare('numDocumentoFB', $this->numDocumentoFB, true);
-		$criteria->compare('rutProveedorFB', $this->rutProveedorFB, true);
-		$criteria->compare('fechaFB', $this->fechaFB, true);
-		$criteria->compare('fechaCancelacionFB', $this->fechaCancelacionFB, true);
-		$criteria->compare('detalleDocumentoFB', $this->detalleDocumentoFB, true);
-		$criteria->compare('valorCanceladoFB', $this->valorCanceladoFB, true);
-		$criteria->compare('observacion1FB', $this->observacion1FB, true);
-		$criteria->compare('procesosFB', $this->procesosFB, true);
+		$criteria->compare('rutProveedor', $this->rutProveedor, true);
+		$criteria->compare('fechaEmisionDoc', $this->fechaEmisionDoc, true);
+		$criteria->compare('fechaCancelacionDoc', $this->fechaCancelacionDoc, true);
+		$criteria->compare('detalleDoc', $this->detalleDoc, true);
+		$criteria->compare('valorTotal', $this->valorTotal, true);
+		$criteria->compare('observacion', $this->observacion, true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria' => $criteria,

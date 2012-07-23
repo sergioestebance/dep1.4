@@ -8,7 +8,7 @@
 ?>
 
 	<p class="note">
-		<?php echo Yii::t('app', 'Campos con'); ?> <span class="required">*</span> <?php echo Yii::t('app', 'son obligatorios'); ?>.
+		<?php echo Yii::t('app', 'Fields with'); ?> <span class="required">*</span> <?php echo Yii::t('app', 'are required'); ?>.
 	</p>
 
 	<?php echo $form->errorSummary($model); ?>
@@ -29,8 +29,13 @@
 		<?php echo $form->error($model,'nombre'); ?>
 		</div><!-- row -->
 
+		<label><?php echo GxHtml::encode($model->getRelationLabel('centrocostos')); ?></label>
+		<?php echo $form->checkBoxList($model, 'centrocostos', GxHtml::encodeEx(GxHtml::listDataEx(Centrocosto::model()->findAllAttributes(null, true)), false, true)); ?>
+		<label><?php echo GxHtml::encode($model->getRelationLabel('subitems')); ?></label>
+		<?php echo $form->checkBoxList($model, 'subitems', GxHtml::encodeEx(GxHtml::listDataEx(Subitem::model()->findAllAttributes(null, true)), false, true)); ?>
+
 <?php
-echo GxHtml::submitButton(Yii::t('app', 'Guardar'));
+echo GxHtml::submitButton(Yii::t('app', 'Save'));
 $this->endWidget();
 ?>
 </div><!-- form -->

@@ -21,13 +21,18 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model, 'fecha'); ?>
-		<?php echo $form->textField($model, 'fecha'); ?>
+		<?php echo $form->label($model, 'estado'); ?>
+		<?php echo $form->textField($model, 'estado', array('maxlength' => 45)); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model, 'estado'); ?>
-		<?php echo $form->textField($model, 'estado', array('maxlength' => 45)); ?>
+		<?php echo $form->label($model, 'fechaCreacion'); ?>
+		<?php echo $form->textField($model, 'fechaCreacion'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model, 'fechaRespuesta'); ?>
+		<?php echo $form->textField($model, 'fechaRespuesta'); ?>
 	</div>
 
 	<div class="row">
@@ -35,8 +40,13 @@
 		<?php echo $form->textField($model, 'observacion', array('maxlength' => 200)); ?>
 	</div>
 
+	<div class="row">
+		<?php echo $form->label($model, 'alerta'); ?>
+		<?php echo $form->textField($model, 'alerta'); ?>
+	</div>
+
 	<div class="row buttons">
-		<?php echo GxHtml::submitButton(Yii::t('app', 'Buscar')); ?>
+		<?php echo GxHtml::submitButton(Yii::t('app', 'Search')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

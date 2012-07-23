@@ -12,11 +12,13 @@
  * @property integer $id
  * @property integer $procesogasto_id
  * @property integer $proyecto_id
+ * @property integer $item_id
+ * @property string $a単o
  * @property string $mes
- * @property string $item
  * @property string $detalleDocumento
  * @property string $valor
  *
+ * @property Item $item
  * @property Procesogasto $procesogasto
  * @property Proyecto $proyecto
  */
@@ -35,21 +37,22 @@ abstract class BaseConstancia extends GxActiveRecord {
 	}
 
 	public static function representingColumn() {
-		return 'mes';
+		return 'a単o';
 	}
 
 	public function rules() {
 		return array(
-			array('procesogasto_id, proyecto_id', 'numerical', 'integerOnly'=>true),
-			array('mes, item, valor', 'length', 'max'=>45),
+			array('procesogasto_id, proyecto_id, item_id', 'numerical', 'integerOnly'=>true),
+			array('a単o, mes, valor', 'length', 'max'=>45),
 			array('detalleDocumento', 'length', 'max'=>200),
-			array('procesogasto_id, proyecto_id, mes, item, detalleDocumento, valor', 'default', 'setOnEmpty' => true, 'value' => null),
-			array('id, procesogasto_id, proyecto_id, mes, item, detalleDocumento, valor', 'safe', 'on'=>'search'),
+			array('procesogasto_id, proyecto_id, item_id, a単o, mes, detalleDocumento, valor', 'default', 'setOnEmpty' => true, 'value' => null),
+			array('id, procesogasto_id, proyecto_id, item_id, a単o, mes, detalleDocumento, valor', 'safe', 'on'=>'search'),
 		);
 	}
 
 	public function relations() {
 		return array(
+			'item' => array(self::BELONGS_TO, 'Item', 'item_id'),
 			'procesogasto' => array(self::BELONGS_TO, 'Procesogasto', 'procesogasto_id'),
 			'proyecto' => array(self::BELONGS_TO, 'Proyecto', 'proyecto_id'),
 		);
@@ -65,10 +68,12 @@ abstract class BaseConstancia extends GxActiveRecord {
 			'id' => Yii::t('app', 'ID'),
 			'procesogasto_id' => null,
 			'proyecto_id' => null,
+			'item_id' => null,
+			'a単o' => Yii::t('app', 'A祓o'),
 			'mes' => Yii::t('app', 'Mes'),
-			'item' => Yii::t('app', 'Item'),
 			'detalleDocumento' => Yii::t('app', 'Detalle Documento'),
 			'valor' => Yii::t('app', 'Valor'),
+			'item' => null,
 			'procesogasto' => null,
 			'proyecto' => null,
 		);
@@ -80,8 +85,9 @@ abstract class BaseConstancia extends GxActiveRecord {
 		$criteria->compare('id', $this->id);
 		$criteria->compare('procesogasto_id', $this->procesogasto_id);
 		$criteria->compare('proyecto_id', $this->proyecto_id);
+		$criteria->compare('item_id', $this->item_id);
+		$criteria->compare('a単o', $this->a単o, true);
 		$criteria->compare('mes', $this->mes, true);
-		$criteria->compare('item', $this->item, true);
 		$criteria->compare('detalleDocumento', $this->detalleDocumento, true);
 		$criteria->compare('valor', $this->valor, true);
 

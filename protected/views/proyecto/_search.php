@@ -17,7 +17,7 @@
 
 	<div class="row">
 		<?php echo $form->label($model, 'nombre'); ?>
-		<?php echo $form->textField($model, 'nombre', array('maxlength' => 45)); ?>
+		<?php echo $form->textField($model, 'nombre', array('maxlength' => 200)); ?>
 	</div>
 
 	<div class="row">
@@ -91,7 +91,7 @@
 	</div>
 
 	<div class="row buttons">
-		<?php echo GxHtml::submitButton(Yii::t('app', 'Buscar')); ?>
+		<?php echo GxHtml::submitButton(Yii::t('app', 'Search')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

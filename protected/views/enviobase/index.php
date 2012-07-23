@@ -6,8 +6,8 @@ $this->breadcrumbs = array(
 );
 
 $this->menu = array(
-	array('label'=>Yii::t('app', 'Crear') . ' ' . Enviobase::label(), 'url' => array('create')),
-	array('label'=>Yii::t('app', 'Administrar') . ' ' . Enviobase::label(2), 'url' => array('admin')),
+	array('label'=>Yii::t('app', 'Create') . ' ' . Enviobase::label(), 'url' => array('create')),
+	array('label'=>Yii::t('app', 'Manage') . ' ' . Enviobase::label(2), 'url' => array('admin')),
 );
 ?>
 

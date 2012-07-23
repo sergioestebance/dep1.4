@@ -35,15 +35,14 @@ abstract class BaseProcesogasto extends GxActiveRecord {
 	}
 
 	public static function representingColumn() {
-		return 'nombre';
+		return 'tipo';
 	}
 
 	public function rules() {
 		return array(
-			array('nombre', 'required'),
 			array('subitem_id', 'numerical', 'integerOnly'=>true),
 			array('tipo, nombre, estado', 'length', 'max'=>45),
-			array('subitem_id, tipo, estado', 'default', 'setOnEmpty' => true, 'value' => null),
+			array('subitem_id, tipo, nombre, estado', 'default', 'setOnEmpty' => true, 'value' => null),
 			array('id, subitem_id, tipo, nombre, estado', 'safe', 'on'=>'search'),
 		);
 	}

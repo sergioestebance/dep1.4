@@ -7,8 +7,8 @@
 ));
 ?>
 
-	<p>
-	Se pueden ocupar los operadores de comparacion (&lt;, &lt;=, &gt;, &gt;=, &lt;&gt; or =) al principio de cada valor de filtrado.
+	<p class="note">
+		<?php echo Yii::t('app', 'Fields with'); ?> <span class="required">*</span> <?php echo Yii::t('app', 'are required'); ?>.
 	</p>
 
 	<?php echo $form->errorSummary($model); ?>
@@ -34,8 +34,11 @@
 		<?php echo $form->error($model,'otro'); ?>
 		</div><!-- row -->
 
+		<label><?php echo GxHtml::encode($model->getRelationLabel('subitems')); ?></label>
+		<?php echo $form->checkBoxList($model, 'subitems', GxHtml::encodeEx(GxHtml::listDataEx(Subitem::model()->findAllAttributes(null, true)), false, true)); ?>
+
 <?php
-echo GxHtml::submitButton(Yii::t('app', 'Guardar'));
+echo GxHtml::submitButton(Yii::t('app', 'Save'));
 $this->endWidget();
 ?>
 </div><!-- form -->

@@ -13,6 +13,8 @@
  * @property string $codigo
  * @property string $nombre
  *
+ * @property Constancia[] $constancias
+ * @property Plantilla[] $plantillas
  * @property Subitem[] $subitems
  */
 abstract class BaseItem extends GxActiveRecord {
@@ -44,6 +46,8 @@ abstract class BaseItem extends GxActiveRecord {
 
 	public function relations() {
 		return array(
+			'constancias' => array(self::HAS_MANY, 'Constancia', 'item_id'),
+			'plantillas' => array(self::HAS_MANY, 'Plantilla', 'item_id'),
 			'subitems' => array(self::HAS_MANY, 'Subitem', 'item_id'),
 		);
 	}
@@ -58,6 +62,8 @@ abstract class BaseItem extends GxActiveRecord {
 			'id' => Yii::t('app', 'ID'),
 			'codigo' => Yii::t('app', 'Codigo'),
 			'nombre' => Yii::t('app', 'Nombre'),
+			'constancias' => null,
+			'plantillas' => null,
 			'subitems' => null,
 		);
 	}

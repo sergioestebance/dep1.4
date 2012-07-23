@@ -8,14 +8,14 @@
 ?>
 
 	<p class="note">
-		<?php echo Yii::t('app', 'Campos con'); ?> <span class="required">*</span> <?php echo Yii::t('app', 'son obligatorios'); ?>.
+		<?php echo Yii::t('app', 'Fields with'); ?> <span class="required">*</span> <?php echo Yii::t('app', 'are required'); ?>.
 	</p>
 
 	<?php echo $form->errorSummary($model); ?>
 
 		<div class="row">
 		<?php echo $form->labelEx($model,'codigoProyecto'); ?>
-		<?php echo $form->textField($model, 'codigoProyecto', array('maxlength' => 200)); ?>
+		<?php echo $form->textField($model, 'codigoProyecto', array('maxlength' => 45)); ?>
 		<?php echo $form->error($model,'codigoProyecto'); ?>
 		</div><!-- row -->
 		<div class="row">
@@ -25,47 +25,47 @@
 		</div><!-- row -->
 		<div class="row">
 		<?php echo $form->labelEx($model,'codigoBip'); ?>
-		<?php echo $form->textField($model, 'codigoBip', array('maxlength' => 200)); ?>
+		<?php echo $form->textField($model, 'codigoBip', array('maxlength' => 45)); ?>
 		<?php echo $form->error($model,'codigoBip'); ?>
 		</div><!-- row -->
 		<div class="row">
 		<?php echo $form->labelEx($model,'duracion'); ?>
-		<?php echo $form->textField($model, 'duracion', array('maxlength' => 200)); ?>
+		<?php echo $form->textField($model, 'duracion', array('maxlength' => 45)); ?>
 		<?php echo $form->error($model,'duracion'); ?>
 		</div><!-- row -->
 		<div class="row">
 		<?php echo $form->labelEx($model,'director'); ?>
-		<?php echo $form->textField($model, 'director', array('maxlength' => 200)); ?>
+		<?php echo $form->textField($model, 'director', array('maxlength' => 45)); ?>
 		<?php echo $form->error($model,'director'); ?>
 		</div><!-- row -->
 		<div class="row">
 		<?php echo $form->labelEx($model,'aporteFic'); ?>
-		<?php echo $form->textField($model, 'aporteFic', array('maxlength' => 200)); ?>
+		<?php echo $form->textField($model, 'aporteFic', array('maxlength' => 45)); ?>
 		<?php echo $form->error($model,'aporteFic'); ?>
 		</div><!-- row -->
 		<div class="row">
 		<?php echo $form->labelEx($model,'aporteUtaV'); ?>
-		<?php echo $form->textField($model, 'aporteUtaV', array('maxlength' => 200)); ?>
+		<?php echo $form->textField($model, 'aporteUtaV', array('maxlength' => 45)); ?>
 		<?php echo $form->error($model,'aporteUtaV'); ?>
 		</div><!-- row -->
 		<div class="row">
 		<?php echo $form->labelEx($model,'aporteUtaP'); ?>
-		<?php echo $form->textField($model, 'aporteUtaP', array('maxlength' => 200)); ?>
+		<?php echo $form->textField($model, 'aporteUtaP', array('maxlength' => 45)); ?>
 		<?php echo $form->error($model,'aporteUtaP'); ?>
 		</div><!-- row -->
 		<div class="row">
 		<?php echo $form->labelEx($model,'aporteUtaTotal'); ?>
-		<?php echo $form->textField($model, 'aporteUtaTotal', array('maxlength' => 200)); ?>
+		<?php echo $form->textField($model, 'aporteUtaTotal', array('maxlength' => 45)); ?>
 		<?php echo $form->error($model,'aporteUtaTotal'); ?>
 		</div><!-- row -->
 		<div class="row">
 		<?php echo $form->labelEx($model,'aportesOtros'); ?>
-		<?php echo $form->textField($model, 'aportesOtros', array('maxlength' => 200)); ?>
+		<?php echo $form->textField($model, 'aportesOtros', array('maxlength' => 45)); ?>
 		<?php echo $form->error($model,'aportesOtros'); ?>
 		</div><!-- row -->
 		<div class="row">
 		<?php echo $form->labelEx($model,'montoProyecto'); ?>
-		<?php echo $form->textField($model, 'montoProyecto', array('maxlength' => 200)); ?>
+		<?php echo $form->textField($model, 'montoProyecto', array('maxlength' => 45)); ?>
 		<?php echo $form->error($model,'montoProyecto'); ?>
 		</div><!-- row -->
 		<div class="row">
@@ -94,8 +94,15 @@
 		<?php echo $form->error($model,'porcAporteExt'); ?>
 		</div><!-- row -->
 
+		<label><?php echo GxHtml::encode($model->getRelationLabel('constancias')); ?></label>
+		<?php echo $form->checkBoxList($model, 'constancias', GxHtml::encodeEx(GxHtml::listDataEx(Constancia::model()->findAllAttributes(null, true)), false, true)); ?>
+		<label><?php echo GxHtml::encode($model->getRelationLabel('plantillas')); ?></label>
+		<?php echo $form->checkBoxList($model, 'plantillas', GxHtml::encodeEx(GxHtml::listDataEx(Plantilla::model()->findAllAttributes(null, true)), false, true)); ?>
+		<label><?php echo GxHtml::encode($model->getRelationLabel('subitems')); ?></label>
+		<?php echo $form->checkBoxList($model, 'subitems', GxHtml::encodeEx(GxHtml::listDataEx(Subitem::model()->findAllAttributes(null, true)), false, true)); ?>
+
 <?php
-echo GxHtml::submitButton(Yii::t('app', 'Guardar'));
+echo GxHtml::submitButton(Yii::t('app', 'Save'));
 $this->endWidget();
 ?>
 </div><!-- form -->

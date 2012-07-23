@@ -74,7 +74,7 @@ abstract class BaseSubitem extends GxActiveRecord {
 
 	public function attributeLabels() {
 		return array(
-			'id' => Yii::t('app', 'correlativo'),
+			'id' => Yii::t('app', 'ID'),
 			'proyecto_id' => null,
 			'tipoaporte_id' => null,
 			'item_id' => null,
@@ -111,9 +111,6 @@ abstract class BaseSubitem extends GxActiveRecord {
 
 		return new CActiveDataProvider($this, array(
 			'criteria' => $criteria,
-			'pagination' => array(
-				'pageSize'=>100
-            ),
 		));
 	}
 }

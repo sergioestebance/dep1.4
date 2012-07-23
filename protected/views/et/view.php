@@ -6,15 +6,15 @@ $this->breadcrumbs = array(
 );
 
 $this->menu=array(
-	array('label'=>Yii::t('app', 'Listar') . ' ' . $model->label(2), 'url'=>array('index')),
-	array('label'=>Yii::t('app', 'Crear') . ' ' . $model->label(), 'url'=>array('create')),
-	array('label'=>Yii::t('app', 'Actualizar') . ' ' . $model->label(), 'url'=>array('update', 'id' => $model->id)),
-	array('label'=>Yii::t('app', 'Eliminar') . ' ' . $model->label(), 'url'=>'#', 'linkOptions' => array('submit' => array('delete', 'id' => $model->id), 'confirm'=>'Seguro desea borrar esta item?')),
-	array('label'=>Yii::t('app', 'Administrar') . ' ' . $model->label(2), 'url'=>array('admin')),
+	array('label'=>Yii::t('app', 'List') . ' ' . $model->label(2), 'url'=>array('index')),
+	array('label'=>Yii::t('app', 'Create') . ' ' . $model->label(), 'url'=>array('create')),
+	array('label'=>Yii::t('app', 'Update') . ' ' . $model->label(), 'url'=>array('update', 'id' => $model->id)),
+	array('label'=>Yii::t('app', 'Delete') . ' ' . $model->label(), 'url'=>'#', 'linkOptions' => array('submit' => array('delete', 'id' => $model->id), 'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>Yii::t('app', 'Manage') . ' ' . $model->label(2), 'url'=>array('admin')),
 );
 ?>
 
-<h1><?php echo Yii::t('app', 'Ver') . ' ' . GxHtml::encode($model->label()) . ' ' . GxHtml::encode(GxHtml::valueEx($model)); ?></h1>
+<h1><?php echo Yii::t('app', 'View') . ' ' . GxHtml::encode($model->label()) . ' ' . GxHtml::encode(GxHtml::valueEx($model)); ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data' => $model,
@@ -26,15 +26,16 @@ array(
 			'value' => $model->procesocompra !== null ? GxHtml::link(GxHtml::encode(GxHtml::valueEx($model->procesocompra)), array('procesocompra/view', 'id' => GxActiveRecord::extractPkValue($model->procesocompra, true))) : null,
 			),
 array(
-			'name' => 'alerta',
+			'name' => 'alerta0',
 			'type' => 'raw',
-			'value' => $model->alerta !== null ? GxHtml::link(GxHtml::encode(GxHtml::valueEx($model->alerta)), array('alerta/view', 'id' => GxActiveRecord::extractPkValue($model->alerta, true))) : null,
+			'value' => $model->alerta0 !== null ? GxHtml::link(GxHtml::encode(GxHtml::valueEx($model->alerta0)), array('alerta/view', 'id' => GxActiveRecord::extractPkValue($model->alerta0, true))) : null,
 			),
 'forma',
 'fecha',
 'observacion1',
 'observacion2',
-'tipo',
+'alerta',
+'alertal1',
 	),
 )); ?>
 
