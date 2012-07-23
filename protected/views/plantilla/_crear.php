@@ -10,44 +10,14 @@
 	<?php echo $form->errorSummary($model); ?>
 
 		<div class="row">
-		<?php echo $form->labelEx($model,'item'); ?>
-		<?php echo $form->textField($model, 'item', array('maxlength' => 45)); ?>
-		<?php echo $form->error($model,'item'); ?>
+		<?php echo $form->labelEx($model,'tipoDocumento'); ?>
+		<?php echo $form->textField($model, 'tipoDocumento', array('maxlength' => 45)); ?>
+		<?php echo $form->error($model,'tipoDocumento'); ?>
 		</div><!-- row -->
 		<div class="row">
-		<?php echo $form->labelEx($model,'numDocumentoSC'); ?>
-		<?php echo $form->textField($model, 'numDocumentoSC', array('maxlength' => 45)); ?>
-		<?php echo $form->error($model,'numDocumentoSC'); ?>
-		</div><!-- row -->
-		<div class="row">
-		<?php echo $form->labelEx($model,'fechaSC'); ?>
-		<?php echo $form->textField($model, 'fechaSC'); ?>
-		<?php echo $form->error($model,'fechaSC'); ?>
-		</div><!-- row -->
-		<div class="row">
-		<?php echo $form->labelEx($model,'numDocumentoOC'); ?>
-		<?php echo $form->textField($model, 'numDocumentoOC', array('maxlength' => 45)); ?>
-		<?php echo $form->error($model,'numDocumentoOC'); ?>
-		</div><!-- row -->
-		<div class="row">
-		<?php echo $form->labelEx($model,'fechaOC'); ?>
-		<?php echo $form->textField($model, 'fechaOC'); ?>
-		<?php echo $form->error($model,'fechaOC'); ?>
-		</div><!-- row -->
-		<div class="row">
-		<?php echo $form->labelEx($model,'tipoDocumentoDP'); ?>
-		<?php echo $form->textField($model, 'tipoDocumentoDP', array('maxlength' => 45)); ?>
-		<?php echo $form->error($model,'tipoDocumentoDP'); ?>
-		</div><!-- row -->
-		<div class="row">
-		<?php echo $form->labelEx($model,'numDocumentoDP'); ?>
-		<?php echo $form->textField($model, 'numDocumentoDP', array('maxlength' => 45)); ?>
-		<?php echo $form->error($model,'numDocumentoDP'); ?>
-		</div><!-- row -->
-		<div class="row">
-		<?php echo $form->labelEx($model,'fechaDP'); ?>
-		<?php echo $form->textField($model, 'fechaDP'); ?>
-		<?php echo $form->error($model,'fechaDP'); ?>
+		<?php echo $form->labelEx($model,'numDocumento'); ?>
+		<?php echo $form->textField($model, 'numDocumento', array('maxlength' => 45)); ?>
+		<?php echo $form->error($model,'numDocumento'); ?>
 		</div><!-- row -->
 		<div class="row">
 		<?php echo $form->labelEx($model,'numComprobanteEI'); ?>
@@ -60,11 +30,6 @@
 		<?php echo $form->error($model,'fechaEI'); ?>
 		</div><!-- row -->
 		<div class="row">
-		<?php echo $form->labelEx($model,'numOrdenPagoEI'); ?>
-		<?php echo $form->textField($model, 'numOrdenPagoEI'); ?>
-		<?php echo $form->error($model,'numOrdenPagoEI'); ?>
-		</div><!-- row -->
-		<div class="row">
 		<?php echo $form->labelEx($model,'tipoDocumentoFB'); ?>
 		<?php echo $form->textField($model, 'tipoDocumentoFB', array('maxlength' => 45)); ?>
 		<?php echo $form->error($model,'tipoDocumentoFB'); ?>
@@ -75,39 +40,34 @@
 		<?php echo $form->error($model,'numDocumentoFB'); ?>
 		</div><!-- row -->
 		<div class="row">
-		<?php echo $form->labelEx($model,'rutProveedorFB'); ?>
-		<?php echo $form->textField($model, 'rutProveedorFB', array('maxlength' => 45)); ?>
-		<?php echo $form->error($model,'rutProveedorFB'); ?>
+		<?php echo $form->labelEx($model,'rutProveedor'); ?>
+		<?php echo $form->textField($model, 'rutProveedor', array('maxlength' => 45)); ?>
+		<?php echo $form->error($model,'rutProveedor'); ?>
 		</div><!-- row -->
 		<div class="row">
-		<?php echo $form->labelEx($model,'fechaFB'); ?>
-		<?php echo $form->textField($model, 'fechaFB'); ?>
-		<?php echo $form->error($model,'fechaFB'); ?>
+		<?php echo $form->labelEx($model,'fechaEmisionDoc'); ?>
+		<?php echo $form->textField($model, 'fechaEmisionDoc'); ?>
+		<?php echo $form->error($model,'fechaEmisionDoc'); ?>
 		</div><!-- row -->
 		<div class="row">
-		<?php echo $form->labelEx($model,'fechaCancelacionFB'); ?>
-		<?php echo $form->textField($model, 'fechaCancelacionFB'); ?>
-		<?php echo $form->error($model,'fechaCancelacionFB'); ?>
+		<?php echo $form->labelEx($model,'fechaCancelacionDoc'); ?>
+		<?php echo $form->textField($model, 'fechaCancelacionDoc'); ?>
+		<?php echo $form->error($model,'fechaCancelacionDoc'); ?>
 		</div><!-- row -->
 		<div class="row">
-		<?php echo $form->labelEx($model,'detalleDocumentoFB'); ?>
-		<?php echo $form->textField($model, 'detalleDocumentoFB', array('maxlength' => 200)); ?>
-		<?php echo $form->error($model,'detalleDocumentoFB'); ?>
+		<?php echo $form->labelEx($model,'detalleDoc'); ?>
+		<?php echo $form->textField($model, 'detalleDoc', array('maxlength' => 200)); ?>
+		<?php echo $form->error($model,'detalleDoc'); ?>
 		</div><!-- row -->
 		<div class="row">
-		<?php echo $form->labelEx($model,'valorCanceladoFB'); ?>
-		<?php echo $form->textField($model, 'valorCanceladoFB', array('maxlength' => 45)); ?>
-		<?php echo $form->error($model,'valorCanceladoFB'); ?>
+		<?php echo $form->labelEx($model,'valorTotal'); ?>
+		<?php echo $form->textField($model, 'valorTotal', array('maxlength' => 45)); ?>
+		<?php echo $form->error($model,'valorTotal'); ?>
 		</div><!-- row -->
 		<div class="row">
-		<?php echo $form->labelEx($model,'observacion1FB'); ?>
-		<?php echo $form->textField($model, 'observacion1FB', array('maxlength' => 200)); ?>
-		<?php echo $form->error($model,'observacion1FB'); ?>
-		</div><!-- row -->
-		<div class="row">
-		<?php echo $form->labelEx($model,'procesosFB'); ?>
-		<?php echo $form->textField($model, 'procesosFB', array('maxlength' => 200)); ?>
-		<?php echo $form->error($model,'procesosFB'); ?>
+		<?php echo $form->labelEx($model,'observacion'); ?>
+		<?php echo $form->textField($model, 'observacion', array('maxlength' => 200)); ?>
+		<?php echo $form->error($model,'observacion'); ?>
 		</div><!-- row -->
 
 
