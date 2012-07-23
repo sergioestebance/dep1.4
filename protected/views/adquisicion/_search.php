@@ -21,10 +21,15 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model, 'fecha'); ?>
-		<?php echo $form->textField($model, 'fecha'); ?>
+		<?php echo $form->label($model, 'fechaCreacion'); ?>
+		<?php echo $form->textField($model, 'fechaCreacion'); ?>
 	</div>
 
+		<div class="row">
+		<?php echo $form->label($model, 'fechaRespuesta'); ?>
+		<?php echo $form->textField($model, 'fechaRespuesta'); ?>
+	</div>
+	
 	<div class="row">
 		<?php echo $form->label($model, 'estado'); ?>
 		<?php echo $form->textField($model, 'estado', array('maxlength' => 45)); ?>

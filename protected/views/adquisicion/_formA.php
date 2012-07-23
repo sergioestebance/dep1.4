@@ -17,10 +17,16 @@
 		<?php echo $form->hiddenField($model,'procesocompra_id',array('size'=>45,'maxlength'=>45,'value'=>$model_pc->id)); ?>
 		</div><!-- row -->
 		<div class="row">
-		<?php echo $form->labelEx($model,'fecha'); ?>
-		<?php echo $form->textField($model, 'fecha',array('value'=>date("Y-m-d H:i:s"),)); ?>
-		<?php echo $form->error($model,'fecha'); ?>
+		<?php echo $form->labelEx($model,'fechaCreacion'); ?>
+		<?php echo $form->textField($model, 'fechaCreacion',array('value'=>date("Y-m-d H:i:s"),)); ?>
+		<?php echo $form->error($model,'fechaCreacion'); ?>
 		</div><!-- row -->
+				<div class="row">
+		<?php echo $form->labelEx($model,'fechaRespuesta'); ?>
+		<?php echo $form->textField($model, 'fechaRespuesta',array('value'=>date("Y-m-d H:i:s"),)); ?>
+		<?php echo $form->error($model,'fechaRespuesta'); ?>
+		</div><!-- row -->
+		
 		<div class="row">
 		<?php echo $form->labelEx($model,'estado'); ?>
 		<?php echo $form->textField($model, 'estado', array('maxlength' => 45)); ?>

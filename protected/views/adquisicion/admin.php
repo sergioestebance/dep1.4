@@ -53,7 +53,8 @@ Se pueden ocupar los operadores de comparacion (&lt;, &lt;=, &gt;, &gt;=, &lt;&g
 				'value'=>'GxHtml::valueEx($data->procesocompra)',
 				'filter'=>GxHtml::listDataEx(Procesocompra::model()->findAllAttributes(null, true)),
 				),
-		'fecha',
+		'fechaCreacion',
+		'fechaRespuesta',
 		'estado',
 		'observacion',
 		array(
