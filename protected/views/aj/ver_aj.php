@@ -1,8 +1,8 @@
 <script type="text/javascript">
-function addPeticion()
+function editAJ()
 {
     <?php echo CHtml::ajax(array(
-            'url'=>Yii::app()->createUrl("aj/editar", array("id"=>$model_pcs->id)),
+            'url'=>Yii::app()->createUrl("aj/editar", array("id"=>$model->et->id)),
             'data'=> "js:$(this).serialize()",
             'type'=>'post',
             'dataType'=>'json',
@@ -10,16 +10,17 @@ function addPeticion()
             {
                 if (data.status == 'failure')
                 {
-                    $('#div_peticionet').html(data.div);
-                    $('#div_peticionet form').submit(addPeticion);
-					$('#div_peticionet').show();
+                    $('#div_aj').html(data.div);
+					$('#div_aj').show();
+                    $('#div_aj form').submit(editET);
                 }
                 else
                 {
-                    $('#div_peticionet').html(data.div);
-					$('#div_peticionet').hide('slow');
-					$.fn.yiiGridView.update('peticionet-grid');
+                    $('#div_aj').html(data.div);
+					$('#div_aj').hide('slow');
+				location.reload();	
 		        }
+			
 			
             } ",
             ))?>;
@@ -28,39 +29,27 @@ function addPeticion()
 }
  
 </script>
-
 <?php 
-$this->widget('zii.widgets.grid.CGridView', array(
-	'id' => 'peticionet-grid',
-	'dataProvider' => new CArrayDataProvider($model_pcs->ajs,array()),
-	'columns' => array(
-		'tipo',
-		'estado',
-		'fechaCreacion',
-		'observacion',
-		array(
-			'class' => 'CButtonColumn',
-			'template'=>'{view} {update}',
-			'buttons'=>array(
-				'view' => array(
-					'label'=>'Ver etapa proceso de compra',
-					'url'=>'Yii::app()->createUrl("peticionet/view", array("id"=>$data->id))',
-				),
-				'update' => array(
-					'label'=>'editar etapa  proceso de compra',
-					'url'=>'Yii::app()->createUrl("peticionet/update", array("id"=>$data->id))',
-				),
-			),
-		),
+	$this->widget('zii.widgets.CDetailView', array(
+	'id'=> 'detalle-aj',
+	'data' => $model_pcs->ajs,
+	'attributes' => array(
+	'tipo',
+	'fechaCreacion',
+	'fechaRespuesta',
+	'estado',
+	
 	),
 )); 
+
+
 ?>
+
 <br>
-<?php echo CHtml::link('AGREGAR', "",array('style'=>'cursor: pointer; text-decoration: underline;', 'onclick'=>"js: addPeticion();"));
+<?php echo CHtml::link('ACTUALIZAR', "",array('style'=>'cursor: pointer; text-decoration: underline;', 'onclick'=>"js: editAJ();"));
 ?>
 <br><br>
-<div id="div_peticionet" class="box"> 
+<div id="div_aj" class="box"> 
 </div>
-
 <br>
 

@@ -6524,3 +6524,50 @@ Stack trace:
 REQUEST_URI=/dep1.4/index.php/site/login
 HTTP_REFERER=http://localhost:8080/dep1.4/index.php/site/login
 ---
+2012/07/23 21:44:48 [error] [exception.CException] exception 'CException' with message 'Please specify the "data" property.' in C:\AppServ\www\yii\framework\zii\widgets\CDetailView.php:137
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CBaseController.php(148): CDetailView->init()
+#1 C:\AppServ\www\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.CDe...', Array)
+#2 C:\AppServ\www\dep1.4\protected\views\aj\ver_aj.php(46): CBaseController->widget('zii.widgets.CDe...', Array)
+#3 C:\AppServ\www\yii\framework\web\CBaseController.php(127): require('C:\AppServ\www\...')
+#4 C:\AppServ\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#5 C:\AppServ\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#6 C:\AppServ\www\dep1.4\protected\views\controlseguimiento\tabL1.php(5): CController->renderPartial('//aj/ver_aj', Array, Object(ControlseguimientoController))
+#7 C:\AppServ\www\yii\framework\web\CBaseController.php(127): require('C:\AppServ\www\...')
+#8 C:\AppServ\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#9 C:\AppServ\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#10 C:\AppServ\www\dep1.4\protected\views\controlseguimiento\view.php(34): CController->renderPartial('tabL1', Array)
+#11 C:\AppServ\www\yii\framework\web\CBaseController.php(127): require('C:\AppServ\www\...')
+#12 C:\AppServ\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#13 C:\AppServ\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#14 C:\AppServ\www\yii\framework\web\CController.php(783): CController->renderPartial('view', Array, true)
+#15 C:\AppServ\www\dep1.4\protected\controllers\ControlseguimientoController.php(14): CController->render('view', Array)
+#16 [internal function]: ControlseguimientoController->actionView('16')
+#17 C:\AppServ\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(ControlseguimientoController), Array)
+#18 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(ControlseguimientoController), Object(ReflectionMethod), Array)
+#19 C:\AppServ\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#20 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#21 C:\AppServ\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#22 C:\AppServ\www\dep1.4\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#23 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#24 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#25 C:\AppServ\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#26 C:\AppServ\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 C:\AppServ\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#28 C:\AppServ\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('controlseguimie...')
+#29 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#30 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#31 {main}
+REQUEST_URI=/dep1.4/index.php/controlseguimiento/16
+HTTP_REFERER=http://localhost:8080/dep1.4/index.php/procesocompra/adminSeg
+---
+2012/07/23 21:50:12 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'The CSRF token could not be verified.' in C:\AppServ\www\yii\framework\web\CHttpRequest.php:929
+Stack trace:
+#0 C:\AppServ\www\yii\framework\base\CComponent.php(559): CHttpRequest->validateCsrfToken(Object(CEvent))
+#1 C:\AppServ\www\yii\framework\base\CApplication.php(189): CComponent->raiseEvent('onBeginRequest', Object(CEvent))
+#2 C:\AppServ\www\yii\framework\base\CApplication.php(161): CApplication->onBeginRequest(Object(CEvent))
+#3 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/dep1.4/index.php/aj/editar/
+HTTP_REFERER=http://localhost:8080/dep1.4/index.php/controlseguimiento/16
+---
