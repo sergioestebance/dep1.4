@@ -66,12 +66,12 @@ return array(
 		),
 		
 		'db'=>array(
-			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/dep1.4.db',
+			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/dep4.db',
 		),
 		// uncomment the following to use a MySQL database
 		
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=dep1.4',
+			'connectionString' => 'mysql:host=localhost;dbname=dep4',
 			'emulatePrepare' => true,
 			'username' => 'root',
 			'password' => '',
