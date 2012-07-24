@@ -42,7 +42,7 @@
 		<?php echo $form->checkBoxList($model, 'plantillas', GxHtml::encodeEx(GxHtml::listDataEx(Plantilla::model()->findAllAttributes(null, true)), false, true)); ?>
 
 <?php
-echo GxHtml::submitButton(Yii::t('app', 'Save'));
+echo GxHtml::submitButton(Yii::t('app', 'Guardar'));
 $this->endWidget();
 ?>
 </div><!-- form -->

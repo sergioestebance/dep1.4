@@ -2,7 +2,7 @@
 
 $this->breadcrumbs = array(
 	$model->label(2) => array('index'),
-	Yii::t('app', 'Create'),
+	Yii::t('app', 'Crear'),
 );
 
 $this->menu = array(

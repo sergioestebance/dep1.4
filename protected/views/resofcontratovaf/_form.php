@@ -56,7 +56,7 @@
 
 
 <?php
-echo GxHtml::submitButton(Yii::t('app', 'Save'));
+echo GxHtml::submitButton(Yii::t('app', 'Guardar'));
 $this->endWidget();
 ?>
 </div><!-- form -->

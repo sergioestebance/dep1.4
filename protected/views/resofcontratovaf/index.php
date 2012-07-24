@@ -6,8 +6,8 @@ $this->breadcrumbs = array(
 );
 
 $this->menu = array(
-	array('label'=>Yii::t('app', 'Create') . ' ' . Resofcontratovaf::label(), 'url' => array('create')),
-	array('label'=>Yii::t('app', 'Manage') . ' ' . Resofcontratovaf::label(2), 'url' => array('admin')),
+	array('label'=>Yii::t('app', 'Crear') . ' ' . Resofcontratovaf::label(), 'url' => array('create')),
+	array('label'=>Yii::t('app', 'Administrar') . ' ' . Resofcontratovaf::label(2), 'url' => array('admin')),
 );
 ?>
 
