@@ -7,8 +7,8 @@
 ));
 ?>
 
-	<p>
-	Se pueden ocupar los operadores de comparacion (&lt;, &lt;=, &gt;, &gt;=, &lt;&gt; or =) al principio de cada valor de filtrado.
+	<p class="note">
+		<?php echo Yii::t('app', 'Campos con'); ?> <span class="required">*</span> <?php echo Yii::t('app', 'son obligatorios'); ?>.
 	</p>
 
 	<?php echo $form->errorSummary($model); ?>
