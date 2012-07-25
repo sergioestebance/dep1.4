@@ -62,13 +62,31 @@ public function filters() {
         }
 	}
 
-
-
-
 	public function actionView($id) {
 		$this->layout="";
-		$model=$this->PCService->cargarEtapas($this->loadModel($id, 'Procesocompra'));		
+		$model=$this->loadModel($id, 'Procesocompra');
 		$this->render('view', array('model' => $model,));
+	}
+	
+	public function actionAnular($id) {
+		$this->layout="";
+		$model=$this->loadModel($id, 'Procesocompra');
+		$this->PCService->anularProceso($model);		
+		$this->redirect(array('view', 'id' => $model->id));
+	}
+	
+	public function actionActivar($id) {
+		$this->layout="";
+		$model=$this->loadModel($id, 'Procesocompra');
+		$this->PCService->anularProceso($model);		
+		$this->redirect(array('view', 'id' => $model->id));
+	}
+	
+	public function actionFinalizar($id) {
+		$this->layout="";
+		$model=$this->loadModel($id, 'Procesocompra');
+		$this->PCService->finalizarProceso($model);		
+		$this->redirect(array('view', 'id' => $model->id));
 	}
 	
 	public function actionViewSeg($id) {

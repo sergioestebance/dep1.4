@@ -4,6 +4,7 @@ $this->beginWidget('zii.widgets.jui.CJuiButton', array(
     'buttonType'=>'buttonset',
     'name'=>'my-set',
 ));
+
 $this->widget('zii.widgets.jui.CJuiButton', array(
     'buttonType'=>'button',
     'name'=>'btnStop',
