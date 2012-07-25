@@ -69,7 +69,7 @@ abstract class BaseConstancia extends GxActiveRecord {
 			'procesogasto_id' => null,
 			'proyecto_id' => null,
 			'item_id' => null,
-			'agno' => Yii::t('app', 'Año'),
+			'agno' => Yii::t('app', 'A&ntilde;o'),
 			'mes' => Yii::t('app', 'Mes'),
 			'detalleDocumento' => Yii::t('app', 'Detalle Documento'),
 			'valor' => Yii::t('app', 'Valor'),
