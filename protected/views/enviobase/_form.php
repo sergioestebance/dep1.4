@@ -35,7 +35,7 @@
 		</div><!-- row -->
 		<div class="row">
 		<?php echo $form->labelEx($model,'estado'); ?>
-		<?php echo $form->textField($model, 'estado', array('maxlength' => 45)); ?>
+		<?php echo $form->dropDownList($model, 'estado',array('' => '', 'FINALIZADO' => 'FINALIZADO')); ?>
 		<?php echo $form->error($model,'estado'); ?>
 		</div><!-- row -->
 

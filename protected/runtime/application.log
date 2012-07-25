@@ -6859,3 +6859,705 @@ Stack trace:
 #19 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
 #20 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
 #21 {main} REQUEST_URI=/dep1.4/index.php/constancia/crear/1
+2012/07/25 14:28:52 [error] [exception.CException] exception 'CException' with message 'EnviobaseController cannot find the requested view "_formEB".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:875
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\dep1.4\protected\controllers\EnviobaseController.php(36): CController->renderPartial('_formEB', Array, true)
+#1 [internal function]: EnviobaseController->actionCrear('1')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\actions\CAction.php(104): ReflectionMethod->invokeArgs(Object(EnviobaseController), Array)
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(EnviobaseController), Object(ReflectionMethod), Array)
+#4 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#5 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 D:\Archivos de Programas\xampp\htdocs\dep1.4\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#8 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#9 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(283): CFilterChain->run()
+#11 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('crear')
+#13 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('enviobase/crear')
+#14 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#15 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#16 {main} REQUEST_URI=/dep1.4/index.php/enviobase/crear/1
+2012/07/25 14:29:01 [error] [exception.CException] exception 'CException' with message 'EnviobaseController cannot find the requested view "_formEB".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:875
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\dep1.4\protected\controllers\EnviobaseController.php(36): CController->renderPartial('_formEB', Array, true)
+#1 [internal function]: EnviobaseController->actionCrear('1')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\actions\CAction.php(104): ReflectionMethod->invokeArgs(Object(EnviobaseController), Array)
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(EnviobaseController), Object(ReflectionMethod), Array)
+#4 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#5 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 D:\Archivos de Programas\xampp\htdocs\dep1.4\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#8 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#9 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(283): CFilterChain->run()
+#11 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('crear')
+#13 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('enviobase/crear')
+#14 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#15 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#16 {main} REQUEST_URI=/dep1.4/index.php/enviobase/crear/1
+2012/07/25 16:02:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/j...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/js/jquery-1.6.3.min.js?_=1343242933622
+2012/07/25 16:02:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('css')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('css')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/c...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/css/jquery-ui.css
+2012/07/25 16:02:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/j...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/js/jquery-ui.min.js?_=1343242933890
+2012/07/25 16:02:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('css')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('css')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/c...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/css/ui.theme.css
+2012/07/25 16:02:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/j...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/js/jquery-ui-i18n.min.js?_=1343242934118
+2012/07/25 16:03:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/j...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/js/jquery-1.6.3.min.js?_=1343243011349
+2012/07/25 16:03:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('css')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('css')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/c...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/css/ui.theme.css
+2012/07/25 16:03:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/j...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/js/jquery-ui.min.js?_=1343243011579
+2012/07/25 16:03:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('css')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('css')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/c...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/css/jquery-ui.css
+2012/07/25 16:03:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/j...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/js/jquery-ui-i18n.min.js?_=1343243011867
+2012/07/25 16:03:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/i...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/images/calendar_icon.gif
+2012/07/25 16:04:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/j...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/js/jquery-1.6.3.min.js?_=1343243065079
+2012/07/25 16:04:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/j...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/js/jquery-ui.min.js?_=1343243065276
+2012/07/25 16:04:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('css')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('css')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/c...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/css/ui.theme.css
+2012/07/25 16:04:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('css')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('css')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/c...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/css/jquery-ui.css
+2012/07/25 16:04:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/j...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/js/jquery-ui-i18n.min.js?_=1343243065486
+2012/07/25 16:04:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/i...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/images/calendar_icon.gif
+2012/07/25 16:04:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/j...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/js/jquery-1.6.3.min.js?_=1343243092257
+2012/07/25 16:04:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('css')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('css')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/c...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/css/ui.theme.css
+2012/07/25 16:04:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/j...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/js/jquery-ui.min.js?_=1343243092498
+2012/07/25 16:04:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('css')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('css')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/c...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/css/jquery-ui.css
+2012/07/25 16:04:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/j...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/js/jquery-ui-i18n.min.js?_=1343243092657
+2012/07/25 16:04:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/i...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/images/calendar_icon.gif
+2012/07/25 16:05:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/j...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/js/jquery-1.6.3.min.js?_=1343243155152
+2012/07/25 16:05:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('css')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('css')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/c...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/css/jquery-ui.css
+2012/07/25 16:05:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('css')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('css')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/c...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/css/ui.theme.css
+2012/07/25 16:05:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/j...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/js/jquery-ui.min.js?_=1343243155423
+2012/07/25 16:05:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/j...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/js/jquery-ui-i18n.min.js?_=1343243155620
+2012/07/25 16:05:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/i...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/images/calendar_icon.gif
+2012/07/25 16:05:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/j...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/js/jquery-1.6.3.min.js?_=1343243156254
+2012/07/25 16:05:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('css')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('css')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/c...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/css/ui.theme.css
+2012/07/25 16:05:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('css')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('css')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/c...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/css/jquery-ui.css
+2012/07/25 16:05:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/j...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/js/jquery-ui.min.js?_=1343243156473
+2012/07/25 16:05:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/j...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/js/jquery-ui-i18n.min.js?_=1343243156590
+2012/07/25 16:05:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/j...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/js/jquery-1.6.3.min.js?_=1343243156731
+2012/07/25 16:05:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/j...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/js/jquery-ui.min.js?_=1343243156837
+2012/07/25 16:05:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/j...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/js/jquery-ui-i18n.min.js?_=1343243156946
+2012/07/25 16:05:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/i...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/images/calendar_icon.gif
+2012/07/25 16:05:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/j...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/js/jquery-1.6.3.min.js?_=1343243157469
+2012/07/25 16:05:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('css')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('css')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/c...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/css/jquery-ui.css
+2012/07/25 16:05:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/j...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/js/jquery-ui.min.js?_=1343243157684
+2012/07/25 16:05:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('css')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('css')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/c...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/css/ui.theme.css
+2012/07/25 16:05:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/j...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/js/jquery-ui-i18n.min.js?_=1343243157873
+2012/07/25 16:05:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/j...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/js/jquery-1.6.3.min.js?_=1343243158015
+2012/07/25 16:05:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/j...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/js/jquery-ui.min.js?_=1343243158131
+2012/07/25 16:05:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/j...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/js/jquery-ui-i18n.min.js?_=1343243158243
+2012/07/25 16:05:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/i...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/images/calendar_icon.gif
+2012/07/25 16:06:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/j...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/js/jquery-1.6.3.min.js?_=1343243160244
+2012/07/25 16:06:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('css')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('css')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/c...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/css/jquery-ui.css
+2012/07/25 16:06:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('css')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('css')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/c...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/css/ui.theme.css
+2012/07/25 16:06:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/j...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/js/jquery-ui.min.js?_=1343243160523
+2012/07/25 16:06:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/j...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/js/jquery-ui-i18n.min.js?_=1343243160702
+2012/07/25 16:06:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/i...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/images/calendar_icon.gif
+2012/07/25 16:06:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/j...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/js/jquery-1.6.3.min.js?_=1343243169697
+2012/07/25 16:06:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('css')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('css')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/c...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/css/ui.theme.css
+2012/07/25 16:06:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('css')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('css')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/c...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/css/jquery-ui.css
+2012/07/25 16:06:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/j...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/js/jquery-ui.min.js?_=1343243170062
+2012/07/25 16:06:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/j...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/js/jquery-ui-i18n.min.js?_=1343243170269
+2012/07/25 16:06:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/i...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/images/calendar_icon.gif
+2012/07/25 16:07:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/j...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/js/jquery-1.6.3.min.js?_=1343243241262
+2012/07/25 16:07:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('css')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('css')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/c...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/css/jquery-ui.css
+2012/07/25 16:07:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('css')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('css')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/c...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/css/ui.theme.css
+2012/07/25 16:07:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/j...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/js/jquery-ui.min.js?_=1343243241644
+2012/07/25 16:07:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/j...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/js/jquery-ui-i18n.min.js?_=1343243241817
+2012/07/25 16:07:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/i...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/images/calendar_icon.gif
+2012/07/25 16:09:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/j...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/js/jquery-1.6.3.min.js?_=1343243382585
+2012/07/25 16:09:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('css')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('css')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/c...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/css/jquery-ui.css
+2012/07/25 16:09:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('css')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('css')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/c...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/css/ui.theme.css
+2012/07/25 16:09:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/j...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/js/jquery-ui.min.js?_=1343243383091
+2012/07/25 16:09:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/j...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/js/jquery-ui-i18n.min.js?_=1343243383237
+2012/07/25 16:09:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/i...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/images/calendar_icon.gif
+2012/07/25 16:17:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/j...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/js/jquery-1.6.3.min.js?_=1343243840520
+2012/07/25 16:17:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('css')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('css')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/c...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/css/jquery-ui.css
+2012/07/25 16:17:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/j...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/js/jquery-ui.min.js?_=1343243840821
+2012/07/25 16:17:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('css')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('css')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/c...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/css/ui.theme.css
+2012/07/25 16:17:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/j...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/js/jquery-ui-i18n.min.js?_=1343243841001
+2012/07/25 16:17:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/i...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/images/calendar_icon.gif
+2012/07/25 16:17:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/j...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/js/jquery-1.6.3.min.js?_=1343243873074
+2012/07/25 16:17:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('css')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('css')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/c...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/css/ui.theme.css
+2012/07/25 16:17:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('css')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('css')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/c...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/css/jquery-ui.css
+2012/07/25 16:17:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/j...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/js/jquery-ui.min.js?_=1343243873326
+2012/07/25 16:17:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/j...')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/js/jquery-ui-i18n.min.js?_=1343243873510
+2012/07/25 16:17:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "..images".' in D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CController.php(262): CController->missingAction('..images')
+#1 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CController->run('..images')
+#2 D:\Archivos de Programas\xampp\htdocs\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('procesocompra/....')
+#3 D:\Archivos de Programas\xampp\htdocs\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\Archivos de Programas\xampp\htdocs\dep1.4\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/dep1.4/index.php/procesocompra/..images/calendar_icon.gif
