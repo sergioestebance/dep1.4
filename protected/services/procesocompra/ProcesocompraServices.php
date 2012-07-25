@@ -15,5 +15,19 @@ abstract class ProcesocompraServices {
 		}
 		$model->save(true);
 		}
+	public function anularProceso($model){
+	$model->estado = "ANULADO";
+	$model->save(true);
+	}
+	
+	public function activarProceso($model){
+	$model->estado = "ACTIVO";
+	$model->save(true);
+	}
+	
+	public function finalizarProceso($model){
+	$model->estado = "FINALIZADO";
+	$model->save(true);
+	}
 		
 }
