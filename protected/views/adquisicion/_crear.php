@@ -12,7 +12,7 @@ $(function() {
 		$.datepicker.setDefaults($.datepicker.regional['es']);
 		$( "#Adquisicion_fechaRespuesta" ).datepicker({
 			showOn: "button",
-			buttonImage: "images/calendar_icon.gif",
+			buttonImage: "images/calendar_icon.gif", 
 			buttonImageOnly: true,
 			dateFormat: 'yy-m-d'
 		});
