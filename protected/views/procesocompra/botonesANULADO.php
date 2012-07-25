@@ -6,10 +6,10 @@ $this->beginWidget('zii.widgets.jui.CJuiButton', array(
 ));
 $this->widget('zii.widgets.jui.CJuiButton', array(
     'buttonType'=>'link',
-    'name'=>'boton_anular',
-    'caption'=>'Anular',
-	'value'=>'Anulado',
-	'url'=>Yii::app()->createUrl("procesocompra/activar", array("id"=>$id)),
+    'name'=>'boton_activar',
+    'caption'=>'Activar',
+	'value'=>'Activado',
+	'url'=>Yii::app()->createUrl("procesocompra/activar", array("id"=>$model->id)),
     'options'=>array('icons'=>'js:{primary:"ui-icon-newwin"}'),
     
 ));

@@ -78,7 +78,7 @@ public function filters() {
 	public function actionActivar($id) {
 		$this->layout="";
 		$model=$this->loadModel($id, 'Procesocompra');
-		$this->PCService->anularProceso($model);		
+		$this->PCService->activarProceso($model);		
 		$this->redirect(array('view', 'id' => $model->id));
 	}
 	

@@ -6,18 +6,22 @@ $this->beginWidget('zii.widgets.jui.CJuiButton', array(
 ));
 
 $this->widget('zii.widgets.jui.CJuiButton', array(
-    'buttonType'=>'button',
-    'name'=>'btnStop',
+    'buttonType'=>'link',
+    'name'=>'boton_anular',
     'caption'=>'Anular',
+	'value'=>'Anulado',
+	'url'=>Yii::app()->createUrl("procesocompra/anular", array("id"=>$model->id)),
     'options'=>array('icons'=>'js:{primary:"ui-icon-newwin"}'),
-    'onclick'=>'js:function(){alert("Button Stop clicked."); this.blur(); return false;}',
+    
 ));
 $this->widget('zii.widgets.jui.CJuiButton', array(
-    'buttonType'=>'button',
-    'name'=>'btnGo',
+    'buttonType'=>'link',
+    'name'=>'boton_finalizar',
     'caption'=>'Finalizar',
+	'value'=>'Finalizado',
+	'url'=>Yii::app()->createUrl("procesocompra/finalizar", array("id"=>$model->id)),
     'options'=>array('icons'=>'js:{primary:"ui-icon-newwin"}'),
-    'onclick'=>'js:function(){alert("Button Go clicked."); $("#btnGo").hide(); return false;}',
+    
 ));
 $this->endWidget();
 ?>
