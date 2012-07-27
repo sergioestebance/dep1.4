@@ -13,6 +13,31 @@ public function filters() {
 			'model' => $this->loadModel($id, 'Procesoevaluacion'),
 		));
 	}
+	
+	public function actionEditar($id){
+		$model = $this->loadModel($id, 'Procesoevaluacion');
+		
+		if (isset($_POST['Procesoevaluacion'])) {
+			$model->setAttributes($_POST['Procesoevaluacion']);
+			
+			if ($model->save()) {
+				if (Yii::app()->request->isAjaxRequest){
+				        echo CJSON::encode(array(
+                        'status'=>'success', 
+                        'div'=>"LISTA",
+                        ));
+                    exit;               
+                }
+			}			
+		}		
+		if (Yii::app()->request->isAjaxRequest)
+        {
+            echo CJSON::encode(array('status'=>'failure', 'div'=>$this->renderPartial('_crear', array('model' => $model,),true)));
+            exit;               
+        }
+	}
+	
+	
 
 	public function actionCreate() {
 		$model = new Procesoevaluacion;

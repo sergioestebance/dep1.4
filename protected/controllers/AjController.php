@@ -12,6 +12,14 @@ public function filters() {
 	public function actionEditar($id){
 		$model = $this->loadModel($id, 'Aj');
 		
+		if (Yii::app()->request->isAjaxRequest)
+        {
+			if($model->controlseguimiento->procesocompra->estado!="ACTIVO"){
+				echo CJSON::encode(array('status'=>'failure', 'div'=>'EL PROCESO DE COMPRA NO ESTA ACTIVO'));
+				exit;               
+			}
+        }
+			
 		if (isset($_POST['Aj'])) {
 			$model->setAttributes($_POST['Aj']);
 			

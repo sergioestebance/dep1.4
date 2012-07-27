@@ -2,7 +2,7 @@
 function editAJ()
 {
     <?php echo CHtml::ajax(array(
-            'url'=>Yii::app()->createUrl("aj/editar", array("id"=>$model->et->id)),
+            'url'=>Yii::app()->createUrl("aj/editar", array("id"=>$model->aj->id)),
             'data'=> "js:$(this).serialize()",
             'type'=>'post',
             'dataType'=>'json',
@@ -12,7 +12,7 @@ function editAJ()
                 {
                     $('#div_aj').html(data.div);
 					$('#div_aj').show();
-                    $('#div_aj form').submit(editET);
+                    $('#div_aj form').submit(editAJ);
                 }
                 else
                 {
@@ -32,7 +32,7 @@ function editAJ()
 <?php 
 	$this->widget('zii.widgets.CDetailView', array(
 	'id'=> 'detalle-aj',
-	'data' => $model_pcs->ajs,
+	'data' => $model->aj,
 	'attributes' => array(
 	'tipo',
 	'fechaCreacion',
