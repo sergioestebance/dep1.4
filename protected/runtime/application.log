@@ -8426,3 +8426,84 @@ Stack trace:
 REQUEST_URI=/dep1.4/index.php/proyecto/adminProyectoPc
 HTTP_REFERER=http://localhost:8080/dep1.4/index.php/procesocompra/activar/3
 ---
+2012/07/25 20:27:06 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\AppServ\www\dep1.4\protected\modules\rights\components\RController.php:62
+Stack trace:
+#0 C:\AppServ\www\dep1.4\protected\modules\rights\components\RightsFilter.php(57): RController->accessDenied()
+#1 C:\AppServ\www\yii\framework\web\filters\CFilter.php(39): RightsFilter->preFilter(Object(CFilterChain))
+#2 C:\AppServ\www\dep1.4\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#3 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#4 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\AppServ\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\AppServ\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\AppServ\www\yii\framework\web\CWebApplication.php(276): CController->run('activar')
+#8 C:\AppServ\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('procesocompra/a...')
+#9 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/dep1.4/index.php/procesocompra/activar/3
+HTTP_REFERER=http://localhost:8080/dep1.4/index.php/site/login
+---
+2012/07/25 20:27:17 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\AppServ\www\dep1.4\protected\modules\rights\components\RController.php:62
+Stack trace:
+#0 C:\AppServ\www\dep1.4\protected\modules\rights\components\RightsFilter.php(57): RController->accessDenied()
+#1 C:\AppServ\www\yii\framework\web\filters\CFilter.php(39): RightsFilter->preFilter(Object(CFilterChain))
+#2 C:\AppServ\www\dep1.4\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#3 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#4 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\AppServ\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\AppServ\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\AppServ\www\yii\framework\web\CWebApplication.php(276): CController->run('admin')
+#8 C:\AppServ\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('procesocompra/a...')
+#9 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/dep1.4/index.php/procesocompra/admin
+---
+2012/07/25 20:27:20 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\AppServ\www\dep1.4\protected\modules\rights\components\RController.php:62
+Stack trace:
+#0 C:\AppServ\www\dep1.4\protected\modules\rights\components\RightsFilter.php(57): RController->accessDenied()
+#1 C:\AppServ\www\yii\framework\web\filters\CFilter.php(39): RightsFilter->preFilter(Object(CFilterChain))
+#2 C:\AppServ\www\dep1.4\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#3 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#4 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\AppServ\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\AppServ\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\AppServ\www\yii\framework\web\CWebApplication.php(276): CController->run('admin')
+#8 C:\AppServ\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('procesocompra/a...')
+#9 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/dep1.4/index.php/procesocompra/admin
+---
+2012/07/25 20:27:41 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\AppServ\www\dep1.4\protected\modules\rights\components\RController.php:62
+Stack trace:
+#0 C:\AppServ\www\dep1.4\protected\modules\rights\components\RightsFilter.php(57): RController->accessDenied()
+#1 C:\AppServ\www\yii\framework\web\filters\CFilter.php(39): RightsFilter->preFilter(Object(CFilterChain))
+#2 C:\AppServ\www\dep1.4\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#3 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#4 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\AppServ\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\AppServ\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\AppServ\www\yii\framework\web\CWebApplication.php(276): CController->run('admin')
+#8 C:\AppServ\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('procesocompra/a...')
+#9 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/dep1.4/index.php/procesocompra/admin
+---
+2012/07/25 20:27:47 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\AppServ\www\yii\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(RWebUser), 'You are not aut...')
+#1 C:\AppServ\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\AppServ\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\AppServ\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\AppServ\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\AppServ\www\yii\framework\web\CWebApplication.php(276): CController->run('')
+#8 C:\AppServ\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('rights')
+#9 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/dep1.4/index.php/rights
+---
