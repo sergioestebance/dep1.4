@@ -18,6 +18,14 @@ public function filters() {
 	public function actionEditarBL($id){
 		$model = $this->loadModel($id, 'Procesocompra');
 		
+		if (Yii::app()->request->isAjaxRequest)
+        {
+			if($model->estado!="ACTIVO"){
+				echo CJSON::encode(array('status'=>'failure', 'div'=>'EL PROCESO DE COMPRA NO ESTA ACTIVO'));
+				exit;               
+			}
+        }
+		
 		if (isset($_POST['Procesocompra'])) {
 			$model->setAttributes($_POST['Procesocompra']);
 			
@@ -41,6 +49,14 @@ public function filters() {
 	
 		public function actionEditarTD($id){
 		$model = $this->loadModel($id, 'Procesocompra');
+		
+		if (Yii::app()->request->isAjaxRequest)
+        {
+			if($model->estado!="ACTIVO"){
+				echo CJSON::encode(array('status'=>'failure', 'div'=>'EL PROCESO DE COMPRA NO ESTA ACTIVO'));
+				exit;               
+			}
+        }
 		
 		if (isset($_POST['Procesocompra'])) {
 			$model->setAttributes($_POST['Procesocompra']);

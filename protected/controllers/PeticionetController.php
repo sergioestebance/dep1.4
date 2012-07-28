@@ -23,7 +23,14 @@ public function filters() {
 
 	public function actionCreate($id) {
 		$model_peticionet = new Peticionet;
-		$model_pc = $this->loadModel($id, 'Procesocompra');
+		$model_pc = $this->loadModel($id, 'Procesocompra');		
+		if (Yii::app()->request->isAjaxRequest)
+        {
+			if($model_pc->estado!="ACTIVO"){
+				echo CJSON::encode(array('status'=>'failure', 'div'=>'EL PROCESO DE COMPRA NO ESTA ACTIVO'));
+				exit;               
+			}
+        }
 
 		//SE REALIZA LUEGO DEL GUARDAR
 		if (isset($_POST['Peticionet'])){

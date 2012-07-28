@@ -9051,3 +9051,156 @@ Stack trace:
 #31 {main}
 REQUEST_URI=/dep1.4/index.php/controlseguimiento/16
 ---
+2012/07/27 14:49:34 [error] [exception.CException] exception 'CException' with message 'Property "Procesocompra.procesocompra" is not defined.' in C:\AppServ\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\AppServ\www\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('procesocompra')
+#1 C:\AppServ\www\dep1.4\protected\controllers\PeticionetController.php(30): CActiveRecord->__get('procesocompra')
+#2 [internal function]: PeticionetController->actionCreate('1')
+#3 C:\AppServ\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(PeticionetController), Array)
+#4 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(PeticionetController), Object(ReflectionMethod), Array)
+#5 C:\AppServ\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\AppServ\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 C:\AppServ\www\dep1.4\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#9 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#10 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\AppServ\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#12 C:\AppServ\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\AppServ\www\yii\framework\web\CWebApplication.php(276): CController->run('create')
+#14 C:\AppServ\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('peticionet/crea...')
+#15 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/dep1.4/index.php/peticionet/create/1
+HTTP_REFERER=http://localhost:8080/dep1.4/index.php/procesocompra/1
+---
+2012/07/27 14:49:37 [error] [exception.CException] exception 'CException' with message 'Property "Procesocompra.procesocompra" is not defined.' in C:\AppServ\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\AppServ\www\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('procesocompra')
+#1 C:\AppServ\www\dep1.4\protected\controllers\PeticionetController.php(30): CActiveRecord->__get('procesocompra')
+#2 [internal function]: PeticionetController->actionCreate('1')
+#3 C:\AppServ\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(PeticionetController), Array)
+#4 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(PeticionetController), Object(ReflectionMethod), Array)
+#5 C:\AppServ\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\AppServ\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 C:\AppServ\www\dep1.4\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#9 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#10 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\AppServ\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#12 C:\AppServ\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\AppServ\www\yii\framework\web\CWebApplication.php(276): CController->run('create')
+#14 C:\AppServ\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('peticionet/crea...')
+#15 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/dep1.4/index.php/peticionet/create/1
+HTTP_REFERER=http://localhost:8080/dep1.4/index.php/procesocompra/1
+---
+2012/07/27 14:49:42 [error] [exception.CException] exception 'CException' with message 'Property "Procesocompra.procesocompra" is not defined.' in C:\AppServ\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\AppServ\www\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('procesocompra')
+#1 C:\AppServ\www\dep1.4\protected\controllers\PeticionetController.php(30): CActiveRecord->__get('procesocompra')
+#2 [internal function]: PeticionetController->actionCreate('1')
+#3 C:\AppServ\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(PeticionetController), Array)
+#4 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(PeticionetController), Object(ReflectionMethod), Array)
+#5 C:\AppServ\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\AppServ\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 C:\AppServ\www\dep1.4\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#9 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#10 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\AppServ\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#12 C:\AppServ\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\AppServ\www\yii\framework\web\CWebApplication.php(276): CController->run('create')
+#14 C:\AppServ\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('peticionet/crea...')
+#15 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/dep1.4/index.php/peticionet/create/1
+HTTP_REFERER=http://localhost:8080/dep1.4/index.php/procesocompra/1
+---
+2012/07/28 16:42:50 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\AppServ\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\AppServ\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\AppServ\www\dep1.4\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#4 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#5 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\AppServ\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\AppServ\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\AppServ\www\yii\framework\web\CWebApplication.php(276): CController->run('create')
+#9 C:\AppServ\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('procesocompra/c...')
+#10 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/dep1.4/index.php/procesocompra/create
+HTTP_REFERER=http://localhost:8080/dep1.4/index.php/procesocompra/
+---
+2012/07/28 16:45:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\AppServ\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CController.php(271): CController->missingAction('js')
+#1 C:\AppServ\www\yii\framework\web\CWebApplication.php(276): CController->run('js')
+#2 C:\AppServ\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('procesocompra/j...')
+#3 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dep1.4/index.php/procesocompra/js/jquery-1.6.3.min.js?_=1343504727275
+HTTP_REFERER=http://localhost:8080/dep1.4/index.php/procesocompra/4
+---
+2012/07/28 16:45:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\AppServ\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CController.php(271): CController->missingAction('css')
+#1 C:\AppServ\www\yii\framework\web\CWebApplication.php(276): CController->run('css')
+#2 C:\AppServ\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('procesocompra/c...')
+#3 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dep1.4/index.php/procesocompra/css/ui.theme.css
+HTTP_REFERER=http://localhost:8080/dep1.4/index.php/procesocompra/4
+---
+2012/07/28 16:45:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\AppServ\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CController.php(271): CController->missingAction('css')
+#1 C:\AppServ\www\yii\framework\web\CWebApplication.php(276): CController->run('css')
+#2 C:\AppServ\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('procesocompra/c...')
+#3 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dep1.4/index.php/procesocompra/css/jquery-ui.css
+HTTP_REFERER=http://localhost:8080/dep1.4/index.php/procesocompra/4
+---
+2012/07/28 16:45:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\AppServ\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CController.php(271): CController->missingAction('js')
+#1 C:\AppServ\www\yii\framework\web\CWebApplication.php(276): CController->run('js')
+#2 C:\AppServ\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('procesocompra/j...')
+#3 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dep1.4/index.php/procesocompra/js/jquery-ui.min.js?_=1343504727383
+HTTP_REFERER=http://localhost:8080/dep1.4/index.php/procesocompra/4
+---
+2012/07/28 16:45:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\AppServ\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CController.php(271): CController->missingAction('js')
+#1 C:\AppServ\www\yii\framework\web\CWebApplication.php(276): CController->run('js')
+#2 C:\AppServ\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('procesocompra/j...')
+#3 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dep1.4/index.php/procesocompra/js/jquery-ui-i18n.min.js?_=1343504727456
+HTTP_REFERER=http://localhost:8080/dep1.4/index.php/procesocompra/4
+---
+2012/07/28 16:45:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\AppServ\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\AppServ\www\yii\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\AppServ\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('procesocompra/i...')
+#3 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dep1.4/index.php/procesocompra/images/calendar_icon.gif
+HTTP_REFERER=http://localhost:8080/dep1.4/index.php/procesocompra/4
+---

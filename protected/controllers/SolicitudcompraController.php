@@ -1,5 +1,5 @@
 <?php
-
+//ramiro escalante vidango
 class SolicitudcompraController extends GxController {
 
 public function filters() {
@@ -16,6 +16,14 @@ public function filters() {
 	public function actionCrear($id){
 		$model = new Solicitudcompra;
 		$model_pc = $this->loadModel($id, 'Procesocompra');
+		
+		if (Yii::app()->request->isAjaxRequest)
+        {
+			if($model_pc->estado!="ACTIVO"){
+				echo CJSON::encode(array('status'=>'failure', 'div'=>'EL PROCESO DE COMPRA NO ESTA ACTIVO'));
+				exit;               
+			}
+        }
 		
 		if (isset($_POST['Solicitudcompra'])){
 			$model->setAttributes($_POST['Solicitudcompra']);

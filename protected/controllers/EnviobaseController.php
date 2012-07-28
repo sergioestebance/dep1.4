@@ -18,6 +18,15 @@ public function filters() {
 		$model = new Enviobase;
 		$model_pc = $this->loadModel($id, 'Procesocompra');
 		
+		
+		if (Yii::app()->request->isAjaxRequest)
+        {
+			if($model_pc->estado!="ACTIVO"){
+				echo CJSON::encode(array('status'=>'failure', 'div'=>'EL PROCESO DE COMPRA NO ESTA ACTIVO'));
+				exit;               
+			}
+        }
+		
 		if (isset($_POST['Enviobase'])){
 			$model->setAttributes($_POST['Enviobase']);
 			
