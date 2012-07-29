@@ -2,7 +2,7 @@
 function addPeticion()
 {
     <?php echo CHtml::ajax(array(
-            'url'=>Yii::app()->createUrl("peticionet/create", array("id"=>$model_pc->id)),
+            'url'=>Yii::app()->createUrl("peticionet/crear", array("id"=>$model_pc->id)),
             'data'=> "js:$(this).serialize()",
             'type'=>'post',
             'dataType'=>'json',

@@ -14,16 +14,12 @@ public function filters() {
 		));
 	}
 	
-	public function actionCrea($id){
-		$model_peticionet = new Peticionet;
-		$model_pc = $this->loadModel($id, 'Procesocompra');
-		$this->renderPartial('ver_peticiones', array('model' => $model_peticionet,'model_pc' => $model_pc,'buttons' => 'create'),false,true);
 	
-	}
-
-	public function actionCreate($id) {
+	public function actionCrear($id){
+	
 		$model_peticionet = new Peticionet;
-		$model_pc = $this->loadModel($id, 'Procesocompra');		
+		$model_pc = $this->loadModel($id, 'Procesocompra');	
+		
 		if (Yii::app()->request->isAjaxRequest)
         {
 			if($model_pc->estado!="ACTIVO"){
@@ -31,8 +27,7 @@ public function filters() {
 				exit;               
 			}
         }
-
-		//SE REALIZA LUEGO DEL GUARDAR
+		
 		if (isset($_POST['Peticionet'])){
 			$model_peticionet->setAttributes($_POST['Peticionet']);
 
@@ -50,15 +45,26 @@ public function filters() {
 			}
 		}
 		
-		
-        if (Yii::app()->request->isAjaxRequest)
+		 if (Yii::app()->request->isAjaxRequest)
         {
-            echo CJSON::encode(array('status'=>'failure', 'div'=>$this->renderPartial('_form', array('model' => $model_peticionet,'model_pc' => $model_pc,'buttons' => 'create'),true)));
+            echo CJSON::encode(array('status'=>'failure', 'div'=>$this->renderPartial('_crear', array('model' => $model_peticionet,'model_pc' => $model_pc,'buttons' => 'create'),true,true)));
             exit;               
         }
-        else
-			$this->render('create', array( 'model_peticionet' => $model_peticionet,'model_pc'=>$model_pc));
 		
+	}
+
+	public function actionCreate($id) {
+		$model_peticionet = new Peticionet;
+		$model_pc = $this->loadModel($id, 'Procesocompra');		
+
+		//SE REALIZA LUEGO DEL GUARDAR
+		if (isset($_POST['Peticionet'])){
+			$model_peticionet->setAttributes($_POST['Peticionet']);
+			if ($model_peticionet->save()) {
+					$this->redirect(array('view', 'id' => $model_peticionet->id));
+			}
+		}
+			$this->render('create', array( 'model_peticionet' => $model_peticionet,'model_pc'=>$model_pc));
 		
 	}
 

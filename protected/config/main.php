@@ -87,7 +87,7 @@ return array(
         'class' => 'application.components.HttpRequest',
         'enableCsrfValidation' => true,
 		'enableCookieValidation'=>true,
-		'noCsrfValidationRoutes'=>array('procesogasto/creaPG','procesocompra/creaPC','peticionet/create','solicitudcompra/crear','enviobase/crear','adquisicion/crear','plantilla/crear','constancia/crear','honorario/crear','et/editar','controlseguimiento/creaCS','procesocompra/editarBL','procesocompra/editarTD','aj/editar'),
+		'noCsrfValidationRoutes'=>array('procesogasto/creaPG','procesocompra/creaPC','peticionet/create','peticionet/crear','solicitudcompra/crear','enviobase/crear','adquisicion/crear','plantilla/crear','constancia/crear','honorario/crear','et/editar','controlseguimiento/creaCS','procesocompra/editarBL','procesocompra/editarTD','aj/editar'),
 		),
 		
 		'log'=>array(
