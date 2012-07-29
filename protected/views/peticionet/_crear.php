@@ -19,20 +19,28 @@ $form = $this->beginWidget('GxActiveForm', array(
 		</div><!-- row -->
 		<div class="row">
 		<?php echo $form->labelEx($model,'fecha'); ?>
-		<?php 
+
+
+	<?php 
 		
-		$this->widget('zii.widgets.jui.CJuiDatePicker', array(
-			'name'=>'fecha',
-			'options'=>array(
-				'showAnim'=>'fold',
-			),
-			'htmlOptions'=>array(
-				'style'=>'height:20px;'
-			),
-		));
+		$this->widget('zii.widgets.jui.CJuiDatePicker',
+			array(
+				'name'=>'fecha',
+				'value'=>$model->fecha,
+				'language' =>'en',
+				'htmlOptions' => array(
+					'readonly'=>"readonly"
+				),
+				'options'=>array(
+					'dateFormat'=>'yy-mm-dd',
+					'buttonImage'=>Yii::app()->baseUrl.'/images/calendar_icon.gif',
+					'buttonImageOnly'=>true,
+					'showOn'=>'button',
+
+				),
+			));
 		?>
-		
-				<?php echo $form->error($model,'fecha'); ?>
+		<?php echo $form->error($model,'fecha'); ?>
 		</div><!-- row -->
 		<div class="row">
 		<?php echo $form->labelEx($model,'observacion'); ?>
