@@ -34,14 +34,12 @@ public function filters() {
 			if ($model_peticionet->save()) {
 				
 				if (Yii::app()->request->isAjaxRequest){
-				Yii::app()->user->setFlash('success', "Creación Exitosa");
-                    echo CJSON::encode(array(
+				   echo CJSON::encode(array(
                         'status'=>'success', 
                         'div'=>"LISTA",
                         ));
-                    exit;               
-                }else
-					$this->redirect(array('view', 'id' => $model_peticionet->id));
+                    exit;
+				}
 			}
 		}
 		

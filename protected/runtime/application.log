@@ -101,3 +101,31 @@ Stack trace:
 REQUEST_URI=/dep1.4/index.php/peticionet/crear/2
 HTTP_REFERER=http://localhost:8080/dep1.4/index.php/procesocompra/2
 ---
+2012/07/28 23:41:31 [error] [exception.CException] exception 'CException' with message 'CJuiDatePicker must specify "model" and "attribute" or "name" property values.' in C:\AppServ\www\yii\framework\zii\widgets\jui\CJuiInputWidget.php:54
+Stack trace:
+#0 C:\AppServ\www\yii\framework\zii\widgets\jui\CJuiDatePicker.php(75): CJuiInputWidget->resolveNameID()
+#1 C:\AppServ\www\yii\framework\web\CBaseController.php(174): CJuiDatePicker->run()
+#2 C:\AppServ\www\dep1.4\protected\views\peticionet\_crear.php(32): CBaseController->widget('zii.widgets.jui...', Array)
+#3 C:\AppServ\www\yii\framework\web\CBaseController.php(127): require('C:\AppServ\www\...')
+#4 C:\AppServ\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#5 C:\AppServ\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#6 C:\AppServ\www\dep1.4\protected\controllers\PeticionetController.php(48): CController->renderPartial('_crear', Array, true, true)
+#7 [internal function]: PeticionetController->actionCrear('2')
+#8 C:\AppServ\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(PeticionetController), Array)
+#9 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(PeticionetController), Object(ReflectionMethod), Array)
+#10 C:\AppServ\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\AppServ\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\AppServ\www\dep1.4\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#14 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#15 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\AppServ\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#17 C:\AppServ\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\AppServ\www\yii\framework\web\CWebApplication.php(276): CController->run('crear')
+#19 C:\AppServ\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('peticionet/crea...')
+#20 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/dep1.4/index.php/peticionet/crear/2
+HTTP_REFERER=http://localhost:8080/dep1.4/index.php/procesocompra/2
+---

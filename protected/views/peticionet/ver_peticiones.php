@@ -18,11 +18,12 @@ function addPeticion()
                 {
                     $('#div_peticionet').html(data.div);
 					$('#div_peticionet').hide('slow');
-					$.fn.yiiGridView.update('peticionet-grid');
+					//$.fn.yiiGridView.update('peticionet-grid');
 		        }
 			
             } ",
             ))?>;
+			
     return false; 
  
 }
@@ -30,6 +31,7 @@ function addPeticion()
 </script>
 
 <?php 
+
 $this->widget('zii.widgets.grid.CGridView', array(
 	'id' => 'peticionet-grid',
 	'dataProvider' => new CArrayDataProvider($model_pc->peticionets,array()),
@@ -55,8 +57,8 @@ $this->widget('zii.widgets.grid.CGridView', array(
 )); 
 ?>
 <br>
-<?php echo CHtml::link('AGREGAR', "",array('style'=>'cursor: pointer; text-decoration: underline;', 'onclick'=>"js: addPeticion();"));
-?>
+<?php echo CHtml::link('AGREGAR', "",array('style'=>'cursor: pointer; text-decoration: underline;', 'onclick'=>"js: addPeticion();"));?><br>
+
 <br><br>
 <div id="div_peticionet" class="box"> 
 </div>
