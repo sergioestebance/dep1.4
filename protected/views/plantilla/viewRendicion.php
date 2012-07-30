@@ -1,0 +1,51 @@
+<?php
+
+$this->breadcrumbs = array(
+	$model->label(2) => array('index'),
+	GxHtml::valueEx($model),
+);
+
+$this->menu=array(
+	array('label'=>Yii::t('app', 'Actualizar') . ' ' . $model->label(), 'url'=>array('update', 'id' => $model->id)),
+	array('label'=>Yii::t('app', 'Eliminar') . ' ' . $model->label(), 'url'=>'#', 'linkOptions' => array('submit' => array('delete', 'id' => $model->id), 'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>Yii::t('app', 'Administrar') . ' ' . $model->label(2), 'url'=>array('controlseguimiento/adminRendicion')),
+);
+?>
+
+<h1><?php echo Yii::t('app', 'Ver') . ' ' . GxHtml::encode($model->label()) . ' ' . GxHtml::encode(GxHtml::valueEx($model)); ?></h1>
+
+<?php $this->widget('zii.widgets.CDetailView', array(
+	'data' => $model,
+	'attributes' => array(
+'id',
+
+array(
+			'name' => 'controlseguimiento',
+			'type' => 'raw',
+			'value' => $model->controlseguimiento !== null ? GxHtml::link(GxHtml::encode(GxHtml::valueEx($model->controlseguimiento)), array('controlseguimiento/view', 'id' => GxActiveRecord::extractPkValue($model->controlseguimiento, true))) : null,
+			),
+array(
+			'name' => 'proyecto',
+			'type' => 'raw',
+			'value' => $model->proyecto !== null ? GxHtml::link(GxHtml::encode(GxHtml::valueEx($model->proyecto)), array('proyecto/view', 'id' => GxActiveRecord::extractPkValue($model->proyecto, true))) : null,
+			),
+array(
+			'name' => 'item',
+			'type' => 'raw',
+			'value' => $model->item !== null ? GxHtml::link(GxHtml::encode(GxHtml::valueEx($model->item)), array('item/view', 'id' => GxActiveRecord::extractPkValue($model->item, true))) : null,
+			),
+'tipoDocumento',
+'numDocumento',
+'numComprobanteEI',
+'fechaEI',
+'tipoDocumentoFB',
+'numDocumentoFB',
+'rutProveedor',
+'fechaEmisionDoc',
+'fechaCancelacionDoc',
+'detalleDoc',
+'valorTotal',
+'observacion',
+	),
+)); ?>
+

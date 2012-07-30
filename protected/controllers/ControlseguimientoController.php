@@ -13,7 +13,16 @@ public function filters() {
 			'model' => $this->loadModel($id, 'Controlseguimiento'),
 		));
 	}
-
+	
+	public function actionViewRendicion($id) {
+		$model = $this->loadModel($id, 'Controlseguimiento');
+		
+		$this->render('viewRendicion', array(
+			'model' => $model,
+			'plantilla' => $model->plantilla,
+		));
+	}
+	
 	public function actionCreaCS($id){
 	
 		$model = new Controlseguimiento;

@@ -58,9 +58,9 @@ abstract class BaseControlseguimiento extends GxActiveRecord {
 	public function rules() {
 		return array(
 			array('procesocompra_id', 'numerical', 'integerOnly'=>true),
-			array('tipo', 'length', 'max'=>45),
-			array('procesocompra_id, tipo', 'default', 'setOnEmpty' => true, 'value' => null),
-			array('id, procesocompra_id, tipo', 'safe', 'on'=>'search'),
+			array('tipo, estado', 'length', 'max'=>45),
+			array('procesocompra_id, tipo, estado', 'default', 'setOnEmpty' => true, 'value' => null),
+			array('id, procesocompra_id, tipo, estado', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -103,6 +103,7 @@ abstract class BaseControlseguimiento extends GxActiveRecord {
 			'id' => Yii::t('app', 'ID'),
 			'procesocompra_id' => null,
 			'tipo' => Yii::t('app', 'Tipo'),
+			'estado' => Yii::t('app', 'Estado'),
 			'abogadasecretarias' => null,
 			'adjudicacions' => null,
 			'ajs' => null,
@@ -136,6 +137,7 @@ abstract class BaseControlseguimiento extends GxActiveRecord {
 		$criteria->compare('id', $this->id);
 		$criteria->compare('procesocompra_id', $this->procesocompra_id);
 		$criteria->compare('tipo', $this->tipo, true);
+		$criteria->compare('estado', $this->estado, true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria' => $criteria,
