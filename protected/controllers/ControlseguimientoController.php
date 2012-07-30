@@ -1,12 +1,25 @@
 <?php
 
+Yii::import('application.services.procesoseguimiento.ControlseguimientoServices');
+Yii::import('application.services.procesoseguimiento.L1Services');
+Yii::import('application.services.procesoseguimiento.LEServices');
+Yii::import('application.services.procesoseguimiento.LPServices');
+Yii::import('application.services.procesoseguimiento.TDServices');
+
 class ControlseguimientoController extends GxController {
 
-public function filters() {
-	return array(
-			'rights', 
-			);
-}
+	private $CSService;
+	
+	
+	function init(){
+	$this->CSService = new L1Services();
+    }
+
+	public function filters() {
+		return array(
+				'rights', 
+				);
+	}
 
 	public function actionView($id) {
 		$this->render('view', array(
@@ -23,6 +36,9 @@ public function filters() {
 		));
 	}
 	
+	
+	/*ACTION QUE PERMITE CREAR UN CONTROL DE SEGUIMIENTO A TRAVES DE LA GRILLA DE ADMINSEG*/
+	
 	public function actionCreaCS($id){
 	
 		$model = new Controlseguimiento;
@@ -30,12 +46,18 @@ public function filters() {
 		
 		$model->procesocompra_id= $model_procesocompra->id;
 		$model->tipo = $model_procesocompra->sigla;
-			
-		
 		$model->save(false);
-				$this->redirect(array('view', 'id' => $model->id));
+		
+		$ServiceName=$model->tipo.'Services';
+		$this->CSService= new $ServiceName;		
+		$this->CSService->asignarEtapas($model);
+			
+		$this->redirect(array('view', 'id' => $model->id));
 	
 	}
+	
+	
+	
 	
 	public function actionCreate() {
 		$model = new Controlseguimiento;

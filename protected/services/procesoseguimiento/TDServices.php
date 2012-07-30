@@ -1,6 +1,6 @@
 <?php
-
-class TDServices extends ProcesocompraServices{
+Yii::import('application.services.procesoseguimiento.ControlseguimientoServices');
+class TDServices extends ControlseguimientoServices{
 
 	public function asignarEtapas($model) {
 		/*$model_peticionet = new Peticionet;
@@ -19,10 +19,10 @@ class TDServices extends ProcesocompraServices{
 		$model_adquisicion->procesocompra_id=$model->id;
 		$model_adquisicion->save(true);*/
 		
-		$model_et = new Et;
-		$model_et->procesocompra_id=$model->id;
-		$model_et->save(true);
-	
+		$model_aj = new Aj;
+		$model_aj->controlseguimiento_id=$model->id;
+		$model_aj->save(false);
+		
 	return true;
 	}
 	

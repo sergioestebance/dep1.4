@@ -14,8 +14,8 @@ public function filters() {
 		
 		if (Yii::app()->request->isAjaxRequest)
         {
-			if($model->controlseguimiento->procesocompra->estado!="ACTIVO"){
-				echo CJSON::encode(array('status'=>'failure', 'div'=>'EL PROCESO DE COMPRA NO ESTA ACTIVO'));
+			if($model->controlseguimiento->procesocompra->estado!="FINALIZADO"){
+				echo CJSON::encode(array('status'=>'failure', 'div'=>'EL PROCESO DE COMPRA NO ESTA FINALIZADO'));
 				exit;               
 			}
         }

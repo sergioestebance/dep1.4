@@ -115,15 +115,6 @@ public function filters() {
 	$this->PCService = new L1EPServices();
     }
 
-	public function actionBuscar($id) {
-		if(Yii::app()->request->isAjaxRequest)
-		{
-			echo CJSON::encode(array('div'=>"BIENVENIDO",'_form'=>$this->renderPartial('_buscar', array('model' => $this->loadModel($id, 'Subitem')),true,true),));
-			exit;
-		}
-		$this->renderPartial('buscar', array('model' => $this->loadModel($id, 'Subitem')));
-	}
-
 	public function actionCreaPC($id) {
 		$model = new Procesocompra;
 		if(isset($_POST['Procesocompra']))

@@ -29,6 +29,7 @@ array(
 	),
 )); ?>
 
+<br>
 
 <?php
   $this->renderPartial('tab'.$model->tipo, array('model' => $model,));
