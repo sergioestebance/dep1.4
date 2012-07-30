@@ -32,7 +32,10 @@ array(
 
 
 </br><h2><?php echo 'Datos Plantilla';  ?></h2>
-<?php $this->widget('zii.widgets.CDetailView', array(
+<?php 
+if($plantilla){
+
+$this->widget('zii.widgets.CDetailView', array(
 	'data' => $plantilla,
 	'attributes' => array(
 'id',
@@ -65,4 +68,8 @@ array(
 'valorTotal',
 'observacion',
 	),
-)); ?>
+));
+}else{
+echo "<p>PLANTILLA NO CREADA</p>";
+
+} ?>
