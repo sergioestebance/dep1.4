@@ -51,7 +51,7 @@ $this->widget('zii.widgets.jui.CJuiButton',
 		'name'=>'button',
 		'value'=>'ACTUALIZAR',
 		'caption'=>'ACTUALIZAR',
-		'onclick'=>new CJavaScriptExpression('function(){editAJ();}'),
+		'onclick'=>'js:editAJ();',
 		)
 );
 ?>
