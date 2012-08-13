@@ -6,13 +6,11 @@
 	'enableAjaxValidation' => false,
 ));
 ?>
-	<p class="note">
-		<?php echo Yii::t('app', 'Campos con'); ?> <span class="required">*</span> <?php echo Yii::t('app', 'son obligatorios'); ?>.
-	</p>
+
 
 		<div class="row">
 		<?php echo $form->labelEx($model,'agno'); ?>
-		<?php echo $form->textField($model, 'agno'); ?>
+		<?php echo $form->dropDownList($model, 'agno',array('2011' => '2011', '2012' => '2012', '2013' => '2013', '2014' => '2014')); ?>
 		<?php echo $form->error($model,'agno'); ?>
 		</div><!-- row -->
 		

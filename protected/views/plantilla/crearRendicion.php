@@ -22,9 +22,7 @@ $this->menu = array(
 ));
 ?>
 
-	<p class="note">
-		<?php echo Yii::t('app', 'Campos con'); ?> <span class="required">*</span> <?php echo Yii::t('app', 'son obligatorios'); ?>.
-	</p>
+
 
 	<?php echo $form->errorSummary($model); ?>
 
