@@ -6,6 +6,7 @@ class L1Services extends ControlseguimientoServices{
 		
 		$model_aj = new Aj;
 		$model_aj->controlseguimiento_id=$model->id;
+		$model_aj->tipo="UTA";
 		$model_aj->save(false);
 		
 		$model_dp = new Directorproyecto;
@@ -45,15 +46,14 @@ class L1Services extends ControlseguimientoServices{
 		$model_oc->tipo="ADODES";
 		$model_oc->save(false);
 		
+		$model_ce = new Comisionevaluacion;
+		$model_ce->controlseguimiento_id=$model->id;		
+		$model_ce->save(false);
+		
 		$model_radodes = new Resolucionadodes;
 		$model_radodes->controlseguimiento_id=$model->id;
 		$model_radodes->tipo="LP";
 		$model_radodes->save(false);
-		
-		
-		$model_ce = new Comisionevaluacion;
-		$model_ce->controlseguimiento_id=$model->id;		
-		$model_ce->save(false);
 		
 		$model_vaf = new Vaf;
 		$model_vaf->controlseguimiento_id=$model->id;
@@ -71,8 +71,30 @@ class L1Services extends ControlseguimientoServices{
 		
 		$model_riup = new Recinformacionsup;
 		$model_riup->controlseguimiento_id=$model->id;
-		$model_riup->tipo
 		$model_riup->save(false);
+		
+		$model_asec = new Abogadasecretaria;
+		$model_asec->controlseguimiento_id=$model->id;
+		$model_asec->tipo="RESOF";
+		$model_asec->save(false);
+		
+		$model_ecf = new Enviocontratofirma ;
+		$model_ecf->controlseguimiento_id=$model->id;
+		$model_ecf->save(false);
+		
+		$model_rocv = new Resofcontratovaf;
+		$model_rocv->controlseguimiento_id=$model->id;
+		$model_rocv->save(false);
+		
+		$model_rofc= new Resofcontrato;
+		$model_rofc->controlseguimiento_id=$model->id;
+		$model_rofc->tipo="SECRETARIA";
+		$model_rofc->save(false);
+		
+		$model_rofcc= new Resofcontrato;
+		$model_rofcc->controlseguimiento_id=$model->id;
+		$model_rofcc->tipo="CONTARLORIA";
+		$model_rofcc->save(false);
 		
 		/*
 		$model_ = new ;

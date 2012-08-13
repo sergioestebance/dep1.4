@@ -51,6 +51,10 @@ class L1Services extends ControlseguimientoServices{
 		$model_radodes->tipo="L1";
 		$model_radodes->save(false);
 		
+		$model_sec = new Secretaria;
+		$model_sec->controlseguimiento_id=$model->id;
+		$model_sec->tipo="RESADODES";
+		$model_sec->save(false);
 
 		$model_con = new Contraloria;
 		$model_con->controlseguimiento_id=$model->id;
