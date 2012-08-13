@@ -39,23 +39,24 @@ abstract class BaseHonorario extends GxActiveRecord {
 	}
 
 	public static function representingColumn() {
-		return 'item';
+		return 'item_id';
 	}
 
 	public function rules() {
 		return array(
-			array('procesogasto_id, numConvenio, cuotas', 'numerical', 'integerOnly'=>true),
-			array('item, rut, monto, reciliacion', 'length', 'max'=>45),
+			array('procesogasto_id, item_id, numConvenio, cuotas', 'numerical', 'integerOnly'=>true),
+			array('rut, monto, reciliacion', 'length', 'max'=>45),
 			array('nombrePersona', 'length', 'max'=>200),
 			array('fechaInicio, fechaTermino, fechaRecilio', 'safe'),
-			array('procesogasto_id, item, nombrePersona, rut, numConvenio, fechaInicio, fechaTermino, cuotas, monto, fechaRecilio, reciliacion', 'default', 'setOnEmpty' => true, 'value' => null),
-			array('id, procesogasto_id, item, nombrePersona, rut, numConvenio, fechaInicio, fechaTermino, cuotas, monto, fechaRecilio, reciliacion', 'safe', 'on'=>'search'),
+			array('procesogasto_id, item_id, nombrePersona, rut, numConvenio, fechaInicio, fechaTermino, cuotas, monto, fechaRecilio, reciliacion', 'default', 'setOnEmpty' => true, 'value' => null),
+			array('id, procesogasto_id, item_id, nombrePersona, rut, numConvenio, fechaInicio, fechaTermino, cuotas, monto, fechaRecilio, reciliacion', 'safe', 'on'=>'search'),
 		);
 	}
 
 	public function relations() {
 		return array(
 			'procesogasto' => array(self::BELONGS_TO, 'Procesogasto', 'procesogasto_id'),
+			'item' => array(self::BELONGS_TO, 'Item', 'item_id'),
 		);
 	}
 
@@ -68,7 +69,7 @@ abstract class BaseHonorario extends GxActiveRecord {
 		return array(
 			'id' => Yii::t('app', 'ID'),
 			'procesogasto_id' => null,
-			'item' => Yii::t('app', 'Item'),
+			'item_id' => null,
 			'nombrePersona' => Yii::t('app', 'Nombre Persona'),
 			'rut' => Yii::t('app', 'Rut'),
 			'numConvenio' => Yii::t('app', 'Num Convenio'),
@@ -79,6 +80,7 @@ abstract class BaseHonorario extends GxActiveRecord {
 			'fechaRecilio' => Yii::t('app', 'Fecha Recilio'),
 			'reciliacion' => Yii::t('app', 'Reciliacion'),
 			'procesogasto' => null,
+			'item' => null,
 		);
 	}
 
@@ -87,7 +89,7 @@ abstract class BaseHonorario extends GxActiveRecord {
 
 		$criteria->compare('id', $this->id);
 		$criteria->compare('procesogasto_id', $this->procesogasto_id);
-		$criteria->compare('item', $this->item, true);
+		$criteria->compare('item_id', $this->item_id);
 		$criteria->compare('nombrePersona', $this->nombrePersona, true);
 		$criteria->compare('rut', $this->rut, true);
 		$criteria->compare('numConvenio', $this->numConvenio);

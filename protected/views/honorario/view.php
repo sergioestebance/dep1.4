@@ -25,7 +25,11 @@ array(
 			'type' => 'raw',
 			'value' => $model->procesogasto !== null ? GxHtml::link(GxHtml::encode(GxHtml::valueEx($model->procesogasto)), array('procesogasto/view', 'id' => GxActiveRecord::extractPkValue($model->procesogasto, true))) : null,
 			),
-'item',
+array(
+			'name' => 'item',
+			'type' => 'raw',
+			'value' => $model->item !== null ? GxHtml::link(GxHtml::encode(GxHtml::valueEx($model->item)), array('item/view', 'id' => GxActiveRecord::extractPkValue($model->item, true))) : null,
+			),
 'nombrePersona',
 'rut',
 'numConvenio',

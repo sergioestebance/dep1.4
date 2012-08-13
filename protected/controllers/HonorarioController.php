@@ -36,10 +36,12 @@ public function filters() {
 	public function actionCrear($id){
 		$model = new Honorario;
 		$model_pg = $this->loadModel($id, 'Procesogasto');
+		$model_subitem = $this->loadModel($model_pg->subitem_id, 'Subitem');
 		
 		if (isset($_POST['Honorario'])){
 			$model->setAttributes($_POST['Honorario']);
 			$model->procesogasto_id=$id;
+			$model->item_id=$model_subitem->item_id;
 		
 			if ($model->save(true)){
 				if (Yii::app()->request->isAjaxRequest){

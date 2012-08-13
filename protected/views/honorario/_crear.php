@@ -14,11 +14,6 @@
 	<?php echo $form->errorSummary($model); ?>
 
 		<div class="row">
-		<?php echo $form->labelEx($model,'item'); ?>
-		<?php echo $form->textField($model, 'item', array('maxlength' => 45)); ?>
-		<?php echo $form->error($model,'item'); ?>
-		</div><!-- row -->
-		<div class="row">
 		<?php echo $form->labelEx($model,'nombrePersona'); ?>
 		<?php echo $form->textField($model, 'nombrePersona', array('maxlength' => 200)); ?>
 		<?php echo $form->error($model,'nombrePersona'); ?>

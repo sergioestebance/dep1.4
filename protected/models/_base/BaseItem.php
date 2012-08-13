@@ -47,6 +47,7 @@ abstract class BaseItem extends GxActiveRecord {
 			'constancias' => array(self::HAS_MANY, 'Constancia', 'item_id'),
 			'plantillas' => array(self::HAS_MANY, 'Plantilla', 'item_id'),
 			'subitems' => array(self::HAS_MANY, 'Subitem', 'item_id'),
+			'honorarios' => array(self::HAS_MANY, 'Honorario', 'item_id'),
 		);
 	}
 
@@ -63,6 +64,7 @@ abstract class BaseItem extends GxActiveRecord {
 			'constancias' => null,
 			'plantillas' => null,
 			'subitems' => null,
+			'honorarios' => null,
 		);
 	}
 

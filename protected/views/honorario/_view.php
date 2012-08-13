@@ -7,8 +7,8 @@
 	<?php echo GxHtml::encode($data->getAttributeLabel('procesogasto_id')); ?>:
 		<?php echo GxHtml::encode(GxHtml::valueEx($data->procesogasto)); ?>
 	<br />
-	<?php echo GxHtml::encode($data->getAttributeLabel('item')); ?>:
-	<?php echo GxHtml::encode($data->item); ?>
+	<?php echo GxHtml::encode($data->getAttributeLabel('item_id')); ?>:
+		<?php echo GxHtml::encode(GxHtml::valueEx($data->item)); ?>
 	<br />
 	<?php echo GxHtml::encode($data->getAttributeLabel('nombrePersona')); ?>:
 	<?php echo GxHtml::encode($data->nombrePersona); ?>
