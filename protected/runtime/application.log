@@ -1427,3 +1427,39 @@ Stack trace:
 REQUEST_URI=/dep1.4/procesocompra/images/calendar_icon.gif
 HTTP_REFERER=http://localhost:8080/dep1.4/procesocompra/1.html
 ---
+2012/08/13 19:21:17 [error] [exception.CException] exception 'CException' with message 'Property "Oficioconductor.aj" is not defined.' in C:\AppServ\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\AppServ\www\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('aj')
+#1 C:\AppServ\www\dep1.4\protected\views\oficioconductor\ver_oc.php(5): CActiveRecord->__get('aj')
+#2 C:\AppServ\www\yii\framework\web\CBaseController.php(127): require('C:\AppServ\www\...')
+#3 C:\AppServ\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#4 C:\AppServ\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#5 C:\AppServ\www\dep1.4\protected\views\controlseguimiento\tabL1.php(8): CController->renderPartial('//oficioconduct...', Array, Object(ControlseguimientoController))
+#6 C:\AppServ\www\yii\framework\web\CBaseController.php(127): require('C:\AppServ\www\...')
+#7 C:\AppServ\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#8 C:\AppServ\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#9 C:\AppServ\www\dep1.4\protected\views\controlseguimiento\view.php(28): CController->renderPartial('tabL1', Array)
+#10 C:\AppServ\www\yii\framework\web\CBaseController.php(127): require('C:\AppServ\www\...')
+#11 C:\AppServ\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#12 C:\AppServ\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#13 C:\AppServ\www\yii\framework\web\CController.php(783): CController->renderPartial('view', Array, true)
+#14 C:\AppServ\www\dep1.4\protected\controllers\ControlseguimientoController.php(27): CController->render('view', Array)
+#15 [internal function]: ControlseguimientoController->actionView('34')
+#16 C:\AppServ\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(ControlseguimientoController), Array)
+#17 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(ControlseguimientoController), Object(ReflectionMethod), Array)
+#18 C:\AppServ\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#19 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#20 C:\AppServ\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#21 C:\AppServ\www\dep1.4\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#22 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#23 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#24 C:\AppServ\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#25 C:\AppServ\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#26 C:\AppServ\www\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#27 C:\AppServ\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('controlseguimie...')
+#28 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#29 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#30 {main}
+REQUEST_URI=/dep1.4/controlseguimiento/34.html
+HTTP_REFERER=http://localhost:8080/dep1.4/controlseguimiento/34.html
+---

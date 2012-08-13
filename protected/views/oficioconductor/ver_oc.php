@@ -1,8 +1,8 @@
 <script type="text/javascript">
-function editAJ()
+function editOficio()
 {
     <?php echo CHtml::ajax(array(
-            'url'=>Yii::app()->createUrl("aj/editar", array("id"=>$model->aj->id)),
+            'url'=>Yii::app()->createUrl("oficioconductor/editar", array("id"=>$model->id)),
             'data'=> "js:$(this).serialize()",
             'type'=>'post',
             'dataType'=>'json',
@@ -12,7 +12,7 @@ function editAJ()
                 {
                     $('#div_aj').html(data.div);
 					$('#div_aj').show();
-                    $('#div_aj form').submit(editAJ);
+                    $('#div_aj form').submit(editOficio);
                 }
                 else
                 {
@@ -30,13 +30,13 @@ function editAJ()
 </script>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
-	'id'=> 'detalle-aj',
-	'data' => $model->aj,
+	'id'=> 'detalle-oc',
+	'data' => $model,
 	'attributes' => array(
 	'tipo',
-	'fechaCreacion',
-	'fechaRespuesta',
-	'estado',
+	'numCarta',
+	'fecha',
+	'observacion',
 	
 	),
 )); 
@@ -51,7 +51,7 @@ $this->widget('zii.widgets.jui.CJuiButton',
 		'name'=>'button',
 		'value'=>'ACTUALIZAR',
 		'caption'=>'ACTUALIZAR',
-		'onclick'=>new CJavaScriptExpression('function(){editAJ();}'),
+		'onclick'=>new CJavaScriptExpression('function(){editOficio();}'),
 		)
 );
 ?>
