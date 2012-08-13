@@ -15,6 +15,7 @@ $form = $this->beginWidget('GxActiveForm', array(
 		<div class="row">
 		<?php echo $form->hiddenField($model,'procesocompra_id',array('size'=>45,'maxlength'=>45,'value'=>$model_pc->id)); ?>
 		</div><!-- row -->
+		
 		<div class="row">
 		<?php echo $form->labelEx($model,'fecha'); ?>
 		<?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(

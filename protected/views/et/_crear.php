@@ -1,25 +1,3 @@
- <link rel="stylesheet" href="css/jquery-ui.css" type="text/css" media="all" />
- <link rel="stylesheet" href="css/ui.theme.css" type="text/css" media="all" />
- <script type="text/javaScript" src="js/jquery-1.6.3.min.js"></script>
- <script type="text/javaScript" src="js/jquery-ui.min.js"></script>
- <script src="js/jquery-ui-i18n.min.js" type="text/javascript"></script>
- <script type="text/javaScript" >
- 
-$(document).ready(function() {
-
-$(function() {
-	
-		$.datepicker.setDefaults($.datepicker.regional['es']);
-		$( "#Et_fecha" ).datepicker({
-			showOn: "button",
-			buttonImage: "images/calendar_icon.gif", 
-			buttonImageOnly: true,
-			dateFormat: 'yy-m-d'
-		});
-	});
-});
-	
-</script>
 
 <div class="form">
 
@@ -40,11 +18,26 @@ $(function() {
 		<?php echo $form->textField($model, 'forma', array('maxlength' => 45)); ?>
 		<?php echo $form->error($model,'forma'); ?>
 		</div><!-- row -->
-		<div class="row">
+		
+	<div class="row">
 		<?php echo $form->labelEx($model,'fecha'); ?>
-		<?php echo $form->textField($model, 'fecha',array('value'=>date("Y-m-d H:i:s"),)); ?>
+		<?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+			'name'=>'Despacho[fecha]',
+			'model'=>$model,
+			'attribute'=>'fecha',
+			'options'=>array(
+				'dateFormat'=>'yy-mm-dd',
+				'buttonImage'=>Yii::app()->baseUrl.'/images/create_new.gif',
+				'buttonImageOnly'=>true,
+			),
+			'htmlOptions'=>array(
+				'style'=>'height:20px;'
+			),
+		));
+		?>
 		<?php echo $form->error($model,'fecha'); ?>
-		</div><!-- row -->
+	</div>
+		
 		<div class="row">
 		<?php echo $form->labelEx($model,'observacion1'); ?>
 		<?php echo $form->textField($model, 'observacion1', array('maxlength' => 100)); ?>
