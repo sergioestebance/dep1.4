@@ -44,14 +44,14 @@ class L1Services extends ControlseguimientoServices{
 		$model_oc = new Oficioconductor;
 		$model_oc->controlseguimiento_id=$model->id;
 		$model_oc->tipo="ADODES";
-		$model_oc->save(false);
+		$model_oc->save(false);		
 		
 		$model_radodes = new Resolucionadodes;
 		$model_radodes->controlseguimiento_id=$model->id;
 		$model_radodes->tipo="L1";
 		$model_radodes->save(false);
 		
-		$model_con= null;
+
 		$model_con = new Contraloria;
 		$model_con->controlseguimiento_id=$model->id;
 		$model_con->tipo="FIRMARESADODES";

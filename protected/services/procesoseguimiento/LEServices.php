@@ -22,6 +22,7 @@ class L1Services extends ControlseguimientoServices{
 		
 		$model_se = new Secretaria;
 		$model_se->controlseguimiento_id=$model->id;
+		$model_se->tipo="RESOFLEP";
 		$model_se->save(false);
 		
 		$model_con = new Contraloria;

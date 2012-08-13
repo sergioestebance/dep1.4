@@ -4,7 +4,7 @@
 			'id'=> 'tabs_etapas',
 			'tabs' => array(
 				'Asesor juridico' => array('id' => 0,'content' => $this->renderPartial('//aj/ver_aj', array('model' => $model,),$this),),
-				'Director de proyecto' => array('id' => 1,'ajax' => $this->createUrl('/directorproyecto/create'),),
+				'Director de proyecto' => array('id' => 1,'content' => $this->renderPartial('//directorproyecto/ver_dp', array('model' => $model,),$this),),
 				'Oficio conductor' => array('id' => 2,'content' => 'TEST',),
 				'Resolucion oficializacion' => array('id' => 3,'content' => 'TEST',),
 				'Secretaria' => array( 'id' => 4,'content' => 'TEST',),
