@@ -1,5 +1,5 @@
 <script type="text/javascript">
-function editOficio()
+function editOficioADODES()
 {
     <?php echo CHtml::ajax(array(
             'url'=>Yii::app()->createUrl("oficioconductor/editar", array("id"=>$model->id)),
@@ -10,14 +10,14 @@ function editOficio()
             {
                 if (data.status == 'failure')
                 {
-                    $('#div_aj').html(data.div);
-					$('#div_aj').show();
-                    $('#div_aj form').submit(editOficio);
+                    $('#div_oc_adodes').html(data.div);
+					$('#div_oc_adodes').show();
+                    $('#div_oc_adodes form').submit(editOficioADODES);
                 }
                 else
                 {
-                    $('#div_aj').html(data.div);
-					$('#div_aj').hide('slow');
+                    $('#div_oc_adodes').html(data.div);
+					$('#div_oc_adodes').hide('slow');
 				location.reload();	
 		        }
 			
@@ -30,7 +30,7 @@ function editOficio()
 </script>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
-	'id'=> 'detalle-oc',
+	'id'=> 'detalle-oc-adodes',
 	'data' => $model,
 	'attributes' => array(
 	'tipo',
@@ -48,16 +48,16 @@ function editOficio()
 <?php 
 $this->widget('zii.widgets.jui.CJuiButton',
 	array(
-		'name'=>'button',
+		'name'=>'button-adodes',
 		'value'=>'ACTUALIZAR',
 		'caption'=>'ACTUALIZAR',
-		'onclick'=>new CJavaScriptExpression('function(){editOficio();}'),
+		'onclick'=>'js: function(e){e.preventDefault();editOficioADODES()}',
 		)
 );
 ?>
 
 <br><br>
-<div id="div_aj" class="box"> 
+<div id="div_oc_adodes" class="box"> 
 </div>
 <br>
 
