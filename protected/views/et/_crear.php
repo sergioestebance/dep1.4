@@ -8,16 +8,12 @@
 ));
 ?>
 
-
-
 	<?php echo $form->errorSummary($model); ?>
-
-
 		<div class="row">
 		<?php echo $form->labelEx($model,'forma'); ?>
 		<?php echo $form->textField($model, 'forma', array('maxlength' => 45)); ?>
 		<?php echo $form->error($model,'forma'); ?>
-		</div><!-- row -->
+		</div>
 		
 	<div class="row">
 		<?php echo $form->labelEx($model,'fecha'); ?>

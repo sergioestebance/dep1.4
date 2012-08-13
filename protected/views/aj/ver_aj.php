@@ -48,10 +48,10 @@ function editAJ()
 <?php 
 $this->widget('zii.widgets.jui.CJuiButton',
 	array(
-		'name'=>'button',
+		'name'=>'button-aj',
 		'value'=>'ACTUALIZAR',
 		'caption'=>'ACTUALIZAR',
-		'onclick'=>'js:editAJ();',
+		'onclick'=>'js: function(e){e.preventDefault(); editAJ()}',
 		)
 );
 ?>

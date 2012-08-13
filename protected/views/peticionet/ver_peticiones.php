@@ -1,6 +1,15 @@
+
+
 <script type="text/javascript">
+test=null;
+$(document).ready(function() {
+   test = $.fn.yiiGridView;
+});
+
 function addPeticion()
 {
+
+		
     <?php echo CHtml::ajax(array(
             'url'=>Yii::app()->createUrl("peticionet/crear", array("id"=>$model_pc->id)),
             'data'=> "js:$(this).serialize()",
@@ -8,17 +17,20 @@ function addPeticion()
             'dataType'=>'json',
             'success'=>"function(data)
             {
+				test.update('peticionet-grid');
                 if (data.status == 'failure')
                 {
+					
                     $('#div_peticionet').html(data.div);
                     $('#div_peticionet form').submit(addPeticion);
 					$('#div_peticionet').show();
                 }
                 else
-                {
+                {	
+					test.update('peticionet-grid');
                     $('#div_peticionet').html(data.div);
 					$('#div_peticionet').hide('slow');
-					//$.fn.yiiGridView.update('peticionet-grid');
+					
 		        }
 			
             } ",

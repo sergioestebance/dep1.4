@@ -1,8 +1,8 @@
 <script type="text/javascript">
-function editAJ()
+function editDirector()
 {
     <?php echo CHtml::ajax(array(
-            'url'=>Yii::app()->createUrl("aj/editar", array("id"=>$model->aj->id)),
+            'url'=>Yii::app()->createUrl("directorproyecto/editar", array("id"=>$model->aj->id)),
             'data'=> "js:$(this).serialize()",
             'type'=>'post',
             'dataType'=>'json',
@@ -10,14 +10,14 @@ function editAJ()
             {
                 if (data.status == 'failure')
                 {
-                    $('#div_aj').html(data.div);
-					$('#div_aj').show();
-                    $('#div_aj form').submit(editAJ);
+                    $('#div_directorproyecto').html(data.div);
+					$('#div_directorproyecto').show();
+                    $('#div_directorproyecto form').submit(editAJ);
                 }
                 else
                 {
-                    $('#div_aj').html(data.div);
-					$('#div_aj').hide('slow');
+                    $('#div_directorproyecto').html(data.div);
+					$('#div_directorproyecto').hide('slow');
 				location.reload();	
 		        }
 			
@@ -29,14 +29,16 @@ function editAJ()
 } 
 </script>
 
-<?php $this->widget('zii.widgets.CDetailView', array(
-	'id'=> 'detalle-aj',
-	'data' => $model->aj,
+<?php 
+
+	$this->widget('zii.widgets.CDetailView', array(
+	'id'=> 'detalle-directorproyecto',
+	'data' => $model->directorproyecto,
 	'attributes' => array(
-	'tipo',
+	'estado',
 	'fechaCreacion',
 	'fechaRespuesta',
-	'estado',
+	'observacion',
 	
 	),
 )); 
@@ -48,16 +50,16 @@ function editAJ()
 <?php 
 $this->widget('zii.widgets.jui.CJuiButton',
 	array(
-		'name'=>'button',
+		'name'=>'button-dp',
 		'value'=>'ACTUALIZAR',
 		'caption'=>'ACTUALIZAR',
-		'onclick'=>'js:editAJ();',
+		'onclick'=>'js: function(e){e.preventDefault(); editDirector()}',
 		)
 );
 ?>
 
 <br><br>
-<div id="div_aj" class="box"> 
+<div id="div_directorproyecto" class="box"> 
 </div>
 <br>
 

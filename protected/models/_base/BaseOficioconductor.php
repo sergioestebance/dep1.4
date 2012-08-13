@@ -84,4 +84,14 @@ abstract class BaseOficioconductor extends GxActiveRecord {
 			'criteria' => $criteria,
 		));
 	}
+	
+	
+	public function scopes()
+    {
+        return array(
+            'ocl'=>array(
+                'condition'=>'tipo=L',
+            ),
+            
+    }
 }
