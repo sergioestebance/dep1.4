@@ -26,7 +26,7 @@ public function filters() {
 	
 		$model = $this->loadModel($id, 'Proyecto');
 		
-		Yii::app()->request->sendFile('proyecto.xls', 		
+		Yii::app()->request->sendFile('proyecto'.$model->codigoProyecto.'.xls', 		
 			$this->renderPartial('excel', array(
 			'model' => $model,
 			),true) 
