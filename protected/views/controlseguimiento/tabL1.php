@@ -1,26 +1,24 @@
-<?php 		
-		$this->widget('zii.widgets.jui.CJuiTabs', array(
+	
+		<?php $this->widget('bootstrap.widgets.BootTabbable', array(
 			'id'=> 'tabs_etapas',
+			'type'=>'tabs',
+			'placement'=>'left', // 'above', 'right', 'below' or 'left'
 			'tabs' => array(
-				'Asesor juridico' => array('id' => 0,'content' => $this->renderPartial('//aj/ver_aj', array('model' => $model,),$this),),
-				'Director de proyecto' => array('id' => 1,'ajax' => $this->createUrl('/directorproyecto/create'),),
-				'Oficio conductor' => array('id' => 2,'content' => 'TEST',),
-				'Resolucion oficializacion' => array('id' => 3,'content' => 'TEST',),
-				'Secretaria' => array('id' => 4,'content' => 'TEST',),
-				'Contraloria' => array('id' => 5,'content' => 'TEST',),
-				'Publicacion' => array('id' => 6,'content' => 'TEST',),
-				'Proceso de evaluacion' => array('id' => 7,'content' => 'TEST',),
-				'Oficio conductor' => array('id' => 8,'content' => 'TEST',),
-				'Resolucion ADODES' => array('id' => 9,'content' => 'TEST',),
-				'Secretaria' => array('id' => 10,'content' => 'TEST',),
-				'Contraloria' => array('id' => 11,'content' => 'TEST',),
-				'Resolucion oficializada' => array('id' => 12,'content' => 'TEST',),
-				'Adjudicacion' => array('id' => 13,'content' => 'TEST',),
+				 array('label'=>'Asesor juridico', 'id' => 0,'content' => $this->renderPartial('//aj/ver_aj', array('model' => $model,),$this),'active'=>true),
+				 array('label'=>'Director de proyecto' , 'id' => 1,'ajax' => $this->createUrl('/directorproyecto/create'),),
+				 array('label'=>'Oficio conductor', 'id' => 2,'content' => 'TEST',),
+				 array('label'=>'Resolucion oficializacion', 'id' => 3,'content' => 'TEST',),
+				 array('label'=>'Secretaria', 'id' => 4,'content' => 'TEST',),
+				 array('label'=>'Contraloria', 'id' => 5,'content' => 'TEST',),
+				 array('label'=>'Publicacion', 'id' => 6,'content' => 'TEST',),
+				 array('label'=>'Proceso de evaluacion', 'id' => 7,'content' => 'TEST',),
+				 array('label'=>'Oficio conductor', 'id' => 8,'content' => 'TEST',),
+				 array('label'=>'Resolucion ADODES', 'id' => 9,'content' => 'TEST',),
+				 array('label'=>'Secretaria', 'id' => 10,'content' => 'TEST',),
+				 array('label'=>'Contraloria', 'id' => 11,'content' => 'TEST',),
+				 array('label'=>'Resolucion oficializada', 'id' => 12,'content' => 'TEST',),
+				 array('label'=>'Adjudicacion', 'id' => 13,'content' => 'TEST',),
 			),
-				
-			'options' => array(
-				'collapsible' => false,
-				),
 			
 		));
 ?>

@@ -29,8 +29,8 @@ function editAJ()
 }
  
 </script>
-<?php 
-	$this->widget('zii.widgets.CDetailView', array(
+
+<?php $this->widget('bootstrap.widgets.BootDetailView', array(
 	'id'=> 'detalle-aj',
 	'data' => $model->aj,
 	'attributes' => array(
@@ -46,10 +46,17 @@ function editAJ()
 ?>
 
 <br>
-<?php echo CHtml::link('ACTUALIZAR', "",array('style'=>'cursor: pointer; text-decoration: underline;', 'onclick'=>"js: editAJ();"));
-?>
+<?php $this->widget('bootstrap.widgets.BootButton', array(
+    'label'=>'AGREGAR',
+    'type'=>'primary', // '', 'primary', 'info', 'success', 'warning', 'danger' or 'inverse'
+    'size'=>'large', // '', 'large', 'small' or 'mini'
+	"htmlOptions"=>array(
+		'onClick'=>'js: editAJ();',
+		),
+)); ?>
+
 <br><br>
-<div id="div_aj" class="box"> 
+<div id="div_aj" > 
 </div>
 <br>
 

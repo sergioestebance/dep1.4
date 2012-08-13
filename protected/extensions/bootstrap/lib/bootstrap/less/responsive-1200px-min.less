@@ -1,25 +1,23 @@
-//
-// Responsive: Large desktop and up
-// --------------------------------------------------
-
+// LARGE DESKTOP & UP
+// ------------------
 
 @media (min-width: 1200px) {
 
   // Fixed grid
-  #grid > .core(@gridColumnWidth1200, @gridGutterWidth1200);
+  #grid > .core(70px, 30px);
 
   // Fluid grid
-  #grid > .fluid(@fluidGridColumnWidth1200, @fluidGridGutterWidth1200);
+  #grid > .fluid(5.982905983%, 2.564102564%);
 
   // Input grid
-  #grid > .input(@gridColumnWidth1200, @gridGutterWidth1200);
+  #grid > .input(70px, 30px);
 
   // Thumbnails
   .thumbnails {
-    margin-left: -@gridGutterWidth1200;
+    margin-left: -30px;
   }
   .thumbnails > li {
-    margin-left: @gridGutterWidth1200;
+    margin-left: 30px;
   }
   .row-fluid .thumbnails {
     margin-left: 0;
