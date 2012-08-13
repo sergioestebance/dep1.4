@@ -1061,3 +1061,273 @@ Stack trace:
 REQUEST_URI=/dep1.4/proyecto/1.ruby
 HTTP_REFERER=http://localhost:8080/dep1.4/subitem/1
 ---
+2012/08/13 14:52:56 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.BootDetailView" is invalid. Make sure it points to an existing directory or file.' in C:\AppServ\www\yii\framework\YiiBase.php:343
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CWidgetFactory.php(147): YiiBase::import('bootstrap.widge...', true)
+#1 C:\AppServ\www\yii\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(ControlseguimientoController), 'bootstrap.widge...', Array)
+#2 C:\AppServ\www\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\AppServ\www\dep1.4\protected\views\controlseguimiento\view.php(21): CBaseController->widget('bootstrap.widge...', Array)
+#4 C:\AppServ\www\yii\framework\web\CBaseController.php(127): require('C:\AppServ\www\...')
+#5 C:\AppServ\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#6 C:\AppServ\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#7 C:\AppServ\www\yii\framework\web\CController.php(783): CController->renderPartial('view', Array, true)
+#8 C:\AppServ\www\dep1.4\protected\controllers\ControlseguimientoController.php(27): CController->render('view', Array)
+#9 [internal function]: ControlseguimientoController->actionView('34')
+#10 C:\AppServ\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(ControlseguimientoController), Array)
+#11 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(ControlseguimientoController), Object(ReflectionMethod), Array)
+#12 C:\AppServ\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 C:\AppServ\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#15 C:\AppServ\www\dep1.4\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#16 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#17 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\AppServ\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#19 C:\AppServ\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\AppServ\www\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#21 C:\AppServ\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('controlseguimie...')
+#22 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/dep1.4/controlseguimiento/34.html
+HTTP_REFERER=http://localhost:8080/dep1.4/plantilla/viewRendicion/2.html
+---
+2012/08/13 14:53:12 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.BootDetailView" is invalid. Make sure it points to an existing directory or file.' in C:\AppServ\www\yii\framework\YiiBase.php:343
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CWidgetFactory.php(147): YiiBase::import('bootstrap.widge...', true)
+#1 C:\AppServ\www\yii\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(ControlseguimientoController), 'bootstrap.widge...', Array)
+#2 C:\AppServ\www\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\AppServ\www\dep1.4\protected\views\controlseguimiento\view.php(21): CBaseController->widget('bootstrap.widge...', Array)
+#4 C:\AppServ\www\yii\framework\web\CBaseController.php(127): require('C:\AppServ\www\...')
+#5 C:\AppServ\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#6 C:\AppServ\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#7 C:\AppServ\www\yii\framework\web\CController.php(783): CController->renderPartial('view', Array, true)
+#8 C:\AppServ\www\dep1.4\protected\controllers\ControlseguimientoController.php(27): CController->render('view', Array)
+#9 [internal function]: ControlseguimientoController->actionView('34')
+#10 C:\AppServ\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(ControlseguimientoController), Array)
+#11 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(ControlseguimientoController), Object(ReflectionMethod), Array)
+#12 C:\AppServ\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 C:\AppServ\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#15 C:\AppServ\www\dep1.4\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#16 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#17 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\AppServ\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#19 C:\AppServ\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\AppServ\www\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#21 C:\AppServ\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('controlseguimie...')
+#22 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/dep1.4/controlseguimiento/34.html
+HTTP_REFERER=http://localhost:8080/dep1.4/plantilla/viewRendicion/2.html
+---
+2012/08/13 14:53:50 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.BootDetailView" is invalid. Make sure it points to an existing directory or file.' in C:\AppServ\www\yii\framework\YiiBase.php:343
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CWidgetFactory.php(147): YiiBase::import('bootstrap.widge...', true)
+#1 C:\AppServ\www\yii\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(ControlseguimientoController), 'bootstrap.widge...', Array)
+#2 C:\AppServ\www\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\AppServ\www\dep1.4\protected\views\controlseguimiento\view.php(21): CBaseController->widget('bootstrap.widge...', Array)
+#4 C:\AppServ\www\yii\framework\web\CBaseController.php(127): require('C:\AppServ\www\...')
+#5 C:\AppServ\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#6 C:\AppServ\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#7 C:\AppServ\www\yii\framework\web\CController.php(783): CController->renderPartial('view', Array, true)
+#8 C:\AppServ\www\dep1.4\protected\controllers\ControlseguimientoController.php(27): CController->render('view', Array)
+#9 [internal function]: ControlseguimientoController->actionView('34')
+#10 C:\AppServ\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(ControlseguimientoController), Array)
+#11 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(ControlseguimientoController), Object(ReflectionMethod), Array)
+#12 C:\AppServ\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 C:\AppServ\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#15 C:\AppServ\www\dep1.4\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#16 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#17 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\AppServ\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#19 C:\AppServ\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\AppServ\www\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#21 C:\AppServ\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('controlseguimie...')
+#22 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/dep1.4/controlseguimiento/34.html
+HTTP_REFERER=http://localhost:8080/dep1.4/plantilla/viewRendicion/2.html
+---
+2012/08/13 14:53:51 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.BootDetailView" is invalid. Make sure it points to an existing directory or file.' in C:\AppServ\www\yii\framework\YiiBase.php:343
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CWidgetFactory.php(147): YiiBase::import('bootstrap.widge...', true)
+#1 C:\AppServ\www\yii\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(ControlseguimientoController), 'bootstrap.widge...', Array)
+#2 C:\AppServ\www\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\AppServ\www\dep1.4\protected\views\controlseguimiento\view.php(21): CBaseController->widget('bootstrap.widge...', Array)
+#4 C:\AppServ\www\yii\framework\web\CBaseController.php(127): require('C:\AppServ\www\...')
+#5 C:\AppServ\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#6 C:\AppServ\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#7 C:\AppServ\www\yii\framework\web\CController.php(783): CController->renderPartial('view', Array, true)
+#8 C:\AppServ\www\dep1.4\protected\controllers\ControlseguimientoController.php(27): CController->render('view', Array)
+#9 [internal function]: ControlseguimientoController->actionView('34')
+#10 C:\AppServ\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(ControlseguimientoController), Array)
+#11 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(ControlseguimientoController), Object(ReflectionMethod), Array)
+#12 C:\AppServ\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 C:\AppServ\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#15 C:\AppServ\www\dep1.4\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#16 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#17 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\AppServ\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#19 C:\AppServ\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\AppServ\www\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#21 C:\AppServ\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('controlseguimie...')
+#22 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/dep1.4/controlseguimiento/34.html
+HTTP_REFERER=http://localhost:8080/dep1.4/plantilla/viewRendicion/2.html
+---
+2012/08/13 14:53:51 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.BootDetailView" is invalid. Make sure it points to an existing directory or file.' in C:\AppServ\www\yii\framework\YiiBase.php:343
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CWidgetFactory.php(147): YiiBase::import('bootstrap.widge...', true)
+#1 C:\AppServ\www\yii\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(ControlseguimientoController), 'bootstrap.widge...', Array)
+#2 C:\AppServ\www\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\AppServ\www\dep1.4\protected\views\controlseguimiento\view.php(21): CBaseController->widget('bootstrap.widge...', Array)
+#4 C:\AppServ\www\yii\framework\web\CBaseController.php(127): require('C:\AppServ\www\...')
+#5 C:\AppServ\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#6 C:\AppServ\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#7 C:\AppServ\www\yii\framework\web\CController.php(783): CController->renderPartial('view', Array, true)
+#8 C:\AppServ\www\dep1.4\protected\controllers\ControlseguimientoController.php(27): CController->render('view', Array)
+#9 [internal function]: ControlseguimientoController->actionView('34')
+#10 C:\AppServ\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(ControlseguimientoController), Array)
+#11 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(ControlseguimientoController), Object(ReflectionMethod), Array)
+#12 C:\AppServ\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 C:\AppServ\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#15 C:\AppServ\www\dep1.4\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#16 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#17 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\AppServ\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#19 C:\AppServ\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\AppServ\www\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#21 C:\AppServ\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('controlseguimie...')
+#22 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/dep1.4/controlseguimiento/34.html
+HTTP_REFERER=http://localhost:8080/dep1.4/plantilla/viewRendicion/2.html
+---
+2012/08/13 14:53:52 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.BootDetailView" is invalid. Make sure it points to an existing directory or file.' in C:\AppServ\www\yii\framework\YiiBase.php:343
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CWidgetFactory.php(147): YiiBase::import('bootstrap.widge...', true)
+#1 C:\AppServ\www\yii\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(ControlseguimientoController), 'bootstrap.widge...', Array)
+#2 C:\AppServ\www\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\AppServ\www\dep1.4\protected\views\controlseguimiento\view.php(21): CBaseController->widget('bootstrap.widge...', Array)
+#4 C:\AppServ\www\yii\framework\web\CBaseController.php(127): require('C:\AppServ\www\...')
+#5 C:\AppServ\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#6 C:\AppServ\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#7 C:\AppServ\www\yii\framework\web\CController.php(783): CController->renderPartial('view', Array, true)
+#8 C:\AppServ\www\dep1.4\protected\controllers\ControlseguimientoController.php(27): CController->render('view', Array)
+#9 [internal function]: ControlseguimientoController->actionView('34')
+#10 C:\AppServ\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(ControlseguimientoController), Array)
+#11 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(ControlseguimientoController), Object(ReflectionMethod), Array)
+#12 C:\AppServ\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 C:\AppServ\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#15 C:\AppServ\www\dep1.4\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#16 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#17 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\AppServ\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#19 C:\AppServ\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\AppServ\www\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#21 C:\AppServ\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('controlseguimie...')
+#22 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/dep1.4/controlseguimiento/34.html
+HTTP_REFERER=http://localhost:8080/dep1.4/plantilla/viewRendicion/2.html
+---
+2012/08/13 14:53:52 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.BootDetailView" is invalid. Make sure it points to an existing directory or file.' in C:\AppServ\www\yii\framework\YiiBase.php:343
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CWidgetFactory.php(147): YiiBase::import('bootstrap.widge...', true)
+#1 C:\AppServ\www\yii\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(ControlseguimientoController), 'bootstrap.widge...', Array)
+#2 C:\AppServ\www\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\AppServ\www\dep1.4\protected\views\controlseguimiento\view.php(21): CBaseController->widget('bootstrap.widge...', Array)
+#4 C:\AppServ\www\yii\framework\web\CBaseController.php(127): require('C:\AppServ\www\...')
+#5 C:\AppServ\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#6 C:\AppServ\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#7 C:\AppServ\www\yii\framework\web\CController.php(783): CController->renderPartial('view', Array, true)
+#8 C:\AppServ\www\dep1.4\protected\controllers\ControlseguimientoController.php(27): CController->render('view', Array)
+#9 [internal function]: ControlseguimientoController->actionView('34')
+#10 C:\AppServ\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(ControlseguimientoController), Array)
+#11 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(ControlseguimientoController), Object(ReflectionMethod), Array)
+#12 C:\AppServ\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 C:\AppServ\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#15 C:\AppServ\www\dep1.4\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#16 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#17 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\AppServ\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#19 C:\AppServ\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\AppServ\www\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#21 C:\AppServ\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('controlseguimie...')
+#22 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/dep1.4/controlseguimiento/34.html
+HTTP_REFERER=http://localhost:8080/dep1.4/plantilla/viewRendicion/2.html
+---
+2012/08/13 14:53:53 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.BootDetailView" is invalid. Make sure it points to an existing directory or file.' in C:\AppServ\www\yii\framework\YiiBase.php:343
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CWidgetFactory.php(147): YiiBase::import('bootstrap.widge...', true)
+#1 C:\AppServ\www\yii\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(ControlseguimientoController), 'bootstrap.widge...', Array)
+#2 C:\AppServ\www\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\AppServ\www\dep1.4\protected\views\controlseguimiento\view.php(21): CBaseController->widget('bootstrap.widge...', Array)
+#4 C:\AppServ\www\yii\framework\web\CBaseController.php(127): require('C:\AppServ\www\...')
+#5 C:\AppServ\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#6 C:\AppServ\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#7 C:\AppServ\www\yii\framework\web\CController.php(783): CController->renderPartial('view', Array, true)
+#8 C:\AppServ\www\dep1.4\protected\controllers\ControlseguimientoController.php(27): CController->render('view', Array)
+#9 [internal function]: ControlseguimientoController->actionView('34')
+#10 C:\AppServ\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(ControlseguimientoController), Array)
+#11 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(ControlseguimientoController), Object(ReflectionMethod), Array)
+#12 C:\AppServ\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 C:\AppServ\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#15 C:\AppServ\www\dep1.4\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#16 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#17 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\AppServ\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#19 C:\AppServ\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\AppServ\www\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#21 C:\AppServ\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('controlseguimie...')
+#22 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/dep1.4/controlseguimiento/34.html
+HTTP_REFERER=http://localhost:8080/dep1.4/plantilla/viewRendicion/2.html
+---
+2012/08/13 14:54:29 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.BootDetailView" is invalid. Make sure it points to an existing directory or file.' in C:\AppServ\www\yii\framework\YiiBase.php:343
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CWidgetFactory.php(147): YiiBase::import('bootstrap.widge...', true)
+#1 C:\AppServ\www\yii\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(ControlseguimientoController), 'bootstrap.widge...', Array)
+#2 C:\AppServ\www\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\AppServ\www\dep1.4\protected\views\controlseguimiento\view.php(21): CBaseController->widget('bootstrap.widge...', Array)
+#4 C:\AppServ\www\yii\framework\web\CBaseController.php(127): require('C:\AppServ\www\...')
+#5 C:\AppServ\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#6 C:\AppServ\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#7 C:\AppServ\www\yii\framework\web\CController.php(783): CController->renderPartial('view', Array, true)
+#8 C:\AppServ\www\dep1.4\protected\controllers\ControlseguimientoController.php(27): CController->render('view', Array)
+#9 [internal function]: ControlseguimientoController->actionView('34')
+#10 C:\AppServ\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(ControlseguimientoController), Array)
+#11 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(ControlseguimientoController), Object(ReflectionMethod), Array)
+#12 C:\AppServ\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 C:\AppServ\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#15 C:\AppServ\www\dep1.4\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#16 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#17 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\AppServ\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#19 C:\AppServ\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\AppServ\www\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#21 C:\AppServ\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('controlseguimie...')
+#22 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/dep1.4/controlseguimiento/34.html
+HTTP_REFERER=http://localhost:8080/dep1.4/plantilla/viewRendicion/2.html
+---

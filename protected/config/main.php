@@ -47,9 +47,6 @@ return array(
 
 	// application components
 	'components'=>array(
-		'bootstrap'=>array(
-			'class'=>'ext.bootstrap.components.Bootstrap', // assuming you extracted bootstrap under extensions
-		),
 		'user'=>array(
 			'class'=>'RWebUser', //YII RIGHTS
 			// enable cookie-based authentication
@@ -104,12 +101,7 @@ return array(
 					'class'=>'CFileLogRoute',
 					'levels'=>'error, warning',
 				),
-				// uncomment the following to show log messages on web pages
-				/*
-				array(
-					'class'=>'CWebLogRoute',
-				),
-				*/
+				
 			),
 		),
 	),

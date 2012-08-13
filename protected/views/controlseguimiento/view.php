@@ -7,7 +7,7 @@ $this->breadcrumbs = array(
 
 <h1><?php echo Yii::t('app', 'Ver') . ' ' . GxHtml::encode($model->label()) . ' ' . GxHtml::encode(GxHtml::valueEx($model)); ?></h1>
 
-<?php $this->widget('bootstrap.widgets.BootDetailView', array(
+<?php $this->widget('zii.widgets.CDetailView', array(
 	'data' => $model,
 	'attributes' => array(
 		'id',
