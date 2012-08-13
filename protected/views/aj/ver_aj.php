@@ -26,8 +26,7 @@ function editAJ()
             ))?>;
     return false; 
  
-}
- 
+} 
 </script>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
