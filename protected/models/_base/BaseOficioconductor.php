@@ -92,6 +92,7 @@ abstract class BaseOficioconductor extends GxActiveRecord {
             'ocl'=>array(
                 'condition'=>'tipo=L',
             ),
-            
+		);
+
     }
 }
