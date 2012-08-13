@@ -13,6 +13,7 @@ $this->menu=array(
 	array('label'=>Yii::t('app', 'Administrar') . ' ' . $model->label(2), 'url'=>array('admin')),
 	array('label'=>Yii::t('app', 'Ingresar Subitem'), 'url'=>array('subitem/createProyecto', 'id' => $model->id)),
 	array('label'=>Yii::t('app', 'Ver Proyecto Completo'), 'url'=>array('viewcompleto', 'id' => $model->id)),
+	array('label'=>Yii::t('app', 'Exportar Proyecto'), 'url'=>array('export', 'id' => $model->id)),
 );
 ?>
 

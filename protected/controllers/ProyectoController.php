@@ -9,14 +9,28 @@ public function filters() {
 }
 
 	public function actionView($id) {
+	
 		$model = $this->loadModel($id, 'Proyecto');
 		$model_subitems = new CArrayDataProvider($model->subitems,array());
 		$model_subitems->setPagination(false);
-	
+		
+
 		$this->render('view', array(
 			'model' => $model,
 			'model_subitems'=> $model_subitems,
 		));
+
+	}
+	
+	public function actionExport ($id){
+	
+		$model = $this->loadModel($id, 'Proyecto');
+		
+		Yii::app()->request->sendFile('proyecto.xls', 		
+			$this->renderPartial('excel', array(
+			'model' => $model,
+			),true) 
+		);	
 	}
 	
 	public function actionViewProyectoPc($id) {
