@@ -30,7 +30,7 @@ class L1Services extends ControlseguimientoServices{
 		
 		$model_con = new Contraloria;
 		$model_con->controlseguimiento_id=$model->id;
-		$model_con->tipo"L1";
+		$model_con->tipo="L1";
 		$model_con->save(false);
 		
 		$model_pub = new Publicacion;
