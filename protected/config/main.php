@@ -12,15 +12,13 @@ return array(
 	// preloading 'log' component
 	'preload'=>array(
 		'log',
-		'bootstrap', // preload the bootstrap component
-	),
+		),
 
 	// autoloading model and component classes
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
 		'ext.giix-components.*', // giix components
-		//'application.extensions.bootstrap.widgets.*',
 		'application.modules.rights.*',// rights
 		'application.modules.rights.components.*',// rights
 	),
@@ -38,7 +36,9 @@ return array(
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
 			'password'=>'dep1.4',
-			'generatorPaths' =>  'bootstrap.gii', // since 0.9.1
+			'generatorPaths' =>  array(
+					'ext.giix-core', // giix generators
+				),
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('127.0.0.1','::1'),
 	),
