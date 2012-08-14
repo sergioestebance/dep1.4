@@ -1,8 +1,8 @@
 <script type="text/javascript">
-function editDirector()
+function editSRESOFL1()
 {
     <?php echo CHtml::ajax(array(
-            'url'=>Yii::app()->createUrl("directorproyecto/editar", array("id"=>$model->directorproyecto->id)),
+            'url'=>Yii::app()->createUrl("secretaria/editar", array("id"=>$model->id)),
             'data'=> "js:$(this).serialize()",
             'type'=>'post',
             'dataType'=>'json',
@@ -10,14 +10,14 @@ function editDirector()
             {
                 if (data.status == 'failure')
                 {
-                    $('#div_directorproyecto').html(data.div);
-					$('#div_directorproyecto').show();
-                    $('#div_directorproyecto form').submit(editDirector);
+                    $('#div_secretaria_sofl1').html(data.div);
+					$('#div_secretaria_sofl1').show();
+                    $('#div_secretaria_sofl1 form').submit(editSRESOFL1);
                 }
                 else
                 {
-                    $('#div_directorproyecto').html(data.div);
-					$('#div_directorproyecto').hide('slow');
+                    $('#div_secretaria_sofl1').html(data.div);
+					$('#div_secretaria_sofl1').hide('slow');
 				location.reload();	
 		        }
 			
@@ -29,15 +29,14 @@ function editDirector()
 } 
 </script>
 
-<?php 
-
-	$this->widget('zii.widgets.CDetailView', array(
-	'id'=> 'detalle-directorproyecto',
-	'data' => $model->directorproyecto,
+<?php $this->widget('zii.widgets.CDetailView', array(
+	'id'=> 'detalle-secretaria-sofl1',
+	'data' => $model,
 	'attributes' => array(
-	'estado',
+	'tipo',
 	'fechaCreacion',
 	'fechaRespuesta',
+	'estado',
 	'observacion',
 	
 	),
@@ -50,16 +49,16 @@ function editDirector()
 <?php 
 $this->widget('zii.widgets.jui.CJuiButton',
 	array(
-		'name'=>'button-dp',
+		'name'=>'button-secretaria-sofl1',
 		'value'=>'ACTUALIZAR',
 		'caption'=>'ACTUALIZAR',
-		'onclick'=>'js: function(e){e.preventDefault(); editDirector()}',
+		'onclick'=>'js: function(e){e.preventDefault(); editSRESOFL1()}',
 		)
 );
 ?>
 
 <br><br>
-<div id="div_directorproyecto" class="box"> 
+<div id="div_secretaria_sofl1" class="box"> 
 </div>
 <br>
 

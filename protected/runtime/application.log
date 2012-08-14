@@ -1463,3 +1463,231 @@ Stack trace:
 REQUEST_URI=/dep1.4/controlseguimiento/34.html
 HTTP_REFERER=http://localhost:8080/dep1.4/controlseguimiento/34.html
 ---
+2012/08/13 22:36:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\AppServ\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CController.php(271): CController->missingAction('js')
+#1 C:\AppServ\www\yii\framework\web\CWebApplication.php(283): CController->run('js')
+#2 C:\AppServ\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('procesocompra/j...')
+#3 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dep1.4/procesocompra/js/jquery-1.6.3.min.js?_=1344908216278
+HTTP_REFERER=http://localhost:8080/dep1.4/procesocompra/9.html
+---
+2012/08/13 22:36:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\AppServ\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CController.php(271): CController->missingAction('css')
+#1 C:\AppServ\www\yii\framework\web\CWebApplication.php(283): CController->run('css')
+#2 C:\AppServ\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('procesocompra/c...')
+#3 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dep1.4/procesocompra/css/jquery-ui.css
+HTTP_REFERER=http://localhost:8080/dep1.4/procesocompra/9.html
+---
+2012/08/13 22:36:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\AppServ\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CController.php(271): CController->missingAction('css')
+#1 C:\AppServ\www\yii\framework\web\CWebApplication.php(283): CController->run('css')
+#2 C:\AppServ\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('procesocompra/c...')
+#3 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dep1.4/procesocompra/css/ui.theme.css
+HTTP_REFERER=http://localhost:8080/dep1.4/procesocompra/9.html
+---
+2012/08/13 22:36:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\AppServ\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CController.php(271): CController->missingAction('js')
+#1 C:\AppServ\www\yii\framework\web\CWebApplication.php(283): CController->run('js')
+#2 C:\AppServ\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('procesocompra/j...')
+#3 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dep1.4/procesocompra/js/jquery-ui.min.js?_=1344908216375
+HTTP_REFERER=http://localhost:8080/dep1.4/procesocompra/9.html
+---
+2012/08/13 22:36:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\AppServ\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CController.php(271): CController->missingAction('js')
+#1 C:\AppServ\www\yii\framework\web\CWebApplication.php(283): CController->run('js')
+#2 C:\AppServ\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('procesocompra/j...')
+#3 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dep1.4/procesocompra/js/jquery-ui-i18n.min.js?_=1344908216434
+HTTP_REFERER=http://localhost:8080/dep1.4/procesocompra/9.html
+---
+2012/08/13 22:36:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\AppServ\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\AppServ\www\yii\framework\web\CWebApplication.php(283): CController->run('images')
+#2 C:\AppServ\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('procesocompra/i...')
+#3 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dep1.4/procesocompra/images/calendar_icon.gif
+HTTP_REFERER=http://localhost:8080/dep1.4/procesocompra/9.html
+---
+2012/08/13 22:37:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\AppServ\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CController.php(271): CController->missingAction('js')
+#1 C:\AppServ\www\yii\framework\web\CWebApplication.php(283): CController->run('js')
+#2 C:\AppServ\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('procesocompra/j...')
+#3 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dep1.4/procesocompra/js/jquery-1.6.3.min.js?_=1344908222793
+HTTP_REFERER=http://localhost:8080/dep1.4/procesocompra/9.html
+---
+2012/08/13 22:37:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\AppServ\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CController.php(271): CController->missingAction('css')
+#1 C:\AppServ\www\yii\framework\web\CWebApplication.php(283): CController->run('css')
+#2 C:\AppServ\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('procesocompra/c...')
+#3 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dep1.4/procesocompra/css/jquery-ui.css
+HTTP_REFERER=http://localhost:8080/dep1.4/procesocompra/9.html
+---
+2012/08/13 22:37:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\AppServ\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CController.php(271): CController->missingAction('css')
+#1 C:\AppServ\www\yii\framework\web\CWebApplication.php(283): CController->run('css')
+#2 C:\AppServ\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('procesocompra/c...')
+#3 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dep1.4/procesocompra/css/ui.theme.css
+HTTP_REFERER=http://localhost:8080/dep1.4/procesocompra/9.html
+---
+2012/08/13 22:37:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\AppServ\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CController.php(271): CController->missingAction('js')
+#1 C:\AppServ\www\yii\framework\web\CWebApplication.php(283): CController->run('js')
+#2 C:\AppServ\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('procesocompra/j...')
+#3 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dep1.4/procesocompra/js/jquery-ui.min.js?_=1344908222874
+HTTP_REFERER=http://localhost:8080/dep1.4/procesocompra/9.html
+---
+2012/08/13 22:37:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\AppServ\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CController.php(271): CController->missingAction('js')
+#1 C:\AppServ\www\yii\framework\web\CWebApplication.php(283): CController->run('js')
+#2 C:\AppServ\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('procesocompra/j...')
+#3 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dep1.4/procesocompra/js/jquery-ui-i18n.min.js?_=1344908222942
+HTTP_REFERER=http://localhost:8080/dep1.4/procesocompra/9.html
+---
+2012/08/13 22:37:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\AppServ\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\AppServ\www\yii\framework\web\CWebApplication.php(283): CController->run('images')
+#2 C:\AppServ\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('procesocompra/i...')
+#3 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dep1.4/procesocompra/images/calendar_icon.gif
+HTTP_REFERER=http://localhost:8080/dep1.4/procesocompra/9.html
+---
+2012/08/13 22:37:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/gridViewStyle/up.gif".' in C:\AppServ\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('css/gridViewSty...')
+#1 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dep1.4/css/gridViewStyle/up.gif
+HTTP_REFERER=http://localhost:8080/dep1.4/procesocompra/adminSeg.html
+---
+2012/08/13 22:37:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/gridViewStyle/down.gif".' in C:\AppServ\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('css/gridViewSty...')
+#1 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dep1.4/css/gridViewStyle/down.gif
+HTTP_REFERER=http://localhost:8080/dep1.4/procesocompra/adminSeg.html
+---
+2012/08/13 22:37:32 [error] [exception.CException] exception 'CException' with message 'Property "Oficioconductor.fechaCreacion" is not defined.' in C:\AppServ\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\AppServ\www\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('fechaCreacion')
+#1 C:\AppServ\www\yii\framework\web\helpers\CHtml.php(1809): CActiveRecord->__get('fechaCreacion')
+#2 C:\AppServ\www\yii\framework\zii\widgets\CDetailView.php(212): CHtml::value(Object(Oficioconductor), 'fechaCreacion')
+#3 C:\AppServ\www\yii\framework\web\CBaseController.php(174): CDetailView->run()
+#4 C:\AppServ\www\dep1.4\protected\views\secretaria\ver_secretaria_resofl1.php(43): CBaseController->widget('zii.widgets.CDe...', Array)
+#5 C:\AppServ\www\yii\framework\web\CBaseController.php(127): require('C:\AppServ\www\...')
+#6 C:\AppServ\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#7 C:\AppServ\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#8 C:\AppServ\www\dep1.4\protected\views\controlseguimiento\tabL1.php(10): CController->renderPartial('//secretaria/ve...', Array, Object(ControlseguimientoController))
+#9 C:\AppServ\www\yii\framework\web\CBaseController.php(127): require('C:\AppServ\www\...')
+#10 C:\AppServ\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#11 C:\AppServ\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#12 C:\AppServ\www\dep1.4\protected\views\controlseguimiento\view.php(28): CController->renderPartial('tabL1', Array)
+#13 C:\AppServ\www\yii\framework\web\CBaseController.php(127): require('C:\AppServ\www\...')
+#14 C:\AppServ\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#15 C:\AppServ\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#16 C:\AppServ\www\yii\framework\web\CController.php(783): CController->renderPartial('view', Array, true)
+#17 C:\AppServ\www\dep1.4\protected\controllers\ControlseguimientoController.php(27): CController->render('view', Array)
+#18 [internal function]: ControlseguimientoController->actionView('37')
+#19 C:\AppServ\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(ControlseguimientoController), Array)
+#20 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(ControlseguimientoController), Object(ReflectionMethod), Array)
+#21 C:\AppServ\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#22 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#23 C:\AppServ\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#24 C:\AppServ\www\dep1.4\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#25 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#26 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#27 C:\AppServ\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#28 C:\AppServ\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#29 C:\AppServ\www\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#30 C:\AppServ\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('controlseguimie...')
+#31 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#32 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#33 {main}
+REQUEST_URI=/dep1.4/controlseguimiento/37.html
+HTTP_REFERER=http://localhost:8080/dep1.4/procesocompra/adminSeg.html
+---
+2012/08/13 22:38:58 [error] [exception.CException] exception 'CException' with message 'Property "Oficioconductor.fechaCreacion" is not defined.' in C:\AppServ\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\AppServ\www\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('fechaCreacion')
+#1 C:\AppServ\www\yii\framework\web\helpers\CHtml.php(1809): CActiveRecord->__get('fechaCreacion')
+#2 C:\AppServ\www\yii\framework\zii\widgets\CDetailView.php(212): CHtml::value(Object(Oficioconductor), 'fechaCreacion')
+#3 C:\AppServ\www\yii\framework\web\CBaseController.php(174): CDetailView->run()
+#4 C:\AppServ\www\dep1.4\protected\views\secretaria\ver_secretaria_resofl1.php(43): CBaseController->widget('zii.widgets.CDe...', Array)
+#5 C:\AppServ\www\yii\framework\web\CBaseController.php(127): require('C:\AppServ\www\...')
+#6 C:\AppServ\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#7 C:\AppServ\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#8 C:\AppServ\www\dep1.4\protected\views\controlseguimiento\tabL1.php(10): CController->renderPartial('//secretaria/ve...', Array, Object(ControlseguimientoController))
+#9 C:\AppServ\www\yii\framework\web\CBaseController.php(127): require('C:\AppServ\www\...')
+#10 C:\AppServ\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#11 C:\AppServ\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#12 C:\AppServ\www\dep1.4\protected\views\controlseguimiento\view.php(28): CController->renderPartial('tabL1', Array)
+#13 C:\AppServ\www\yii\framework\web\CBaseController.php(127): require('C:\AppServ\www\...')
+#14 C:\AppServ\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#15 C:\AppServ\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#16 C:\AppServ\www\yii\framework\web\CController.php(783): CController->renderPartial('view', Array, true)
+#17 C:\AppServ\www\dep1.4\protected\controllers\ControlseguimientoController.php(27): CController->render('view', Array)
+#18 [internal function]: ControlseguimientoController->actionView('37')
+#19 C:\AppServ\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(ControlseguimientoController), Array)
+#20 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(ControlseguimientoController), Object(ReflectionMethod), Array)
+#21 C:\AppServ\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#22 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#23 C:\AppServ\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#24 C:\AppServ\www\dep1.4\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#25 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#26 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#27 C:\AppServ\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#28 C:\AppServ\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#29 C:\AppServ\www\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#30 C:\AppServ\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('controlseguimie...')
+#31 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#32 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#33 {main}
+REQUEST_URI=/dep1.4/controlseguimiento/37.html
+HTTP_REFERER=http://localhost:8080/dep1.4/procesocompra/adminSeg.html
+---

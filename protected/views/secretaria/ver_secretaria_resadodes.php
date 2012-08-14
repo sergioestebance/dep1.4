@@ -1,8 +1,8 @@
 <script type="text/javascript">
-function editDirector()
+function editSRADODES()
 {
     <?php echo CHtml::ajax(array(
-            'url'=>Yii::app()->createUrl("directorproyecto/editar", array("id"=>$model->directorproyecto->id)),
+            'url'=>Yii::app()->createUrl("secretaria/editar", array("id"=>$model->id)),
             'data'=> "js:$(this).serialize()",
             'type'=>'post',
             'dataType'=>'json',
@@ -10,14 +10,14 @@ function editDirector()
             {
                 if (data.status == 'failure')
                 {
-                    $('#div_directorproyecto').html(data.div);
-					$('#div_directorproyecto').show();
-                    $('#div_directorproyecto form').submit(editDirector);
+                    $('#div_secretaria_adodes').html(data.div);
+					$('#div_secretaria_adodes').show();
+                    $('#div_secretaria_adodes form').submit(editSRADODES);
                 }
                 else
                 {
-                    $('#div_directorproyecto').html(data.div);
-					$('#div_directorproyecto').hide('slow');
+                    $('#div_secretaria_adodes').html(data.div);
+					$('#div_secretaria_adodes').hide('slow');
 				location.reload();	
 		        }
 			
@@ -29,15 +29,14 @@ function editDirector()
 } 
 </script>
 
-<?php 
-
-	$this->widget('zii.widgets.CDetailView', array(
-	'id'=> 'detalle-directorproyecto',
-	'data' => $model->directorproyecto,
+<?php $this->widget('zii.widgets.CDetailView', array(
+	'id'=> 'detalle-secretaria-adodes',
+	'data' => $model,
 	'attributes' => array(
-	'estado',
+	'tipo',
 	'fechaCreacion',
 	'fechaRespuesta',
+	'estado',
 	'observacion',
 	
 	),
@@ -50,16 +49,16 @@ function editDirector()
 <?php 
 $this->widget('zii.widgets.jui.CJuiButton',
 	array(
-		'name'=>'button-dp',
+		'name'=>'button-secretaria-adodes',
 		'value'=>'ACTUALIZAR',
 		'caption'=>'ACTUALIZAR',
-		'onclick'=>'js: function(e){e.preventDefault(); editDirector()}',
+		'onclick'=>'js: function(e){e.preventDefault(); editSRADODES()}',
 		)
 );
 ?>
 
 <br><br>
-<div id="div_directorproyecto" class="box"> 
+<div id="div_secretaria_adodes" class="box"> 
 </div>
 <br>
 
