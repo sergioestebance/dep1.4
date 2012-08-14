@@ -29,15 +29,15 @@ function editAJ()
 } 
 </script>
 
-<?php $this->widget('zii.widgets.CDetailView', array(
+<?php
+ $this->widget('zii.widgets.CDetailView', array(
 	'id'=> 'detalle-aj',
 	'data' => $model->aj,
 	'attributes' => array(
 	'tipo',
 	'fechaCreacion',
 	'fechaRespuesta',
-	'estado',
-	
+	'estado',	
 	),
 )); 
 
