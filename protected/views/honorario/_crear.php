@@ -7,8 +7,6 @@
 ));
 ?>
 
-
-
 	<?php echo $form->errorSummary($model); ?>
 
 		<div class="row">
@@ -26,16 +24,43 @@
 		<?php echo $form->textField($model, 'numConvenio'); ?>
 		<?php echo $form->error($model,'numConvenio'); ?>
 		</div><!-- row -->
+		
 		<div class="row">
 		<?php echo $form->labelEx($model,'fechaInicio'); ?>
-		<?php echo $form->textField($model, 'fechaInicio'); ?>
+		<?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+			'model'=>$model,
+			'attribute'=>'fechaInicio',
+			 
+			// additional javascript options for the date picker plugin
+			'options'=>array(
+				'showAnim'=>'fold',
+				'dateFormat'=>'yy-mm-dd',
+			),
+			'htmlOptions'=>array(
+				'style'=>'height:20px;'
+			),
+		));?>
 		<?php echo $form->error($model,'fechaInicio'); ?>
 		</div><!-- row -->
+		
 		<div class="row">
 		<?php echo $form->labelEx($model,'fechaTermino'); ?>
-		<?php echo $form->textField($model, 'fechaTermino'); ?>
+		<?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+			'model'=>$model,
+			'attribute'=>'fechaTermino',
+			 
+			// additional javascript options for the date picker plugin
+			'options'=>array(
+				'showAnim'=>'fold',
+				'dateFormat'=>'yy-mm-dd',
+			),
+			'htmlOptions'=>array(
+				'style'=>'height:20px;'
+			),
+		));?>
 		<?php echo $form->error($model,'fechaTermino'); ?>
 		</div><!-- row -->
+		
 		<div class="row">
 		<?php echo $form->labelEx($model,'cuotas'); ?>
 		<?php echo $form->textField($model, 'cuotas'); ?>
@@ -46,11 +71,25 @@
 		<?php echo $form->textField($model, 'monto', array('maxlength' => 45)); ?>
 		<?php echo $form->error($model,'monto'); ?>
 		</div><!-- row -->
+			
 		<div class="row">
 		<?php echo $form->labelEx($model,'fechaRecilio'); ?>
-		<?php echo $form->textField($model, 'fechaRecilio'); ?>
+		<?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+			'model'=>$model,
+			'attribute'=>'fechaRecilio',
+			 
+			// additional javascript options for the date picker plugin
+			'options'=>array(
+				'showAnim'=>'fold',
+				'dateFormat'=>'yy-mm-dd',
+			),
+			'htmlOptions'=>array(
+				'style'=>'height:20px;'
+			),
+		));?>
 		<?php echo $form->error($model,'fechaRecilio'); ?>
 		</div><!-- row -->
+		
 		<div class="row">
 		<?php echo $form->labelEx($model,'reciliacion'); ?>
 		<?php echo $form->textField($model, 'reciliacion', array('maxlength' => 45)); ?>
