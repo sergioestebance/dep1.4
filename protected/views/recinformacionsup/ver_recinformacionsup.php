@@ -33,10 +33,12 @@ function editRecinformacionsup()
 	'id'=> 'detalle-recinformacionsup',
 	'data' => $model,
 	'attributes' => array(
-	'fase',
+	'fechaCreacion',
+	'boletayotros',
 	'fecha1',
-	'fecha2',
 	'observacion',
+	'envioantecedentes',
+	'fecha2',
 	
 	),
 )); 
@@ -51,7 +53,7 @@ $this->widget('zii.widgets.jui.CJuiButton',
 		'name'=>'button-recinformacionsup',
 		'value'=>'ACTUALIZAR',
 		'caption'=>'ACTUALIZAR',
-		'onclick'=>'js: function(e){e.preventDefault();editRecopilacioninfo()}',
+		'onclick'=>'js: function(e){e.preventDefault();editRecinformacionsup()}',
 		)
 );
 ?>
