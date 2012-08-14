@@ -91,7 +91,7 @@ return array(
         'class' => 'application.components.HttpRequest',
         'enableCsrfValidation' => true,
 		'enableCookieValidation'=>true,
-		'noCsrfValidationRoutes'=>array('procesogasto/creaPG','procesocompra/creaPC','peticionet/create','peticionet/crear','solicitudcompra/crear','enviobase/crear','adquisicion/crear','plantilla/crear','constancia/crear','honorario/crear','et/editar','controlseguimiento/creaCS','procesocompra/editarBL','procesocompra/editarTD','aj/editar','directorproyecto/editar','oficioconductor/editar','secretaria/editar','adjudicacion/editar','resolucionoficializada/editar','resolucionadodes/editar','resolucionof/editar','contraloria/editar','publicacion/editar','procesoevaluacion/editar'),
+		'noCsrfValidationRoutes'=>array('procesogasto/creaPG','procesocompra/creaPC','peticionet/create','peticionet/crear','solicitudcompra/crear','enviobase/crear','adquisicion/crear','plantilla/crear','constancia/crear','honorario/crear','et/editar','controlseguimiento/creaCS','procesocompra/editarBL','procesocompra/editarTD','aj/editar','directorproyecto/editar','oficioconductor/editar','secretaria/editar','adjudicacion/editar','resolucionoficializada/editar','resolucionadodes/editar','resolucionof/editar','contraloria/editar','publicacion/editar','procesoevaluacion/editar','envinformeseva/editar'),
 		),
 		
 		'log'=>array(

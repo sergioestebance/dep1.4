@@ -9,7 +9,7 @@
 				'Secretaria' => array( 'id' => 4,'content' => $this->renderPartial('//secretaria/ver_secretaria_resofl1', array('model' => $model->secretarias[0],),$this),),
 				'Contraloria' => array('id' => 5,'content' => $this->renderPartial('//contraloria/ver_contraloria', array('model' => $model->contralorias[0],),$this),),
 				'Publicacion' => array('id' => 6,'content' => $this->renderPartial('//publicacion/ver_publicacion', array('model' => $model->publicacion,),$this),),
-				'Envio informes a evaluacion' => array('id' => 7,'content' => 'TEST',),
+				'Envio informes a evaluacion' => array('id' => 7,'content' => $this->renderPartial('//envinformeseva/ver_envinformeseva', array('model' => $model->envinformeseva,),$this),),
 				'Oficio conductor AOD' => array('id' => 8,'content' => $this->renderPartial('//oficioconductor/ver_ocADODES', array('model' => $model->oficioconductors[1],),$this),),
 				'Comision evaluacion' => array('id' => 9,'content' => 'TEST',),
 				'VAF' => array('id' => 10,'content' => 'TEST',),

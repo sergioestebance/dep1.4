@@ -2245,3 +2245,185 @@ Stack trace:
 REQUEST_URI=/dep1.4/publicacion/editar/1.html
 HTTP_REFERER=http://localhost:8080/dep1.4/controlseguimiento/3.html
 ---
+2012/08/14 16:25:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\AppServ\www\dep1.4\protected\extensions\giix-components\GxController.php:144
+Stack trace:
+#0 C:\AppServ\www\dep1.4\protected\controllers\ControlseguimientoController.php(26): GxController->loadModel('34', 'Controlseguimie...')
+#1 [internal function]: ControlseguimientoController->actionView('34')
+#2 C:\AppServ\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(ControlseguimientoController), Array)
+#3 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(ControlseguimientoController), Object(ReflectionMethod), Array)
+#4 C:\AppServ\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\AppServ\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\AppServ\www\dep1.4\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#8 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#9 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\AppServ\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\AppServ\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\AppServ\www\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#13 C:\AppServ\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('controlseguimie...')
+#14 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/dep1.4/controlseguimiento/34.html
+HTTP_REFERER=http://localhost:8080/dep1.4/site/login.html
+---
+2012/08/14 16:27:45 [error] [exception.CException] exception 'CException' with message 'Please specify the "data" property.' in C:\AppServ\www\yii\framework\zii\widgets\CDetailView.php:138
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CBaseController.php(148): CDetailView->init()
+#1 C:\AppServ\www\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.CDe...', Array)
+#2 C:\AppServ\www\dep1.4\protected\views\aj\ver_aj.php(42): CBaseController->widget('zii.widgets.CDe...', Array)
+#3 C:\AppServ\www\yii\framework\web\CBaseController.php(127): require('C:\AppServ\www\...')
+#4 C:\AppServ\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#5 C:\AppServ\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#6 C:\AppServ\www\dep1.4\protected\views\controlseguimiento\tabLE.php(5): CController->renderPartial('//aj/ver_aj', Array, Object(ControlseguimientoController))
+#7 C:\AppServ\www\yii\framework\web\CBaseController.php(127): require('C:\AppServ\www\...')
+#8 C:\AppServ\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#9 C:\AppServ\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#10 C:\AppServ\www\dep1.4\protected\views\controlseguimiento\view.php(28): CController->renderPartial('tabLE', Array)
+#11 C:\AppServ\www\yii\framework\web\CBaseController.php(127): require('C:\AppServ\www\...')
+#12 C:\AppServ\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#13 C:\AppServ\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#14 C:\AppServ\www\yii\framework\web\CController.php(783): CController->renderPartial('view', Array, true)
+#15 C:\AppServ\www\dep1.4\protected\controllers\ControlseguimientoController.php(27): CController->render('view', Array)
+#16 [internal function]: ControlseguimientoController->actionView('4')
+#17 C:\AppServ\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(ControlseguimientoController), Array)
+#18 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(ControlseguimientoController), Object(ReflectionMethod), Array)
+#19 C:\AppServ\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#20 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#21 C:\AppServ\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#22 C:\AppServ\www\dep1.4\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#23 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#24 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#25 C:\AppServ\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#26 C:\AppServ\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 C:\AppServ\www\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#28 C:\AppServ\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('controlseguimie...')
+#29 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#30 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#31 {main}
+REQUEST_URI=/dep1.4/controlseguimiento/4.html
+HTTP_REFERER=http://localhost:8080/dep1.4/controlseguimiento/
+---
+2012/08/14 16:28:27 [error] [exception.CException] exception 'CException' with message 'Please specify the "data" property.' in C:\AppServ\www\yii\framework\zii\widgets\CDetailView.php:138
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CBaseController.php(148): CDetailView->init()
+#1 C:\AppServ\www\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.CDe...', Array)
+#2 C:\AppServ\www\dep1.4\protected\views\aj\ver_aj.php(42): CBaseController->widget('zii.widgets.CDe...', Array)
+#3 C:\AppServ\www\yii\framework\web\CBaseController.php(127): require('C:\AppServ\www\...')
+#4 C:\AppServ\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#5 C:\AppServ\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#6 C:\AppServ\www\dep1.4\protected\views\controlseguimiento\tabLE.php(5): CController->renderPartial('//aj/ver_aj', Array, Object(ControlseguimientoController))
+#7 C:\AppServ\www\yii\framework\web\CBaseController.php(127): require('C:\AppServ\www\...')
+#8 C:\AppServ\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#9 C:\AppServ\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#10 C:\AppServ\www\dep1.4\protected\views\controlseguimiento\view.php(28): CController->renderPartial('tabLE', Array)
+#11 C:\AppServ\www\yii\framework\web\CBaseController.php(127): require('C:\AppServ\www\...')
+#12 C:\AppServ\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#13 C:\AppServ\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#14 C:\AppServ\www\yii\framework\web\CController.php(783): CController->renderPartial('view', Array, true)
+#15 C:\AppServ\www\dep1.4\protected\controllers\ControlseguimientoController.php(27): CController->render('view', Array)
+#16 [internal function]: ControlseguimientoController->actionView('4')
+#17 C:\AppServ\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(ControlseguimientoController), Array)
+#18 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(ControlseguimientoController), Object(ReflectionMethod), Array)
+#19 C:\AppServ\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#20 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#21 C:\AppServ\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#22 C:\AppServ\www\dep1.4\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#23 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#24 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#25 C:\AppServ\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#26 C:\AppServ\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 C:\AppServ\www\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#28 C:\AppServ\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('controlseguimie...')
+#29 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#30 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#31 {main}
+REQUEST_URI=/dep1.4/controlseguimiento/4.html
+HTTP_REFERER=http://localhost:8080/dep1.4/controlseguimiento/
+---
+2012/08/14 16:28:44 [error] [exception.CException] exception 'CException' with message 'Please specify the "data" property.' in C:\AppServ\www\yii\framework\zii\widgets\CDetailView.php:138
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CBaseController.php(148): CDetailView->init()
+#1 C:\AppServ\www\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.CDe...', Array)
+#2 C:\AppServ\www\dep1.4\protected\views\directorproyecto\ver_dp.php(44): CBaseController->widget('zii.widgets.CDe...', Array)
+#3 C:\AppServ\www\yii\framework\web\CBaseController.php(127): require('C:\AppServ\www\...')
+#4 C:\AppServ\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#5 C:\AppServ\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#6 C:\AppServ\www\dep1.4\protected\views\controlseguimiento\tabLE.php(6): CController->renderPartial('//directorproye...', Array, Object(ControlseguimientoController))
+#7 C:\AppServ\www\yii\framework\web\CBaseController.php(127): require('C:\AppServ\www\...')
+#8 C:\AppServ\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#9 C:\AppServ\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#10 C:\AppServ\www\dep1.4\protected\views\controlseguimiento\view.php(28): CController->renderPartial('tabLE', Array)
+#11 C:\AppServ\www\yii\framework\web\CBaseController.php(127): require('C:\AppServ\www\...')
+#12 C:\AppServ\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#13 C:\AppServ\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#14 C:\AppServ\www\yii\framework\web\CController.php(783): CController->renderPartial('view', Array, true)
+#15 C:\AppServ\www\dep1.4\protected\controllers\ControlseguimientoController.php(27): CController->render('view', Array)
+#16 [internal function]: ControlseguimientoController->actionView('4')
+#17 C:\AppServ\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(ControlseguimientoController), Array)
+#18 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(ControlseguimientoController), Object(ReflectionMethod), Array)
+#19 C:\AppServ\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#20 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#21 C:\AppServ\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#22 C:\AppServ\www\dep1.4\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#23 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#24 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#25 C:\AppServ\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#26 C:\AppServ\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 C:\AppServ\www\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#28 C:\AppServ\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('controlseguimie...')
+#29 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#30 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#31 {main}
+REQUEST_URI=/dep1.4/controlseguimiento/4.html
+HTTP_REFERER=http://localhost:8080/dep1.4/controlseguimiento/
+---
+2012/08/14 16:40:27 [error] [exception.CException] exception 'CException' with message 'Property "Envinformeseva.fecha" is not defined.' in C:\AppServ\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\AppServ\www\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('fecha')
+#1 C:\AppServ\www\yii\framework\web\helpers\CHtml.php(1809): CActiveRecord->__get('fecha')
+#2 C:\AppServ\www\yii\framework\zii\widgets\CDetailView.php(212): CHtml::value(Object(Envinformeseva), 'fecha')
+#3 C:\AppServ\www\yii\framework\web\CBaseController.php(174): CDetailView->run()
+#4 C:\AppServ\www\dep1.4\protected\views\envinformeseva\ver_envinformeseva.php(40): CBaseController->widget('zii.widgets.CDe...', Array)
+#5 C:\AppServ\www\yii\framework\web\CBaseController.php(127): require('C:\AppServ\www\...')
+#6 C:\AppServ\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#7 C:\AppServ\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#8 C:\AppServ\www\dep1.4\protected\views\controlseguimiento\tabLE.php(12): CController->renderPartial('//envinformesev...', Array, Object(ControlseguimientoController))
+#9 C:\AppServ\www\yii\framework\web\CBaseController.php(127): require('C:\AppServ\www\...')
+#10 C:\AppServ\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#11 C:\AppServ\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#12 C:\AppServ\www\dep1.4\protected\views\controlseguimiento\view.php(28): CController->renderPartial('tabLE', Array)
+#13 C:\AppServ\www\yii\framework\web\CBaseController.php(127): require('C:\AppServ\www\...')
+#14 C:\AppServ\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#15 C:\AppServ\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#16 C:\AppServ\www\yii\framework\web\CController.php(783): CController->renderPartial('view', Array, true)
+#17 C:\AppServ\www\dep1.4\protected\controllers\ControlseguimientoController.php(27): CController->render('view', Array)
+#18 [internal function]: ControlseguimientoController->actionView('7')
+#19 C:\AppServ\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(ControlseguimientoController), Array)
+#20 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(ControlseguimientoController), Object(ReflectionMethod), Array)
+#21 C:\AppServ\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#22 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#23 C:\AppServ\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#24 C:\AppServ\www\dep1.4\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#25 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#26 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#27 C:\AppServ\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#28 C:\AppServ\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#29 C:\AppServ\www\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#30 C:\AppServ\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('controlseguimie...')
+#31 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#32 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#33 {main}
+REQUEST_URI=/dep1.4/controlseguimiento/7.html
+HTTP_REFERER=http://localhost:8080/dep1.4/controlseguimiento/
+---
+2012/08/14 16:41:36 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'The CSRF token could not be verified.' in C:\AppServ\www\yii\framework\web\CHttpRequest.php:976
+Stack trace:
+#0 C:\AppServ\www\yii\framework\base\CComponent.php(559): CHttpRequest->validateCsrfToken(Object(CEvent))
+#1 C:\AppServ\www\yii\framework\base\CApplication.php(189): CComponent->raiseEvent('onBeginRequest', Object(CEvent))
+#2 C:\AppServ\www\yii\framework\base\CApplication.php(161): CApplication->onBeginRequest(Object(CEvent))
+#3 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/dep1.4/envinformeseva/editar/1.html
+HTTP_REFERER=http://localhost:8080/dep1.4/controlseguimiento/7.html
+---
