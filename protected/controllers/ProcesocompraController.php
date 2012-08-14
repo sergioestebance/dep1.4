@@ -41,7 +41,7 @@ public function filters() {
 		}		
 		if (Yii::app()->request->isAjaxRequest)
         {
-            echo CJSON::encode(array('status'=>'failure', 'div'=>$this->renderPartial('_bl', array('model' => $model,'buttons' => 'create'),true)));
+            echo CJSON::encode(array('status'=>'failure', 'div'=>$this->renderPartial('_bl', array('model' => $model),true,true)));
             exit;               
         }
 	}
@@ -73,7 +73,7 @@ public function filters() {
 		}		
 		if (Yii::app()->request->isAjaxRequest)
         {
-            echo CJSON::encode(array('status'=>'failure', 'div'=>$this->renderPartial('_td', array('model' => $model,'buttons' => 'create'),true)));
+            echo CJSON::encode(array('status'=>'failure', 'div'=>$this->renderPartial('_td', array('model' => $model,'buttons' => 'create'),true,true)));
             exit;               
         }
 	}

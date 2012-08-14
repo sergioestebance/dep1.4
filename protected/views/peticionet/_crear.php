@@ -1,4 +1,3 @@
-
 <div class="form">
 
 <?php 
@@ -7,8 +6,6 @@ $form = $this->beginWidget('GxActiveForm', array(
 	'enableAjaxValidation' => false,
 ));
 ?>
-
-
 	
 	<?php echo $form->errorSummary($model); ?>
 		
@@ -33,6 +30,7 @@ $form = $this->beginWidget('GxActiveForm', array(
 		));?>
 		<?php echo $form->error($model,'fecha'); ?>
 		</div><!-- row -->
+		
 		<div class="row">
 		<?php echo $form->labelEx($model,'observacion'); ?>
 		<?php echo $form->textField($model, 'observacion', array('maxlength' => 200)); ?>

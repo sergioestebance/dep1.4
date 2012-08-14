@@ -15,24 +15,23 @@
 		<?php echo $form->error($model,'forma'); ?>
 		</div>
 		
-	<div class="row">
+		<div class="row">
 		<?php echo $form->labelEx($model,'fecha'); ?>
 		<?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(
-			'name'=>'Despacho[fecha]',
 			'model'=>$model,
 			'attribute'=>'fecha',
+			
+			// additional javascript options for the date picker plugin
 			'options'=>array(
+				'showAnim'=>'fold',
 				'dateFormat'=>'yy-mm-dd',
-				'buttonImage'=>Yii::app()->baseUrl.'/images/create_new.gif',
-				'buttonImageOnly'=>true,
 			),
 			'htmlOptions'=>array(
 				'style'=>'height:20px;'
 			),
-		));
-		?>
+		));?>
 		<?php echo $form->error($model,'fecha'); ?>
-	</div>
+		</div><!-- row -->
 		
 		<div class="row">
 		<?php echo $form->labelEx($model,'observacion1'); ?>

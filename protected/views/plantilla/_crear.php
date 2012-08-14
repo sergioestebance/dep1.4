@@ -26,11 +26,25 @@
 		<?php echo $form->textField($model, 'numComprobanteEI', array('maxlength' => 45)); ?>
 		<?php echo $form->error($model,'numComprobanteEI'); ?>
 		</div><!-- row -->
+		
 		<div class="row">
 		<?php echo $form->labelEx($model,'fechaEI'); ?>
-		<?php echo $form->textField($model, 'fechaEI'); ?>
+		<?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+			'model'=>$model,
+			'attribute'=>'fechaEI',
+			
+			// additional javascript options for the date picker plugin
+			'options'=>array(
+				'showAnim'=>'fold',
+				'dateFormat'=>'yy-mm-dd',
+			),
+			'htmlOptions'=>array(
+				'style'=>'height:20px;'
+			),
+		));?>
 		<?php echo $form->error($model,'fechaEI'); ?>
 		</div><!-- row -->
+		
 		<div class="row">
 		<?php echo $form->labelEx($model,'tipoDocumentoFB'); ?>
 		<?php echo $form->textField($model, 'tipoDocumentoFB', array('maxlength' => 45)); ?>
@@ -46,16 +60,43 @@
 		<?php echo $form->textField($model, 'rutProveedor', array('maxlength' => 45)); ?>
 		<?php echo $form->error($model,'rutProveedor'); ?>
 		</div><!-- row -->
+		
 		<div class="row">
 		<?php echo $form->labelEx($model,'fechaEmisionDoc'); ?>
-		<?php echo $form->textField($model, 'fechaEmisionDoc'); ?>
+		<?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+			'model'=>$model,
+			'attribute'=>'fechaEmisionDoc',
+			
+			// additional javascript options for the date picker plugin
+			'options'=>array(
+				'showAnim'=>'fold',
+				'dateFormat'=>'yy-mm-dd',
+			),
+			'htmlOptions'=>array(
+				'style'=>'height:20px;'
+			),
+		));?>
 		<?php echo $form->error($model,'fechaEmisionDoc'); ?>
 		</div><!-- row -->
+			
 		<div class="row">
 		<?php echo $form->labelEx($model,'fechaCancelacionDoc'); ?>
-		<?php echo $form->textField($model, 'fechaCancelacionDoc'); ?>
+		<?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+			'model'=>$model,
+			'attribute'=>'fechaCancelacionDoc',
+			
+			// additional javascript options for the date picker plugin
+			'options'=>array(
+				'showAnim'=>'fold',
+				'dateFormat'=>'yy-mm-dd',
+			),
+			'htmlOptions'=>array(
+				'style'=>'height:20px;'
+			),
+		));?>
 		<?php echo $form->error($model,'fechaCancelacionDoc'); ?>
 		</div><!-- row -->
+		
 		<div class="row">
 		<?php echo $form->labelEx($model,'detalleDoc'); ?>
 		<?php echo $form->textField($model, 'detalleDoc', array('maxlength' => 200)); ?>

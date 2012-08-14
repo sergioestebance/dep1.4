@@ -22,7 +22,6 @@ public function filters() {
 	}
 
 
-	
 	public function actionCrear($id){
 		$model = new Plantilla;
 		$model_pg = $this->loadModel($id, 'Procesogasto');
@@ -47,7 +46,7 @@ public function filters() {
 		}		
 		if (Yii::app()->request->isAjaxRequest)
         {
-            echo CJSON::encode(array('status'=>'failure', 'div'=>$this->renderPartial('_crear', array('model' => $model,'buttons' => 'create'),true)));
+            echo CJSON::encode(array('status'=>'failure', 'div'=>$this->renderPartial('_crear', array('model' => $model),true,true)));
             exit;               
         }
 	}	

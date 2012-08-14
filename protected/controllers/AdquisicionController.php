@@ -40,7 +40,7 @@ public function filters() {
 		}		
 		if (Yii::app()->request->isAjaxRequest)
         {
-            echo CJSON::encode(array('status'=>'failure', 'div'=>$this->renderPartial('_crear', array('model' => $model,'model_pc' => $model_pc,'buttons' => 'create'),true)));
+            echo CJSON::encode(array('status'=>'failure', 'div'=>$this->renderPartial('_crear', array('model' => $model,'model_pc' => $model_pc),true,true)));
             exit;               
         }
 	}
