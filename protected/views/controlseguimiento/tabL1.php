@@ -5,7 +5,7 @@
 			'tabs' => array(
 				'Asesor juridico' => array('id' => 0,'content' => $this->renderPartial('//aj/ver_aj', array('model' => $model,),$this),),
 				'Director de proyecto' => array('id' => 1,'content' => $this->renderPartial('//directorproyecto/ver_dp', array('model' => $model,),$this),),
-				'Oficio conductor' => array('id' => 2,'content' =>  $this->renderPartial('//oficioconductor/ver_ocL', array('model' => $model->oficioconductors[0],),$this),),
+				'Oficio conductor' => array('id' => 2,'content' =>  $this->renderPartial('//oficioconductor/ver_oc', array('model' => $model->oficioconductors[0],),$this),),
 				'Resolucion oficializacion' => array('id' => 3,'content' => $this->renderPartial('//resolucionof/ver_resolucionof', array('model' => $model->resolucionof,),$this),),
 				'Secretaria' => array( 'id' => 4,'content' => $this->renderPartial('//secretaria/ver_secretaria_resofl1', array('model' => $model->secretarias[0],),$this),),
 				'Contraloria' => array('id' => 5,'content' => $this->renderPartial('//contraloria/ver_contraloria', array('model' => $model->contralorias[0],),$this),),

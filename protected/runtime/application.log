@@ -2427,3 +2427,69 @@ Stack trace:
 REQUEST_URI=/dep1.4/envinformeseva/editar/1.html
 HTTP_REFERER=http://localhost:8080/dep1.4/controlseguimiento/7.html
 ---
+2012/08/14 17:02:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\AppServ\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CController.php(271): CController->missingAction('css')
+#1 C:\AppServ\www\yii\framework\web\CWebApplication.php(283): CController->run('css')
+#2 C:\AppServ\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('procesocompra/c...')
+#3 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dep1.4/procesocompra/css/jquery-ui.css
+HTTP_REFERER=http://localhost:8080/dep1.4/procesocompra/2.html
+---
+2012/08/14 17:02:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\AppServ\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CController.php(271): CController->missingAction('js')
+#1 C:\AppServ\www\yii\framework\web\CWebApplication.php(283): CController->run('js')
+#2 C:\AppServ\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('procesocompra/j...')
+#3 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dep1.4/procesocompra/js/jquery-1.6.3.min.js?_=1344974523377
+HTTP_REFERER=http://localhost:8080/dep1.4/procesocompra/2.html
+---
+2012/08/14 17:02:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\AppServ\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CController.php(271): CController->missingAction('css')
+#1 C:\AppServ\www\yii\framework\web\CWebApplication.php(283): CController->run('css')
+#2 C:\AppServ\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('procesocompra/c...')
+#3 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dep1.4/procesocompra/css/ui.theme.css
+HTTP_REFERER=http://localhost:8080/dep1.4/procesocompra/2.html
+---
+2012/08/14 17:02:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\AppServ\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CController.php(271): CController->missingAction('js')
+#1 C:\AppServ\www\yii\framework\web\CWebApplication.php(283): CController->run('js')
+#2 C:\AppServ\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('procesocompra/j...')
+#3 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dep1.4/procesocompra/js/jquery-ui.min.js?_=1344974523494
+HTTP_REFERER=http://localhost:8080/dep1.4/procesocompra/2.html
+---
+2012/08/14 17:02:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\AppServ\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CController.php(271): CController->missingAction('js')
+#1 C:\AppServ\www\yii\framework\web\CWebApplication.php(283): CController->run('js')
+#2 C:\AppServ\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('procesocompra/j...')
+#3 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dep1.4/procesocompra/js/jquery-ui-i18n.min.js?_=1344974523561
+HTTP_REFERER=http://localhost:8080/dep1.4/procesocompra/2.html
+---
+2012/08/14 17:02:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\AppServ\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\AppServ\www\yii\framework\web\CWebApplication.php(283): CController->run('images')
+#2 C:\AppServ\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('procesocompra/i...')
+#3 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dep1.4/procesocompra/images/calendar_icon.gif
+HTTP_REFERER=http://localhost:8080/dep1.4/procesocompra/2.html
+---

@@ -14,6 +14,38 @@ public function filters() {
 		));
 	}
 
+	public function actionEditar($id){
+		$model = $this->loadModel($id, 'Resofcontratovaf');
+		
+		if (Yii::app()->request->isAjaxRequest)
+        {
+			if($model->controlseguimiento->procesocompra->estado!="FINALIZADO"){
+				echo CJSON::encode(array('status'=>'failure', 'div'=>'EL PROCESO DE COMPRA NO EST&Atilde; FINALIZADO'));
+				exit;               
+			}
+        }
+			
+		if (isset($_POST['Resofcontratovaf'])) {
+			$model->setAttributes($_POST['Resofcontratovaf']);
+			
+			if ($model->save()) {
+				if (Yii::app()->request->isAjaxRequest){
+				        echo CJSON::encode(array(
+                        'status'=>'success', 
+                        'div'=>"LISTA",
+                        ));
+                    exit;               
+                }
+			}			
+		}		
+		if (Yii::app()->request->isAjaxRequest)
+        {
+            echo CJSON::encode(array('status'=>'failure', 'div'=>$this->renderPartial('_crear', array('model' => $model,),true,true)));
+            exit;               
+        }
+	}
+	
+	
 	public function actionCreate() {
 		$model = new Resofcontratovaf;
 
