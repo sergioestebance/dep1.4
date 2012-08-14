@@ -15,8 +15,8 @@
 				'Resolucion ADODES' => array('id' => 9,'content' => 'TEST',),
 				'Secretaria RESADODES' => array( 'id' => 10,'content' => $this->renderPartial('//secretaria/ver_secretaria_resadodes', array('model' => $model->secretarias[1],),$this),),
 				'Contraloria' => array('id' => 11,'content' => 'TEST',),
-				'Resolucion oficializada' => array( 'id' => 12,'content' => 'TEST',),
-				'Adjudicacion' => array('id' => 13,'content' => 'TEST',),
+				'Resolucion oficializada' => array( 'id' => 12,'content' => $this->renderPartial('//resolucionoficializada/ver_resolucionoficializada', array('model' => $model->resolucionoficializada,),$this),),
+				'Adjudicacion' => array('id' => 13,'content' => $this->renderPartial('//adjudicacion/ver_adjudicacion', array('model' => $model->adjudicacion,),$this),),
 			),
 				
 			'options' => array(
@@ -27,19 +27,3 @@
 
 ?>
 
-<?php 
-/*
-	if($model->oficioconductors[0]->tipo=='L')
-	{
-	$this->widget('zii.widgets.CDetailView', array(
-	'id'=> 'detalle-ocl0',
-	'data' => $model->oficioconductors[0],
-	'attributes' => array(
-		'id',
-		'tipo',
-
-	),
-)); 
-}
-*/
-?>

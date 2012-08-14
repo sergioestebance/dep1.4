@@ -14,6 +14,29 @@ public function filters() {
 		));
 	}
 
+		public function actionEditar($id){
+		$model = $this->loadModel($id, 'Resolucionoficializada');
+		
+		if (isset($_POST['Resolucionoficializada'])) {
+			$model->setAttributes($_POST['Resolucionoficializada']);
+			
+			if ($model->save()) {
+				if (Yii::app()->request->isAjaxRequest){
+				        echo CJSON::encode(array(
+                        'status'=>'success', 
+                        'div'=>"LISTA",
+                        ));
+                    exit;               
+                }
+			}			
+		}		
+		if (Yii::app()->request->isAjaxRequest)
+        {
+            echo CJSON::encode(array('status'=>'failure', 'div'=>$this->renderPartial('_crear', array('model' => $model,),true)));
+            exit;               
+        }
+	}
+	
 	public function actionCreate() {
 		$model = new Resolucionoficializada;
 
