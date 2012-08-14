@@ -36,16 +36,7 @@
 		<?php echo $form->textField($model, 'fechaRespuesta'); ?>
 		<?php echo $form->error($model,'fechaRespuesta'); ?>
 		</div><!-- row -->
-		<div class="row">
-		<?php echo $form->labelEx($model,'alertal1'); ?>
-		<?php echo $form->textField($model, 'alertal1'); ?>
-		<?php echo $form->error($model,'alertal1'); ?>
-		</div><!-- row -->
-		<div class="row">
-		<?php echo $form->labelEx($model,'alerta2'); ?>
-		<?php echo $form->textField($model, 'alerta2'); ?>
-		<?php echo $form->error($model,'alerta2'); ?>
-		</div><!-- row -->
+
 
 
 <?php
