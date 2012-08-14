@@ -1,8 +1,8 @@
 <script type="text/javascript">
-function editAbogadasecretaria()
+function editResofcontratovaf()
 {
     <?php echo CHtml::ajax(array(
-            'url'=>Yii::app()->createUrl("abogadasecretaria/editar", array("id"=>$model->id)),
+            'url'=>Yii::app()->createUrl("resofcontratovaf/editar", array("id"=>$model->id)),
             'data'=> "js:$(this).serialize()",
             'type'=>'post',
             'dataType'=>'json',
@@ -10,14 +10,14 @@ function editAbogadasecretaria()
             {
                 if (data.status == 'failure')
                 {
-                    $('#div_abogadasecretaria').html(data.div);
-					$('#div_abogadasecretaria').show();
-                    $('#div_abogadasecretaria form').submit(editAbogadasecretaria);
+                    $('#div_resofcontratovaf').html(data.div);
+					$('#div_resofcontratovaf').show();
+                    $('#div_resofcontratovaf form').submit(editResofcontratovaf);
                 }
                 else
                 {
-                    $('#div_abogadasecretaria').html(data.div);
-					$('#div_abogadasecretaria').hide('slow');
+                    $('#div_resofcontratovaf').html(data.div);
+					$('#div_resofcontratovaf').hide('slow');
 				location.reload();	
 		        }
 			
@@ -30,14 +30,14 @@ function editAbogadasecretaria()
 </script>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
-	'id'=> 'detalle-abogadasecretaria',
+	'id'=> 'detalle-resofcontratovaf',
 	'data' => $model,
 	'attributes' => array(
-		'tipo',
-		'estado',
 		'fechaCreacion',
-		'fechaRespuesta',
-		'observacion',
+		'numRes',
+		'fechaNumRes',
+		'firma',
+		'fechaFirma',
 		),
 )); 
 
@@ -48,16 +48,16 @@ function editAbogadasecretaria()
 <?php 
 $this->widget('zii.widgets.jui.CJuiButton',
 	array(
-		'name'=>'button-abogadasecretaria',
+		'name'=>'button-resofcontratovaf',
 		'value'=>'ACTUALIZAR',
 		'caption'=>'ACTUALIZAR',
-		'onclick'=>'js: function(e){e.preventDefault();editAbogadasecretaria()}',
+		'onclick'=>'js: function(e){e.preventDefault();editResofcontratovaf()}',
 		)
 );
 ?>
 
 <br><br>
-<div id="div_abogadasecretaria" class="box"> 
+<div id="div_resofcontratovaf" class="box"> 
 </div>
 <br>
 

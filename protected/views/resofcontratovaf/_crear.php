@@ -25,11 +25,7 @@
 		<?php echo $form->textField($model, 'fechaNumRes'); ?>
 		<?php echo $form->error($model,'fechaNumRes'); ?>
 		</div><!-- row -->
-		<div class="row">
-		<?php echo $form->labelEx($model,'alerta1'); ?>
-		<?php echo $form->textField($model, 'alerta1'); ?>
-		<?php echo $form->error($model,'alerta1'); ?>
-		</div><!-- row -->
+
 		<div class="row">
 		<?php echo $form->labelEx($model,'firma'); ?>
 		<?php echo $form->textField($model, 'firma', array('maxlength' => 45)); ?>
@@ -40,11 +36,7 @@
 		<?php echo $form->textField($model, 'fechaFirma', array('maxlength' => 45)); ?>
 		<?php echo $form->error($model,'fechaFirma'); ?>
 		</div><!-- row -->
-		<div class="row">
-		<?php echo $form->labelEx($model,'alerta2'); ?>
-		<?php echo $form->textField($model, 'alerta2'); ?>
-		<?php echo $form->error($model,'alerta2'); ?>
-		</div><!-- row -->
+
 
 
 <?php

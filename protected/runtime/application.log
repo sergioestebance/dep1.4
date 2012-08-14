@@ -2663,3 +2663,81 @@ Stack trace:
 REQUEST_URI=/dep1.4/resofcontrato/editar/2.html
 HTTP_REFERER=http://localhost:8080/dep1.4/controlseguimiento/7.html
 ---
+2012/08/14 18:23:51 [error] [exception.CException] exception 'CException' with message 'Property "Resofcontratovaf.tipo" is not defined.' in C:\AppServ\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\AppServ\www\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('tipo')
+#1 C:\AppServ\www\yii\framework\web\helpers\CHtml.php(1809): CActiveRecord->__get('tipo')
+#2 C:\AppServ\www\yii\framework\zii\widgets\CDetailView.php(212): CHtml::value(Object(Resofcontratovaf), 'tipo')
+#3 C:\AppServ\www\yii\framework\web\CBaseController.php(174): CDetailView->run()
+#4 C:\AppServ\www\dep1.4\protected\views\resofcontratovaf\ver_resofcontratovaf.php(42): CBaseController->widget('zii.widgets.CDe...', Array)
+#5 C:\AppServ\www\yii\framework\web\CBaseController.php(127): require('C:\AppServ\www\...')
+#6 C:\AppServ\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#7 C:\AppServ\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#8 C:\AppServ\www\dep1.4\protected\views\controlseguimiento\tabLE.php(23): CController->renderPartial('//resofcontrato...', Array, Object(ControlseguimientoController))
+#9 C:\AppServ\www\yii\framework\web\CBaseController.php(127): require('C:\AppServ\www\...')
+#10 C:\AppServ\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#11 C:\AppServ\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#12 C:\AppServ\www\dep1.4\protected\views\controlseguimiento\view.php(28): CController->renderPartial('tabLE', Array)
+#13 C:\AppServ\www\yii\framework\web\CBaseController.php(127): require('C:\AppServ\www\...')
+#14 C:\AppServ\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#15 C:\AppServ\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#16 C:\AppServ\www\yii\framework\web\CController.php(783): CController->renderPartial('view', Array, true)
+#17 C:\AppServ\www\dep1.4\protected\controllers\ControlseguimientoController.php(27): CController->render('view', Array)
+#18 [internal function]: ControlseguimientoController->actionView('7')
+#19 C:\AppServ\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(ControlseguimientoController), Array)
+#20 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(ControlseguimientoController), Object(ReflectionMethod), Array)
+#21 C:\AppServ\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#22 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#23 C:\AppServ\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#24 C:\AppServ\www\dep1.4\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#25 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#26 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#27 C:\AppServ\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#28 C:\AppServ\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#29 C:\AppServ\www\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#30 C:\AppServ\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('controlseguimie...')
+#31 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#32 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#33 {main}
+REQUEST_URI=/dep1.4/controlseguimiento/7.html
+HTTP_REFERER=http://localhost:8080/dep1.4/controlseguimiento/7.html
+---
+2012/08/14 18:25:30 [error] [exception.CException] exception 'CException' with message 'Property "Resofcontratovaf.fechaRespuesta" is not defined.' in C:\AppServ\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\AppServ\www\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('fechaRespuesta')
+#1 C:\AppServ\www\yii\framework\web\helpers\CHtml.php(1809): CActiveRecord->__get('fechaRespuesta')
+#2 C:\AppServ\www\yii\framework\zii\widgets\CDetailView.php(212): CHtml::value(Object(Resofcontratovaf), 'fechaRespuesta')
+#3 C:\AppServ\www\yii\framework\web\CBaseController.php(174): CDetailView->run()
+#4 C:\AppServ\www\dep1.4\protected\views\resofcontratovaf\ver_resofcontratovaf.php(43): CBaseController->widget('zii.widgets.CDe...', Array)
+#5 C:\AppServ\www\yii\framework\web\CBaseController.php(127): require('C:\AppServ\www\...')
+#6 C:\AppServ\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#7 C:\AppServ\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#8 C:\AppServ\www\dep1.4\protected\views\controlseguimiento\tabLE.php(23): CController->renderPartial('//resofcontrato...', Array, Object(ControlseguimientoController))
+#9 C:\AppServ\www\yii\framework\web\CBaseController.php(127): require('C:\AppServ\www\...')
+#10 C:\AppServ\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#11 C:\AppServ\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#12 C:\AppServ\www\dep1.4\protected\views\controlseguimiento\view.php(28): CController->renderPartial('tabLE', Array)
+#13 C:\AppServ\www\yii\framework\web\CBaseController.php(127): require('C:\AppServ\www\...')
+#14 C:\AppServ\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#15 C:\AppServ\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#16 C:\AppServ\www\yii\framework\web\CController.php(783): CController->renderPartial('view', Array, true)
+#17 C:\AppServ\www\dep1.4\protected\controllers\ControlseguimientoController.php(27): CController->render('view', Array)
+#18 [internal function]: ControlseguimientoController->actionView('7')
+#19 C:\AppServ\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(ControlseguimientoController), Array)
+#20 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(ControlseguimientoController), Object(ReflectionMethod), Array)
+#21 C:\AppServ\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#22 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#23 C:\AppServ\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#24 C:\AppServ\www\dep1.4\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#25 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#26 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#27 C:\AppServ\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#28 C:\AppServ\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#29 C:\AppServ\www\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#30 C:\AppServ\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('controlseguimie...')
+#31 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#32 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#33 {main}
+REQUEST_URI=/dep1.4/controlseguimiento/7.html
+HTTP_REFERER=http://localhost:8080/dep1.4/controlseguimiento/7.html
+---
