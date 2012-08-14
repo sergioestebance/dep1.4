@@ -6,9 +6,6 @@
 	'enableAjaxValidation' => false,
 ));
 ?>
-
-
-
 	<?php echo $form->errorSummary($model); ?>
 
 
@@ -60,11 +57,6 @@
 		<?php echo $form->labelEx($model,'observacion'); ?>
 		<?php echo $form->textField($model, 'observacion', array('maxlength' => 200)); ?>
 		<?php echo $form->error($model,'observacion'); ?>
-		</div><!-- row -->
-		<div class="row">
-		<?php echo $form->labelEx($model,'alerta'); ?>
-		<?php echo $form->textField($model, 'alerta'); ?>
-		<?php echo $form->error($model,'alerta'); ?>
 		</div><!-- row -->
 
 

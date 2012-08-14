@@ -21,8 +21,8 @@
 				'Abogada secretaria' => array('id' => 16,'content' =>$this->renderPartial('//abogadasecretaria/ver_abogadasecretaria', array('model' => $model->abogadasecretaria,),$this),),
 				'Envio contrato firma' => array('id' => 17,'content' => 'TEST',),
 				'Resof contrato VAF' => array('id' => 18,'content' => 'TEST',),				
-				'Resof contrato secr' => array('id' => 19,'content' => 'TEST',),
-				'Resof contrato cont' => array('id' => 20,'content' => 'TEST',),
+				'Resof contrato secr' => array('id' => 19,'content' => $this->renderPartial('//resofcontrato/ver_resofcontrato_sec', array('model' => $model->resofcontratos[0],),$this),),
+				'Resof contrato cont' => array('id' => 20,'content' => $this->renderPartial('//resofcontrato/ver_resofcontrato_con', array('model' => $model->resofcontratos[1],),$this),),
 				
 				
 			),

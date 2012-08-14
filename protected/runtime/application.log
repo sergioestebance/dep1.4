@@ -2643,3 +2643,23 @@ Stack trace:
 REQUEST_URI=/dep1.4/controlseguimiento/7.html
 HTTP_REFERER=http://localhost:8080/dep1.4/controlseguimiento/7.html
 ---
+2012/08/14 18:10:15 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'The CSRF token could not be verified.' in C:\AppServ\www\yii\framework\web\CHttpRequest.php:976
+Stack trace:
+#0 C:\AppServ\www\yii\framework\base\CComponent.php(559): CHttpRequest->validateCsrfToken(Object(CEvent))
+#1 C:\AppServ\www\yii\framework\base\CApplication.php(189): CComponent->raiseEvent('onBeginRequest', Object(CEvent))
+#2 C:\AppServ\www\yii\framework\base\CApplication.php(161): CApplication->onBeginRequest(Object(CEvent))
+#3 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/dep1.4/resofcontrato/editar/1.html
+HTTP_REFERER=http://localhost:8080/dep1.4/controlseguimiento/7.html
+---
+2012/08/14 18:10:44 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'The CSRF token could not be verified.' in C:\AppServ\www\yii\framework\web\CHttpRequest.php:976
+Stack trace:
+#0 C:\AppServ\www\yii\framework\base\CComponent.php(559): CHttpRequest->validateCsrfToken(Object(CEvent))
+#1 C:\AppServ\www\yii\framework\base\CApplication.php(189): CComponent->raiseEvent('onBeginRequest', Object(CEvent))
+#2 C:\AppServ\www\yii\framework\base\CApplication.php(161): CApplication->onBeginRequest(Object(CEvent))
+#3 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/dep1.4/resofcontrato/editar/2.html
+HTTP_REFERER=http://localhost:8080/dep1.4/controlseguimiento/7.html
+---
