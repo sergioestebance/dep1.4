@@ -12,7 +12,7 @@
 				'Publicacion' => array('id' => 6,'content' => 'TEST',),
 				'Proceso de evaluacion' => array( 'id' => 7,'content' => 'TEST',),
 				'Oficio conductor ADODES' => array('id' => 8,'content' => $this->renderPartial('//oficioconductor/ver_ocADODES', array('model' => $model->oficioconductors[1],),$this),),
-				'Resolucion ADODES' => array('id' => 9,'content' => 'TEST',),
+				'Resolucion ADODES' => array('id' => 9,'content' => $this->renderPartial('//resolucionadodes/ver_resolucionadode', array('model' => $model->resolucionadode,),$this),),
 				'Secretaria RESADODES' => array( 'id' => 10,'content' => $this->renderPartial('//secretaria/ver_secretaria_resadodes', array('model' => $model->secretarias[1],),$this),),
 				'Contraloria' => array('id' => 11,'content' => 'TEST',),
 				'Resolucion oficializada' => array( 'id' => 12,'content' => $this->renderPartial('//resolucionoficializada/ver_resolucionoficializada', array('model' => $model->resolucionoficializada,),$this),),
