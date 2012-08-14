@@ -2,7 +2,7 @@
 
 
 <?php $form = $this->beginWidget('GxActiveForm', array(
-	'id' => 'envinformeseva-form',
+	'id' => 'enviocontratofirma-form',
 	'enableAjaxValidation' => false,
 ));
 ?>
@@ -36,10 +36,10 @@
 		</div><!-- row -->
 		
 		<div class="row">
-		<?php echo $form->labelEx($model,'fecha1'); ?>
+		<?php echo $form->labelEx($model,'fechaProveedor'); ?>
 		<?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(
 			'model'=>$model,
-			'attribute'=>'fecha1',
+			'attribute'=>'fechaProveedor',
 			
 			// additional javascript options for the date picker plugin
 			'options'=>array(
@@ -50,20 +50,14 @@
 				'style'=>'height:20px;'
 			),
 		));?>
-		<?php echo $form->error($model,'fecha1'); ?>
+		<?php echo $form->error($model,'fechaProveedor'); ?>
 		</div><!-- row -->
-		
+				
 		<div class="row">
-		<?php echo $form->labelEx($model,'observacion1'); ?>
-		<?php echo $form->textField($model, 'observacion1', array('maxlength' => 200)); ?>
-		<?php echo $form->error($model,'observacion1'); ?>
-		</div><!-- row -->
-		
-		<div class="row">
-		<?php echo $form->labelEx($model,'fecha2'); ?>
+		<?php echo $form->labelEx($model,'fechaFirmaContrato'); ?>
 		<?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(
 			'model'=>$model,
-			'attribute'=>'fecha2',
+			'attribute'=>'fechaFirmaContrato',
 			
 			// additional javascript options for the date picker plugin
 			'options'=>array(
@@ -74,13 +68,18 @@
 				'style'=>'height:20px;'
 			),
 		));?>
-		<?php echo $form->error($model,'fecha2'); ?>
+		<?php echo $form->error($model,'fechaFirmaContrato'); ?>
 		</div><!-- row -->
 		
 		<div class="row">
-		<?php echo $form->labelEx($model,'observacion2'); ?>
-		<?php echo $form->textField($model, 'observacion2', array('maxlength' => 200)); ?>
-		<?php echo $form->error($model,'observacion2'); ?>
+		<?php echo $form->labelEx($model,'observacion'); ?>
+		<?php echo $form->textField($model, 'observacion', array('maxlength' => 200)); ?>
+		<?php echo $form->error($model,'observacion'); ?>
+		</div><!-- row -->
+		<div class="row">
+		<?php echo $form->labelEx($model,'alerta'); ?>
+		<?php echo $form->textField($model, 'alerta'); ?>
+		<?php echo $form->error($model,'alerta'); ?>
 		</div><!-- row -->
 
 
