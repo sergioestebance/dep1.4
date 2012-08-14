@@ -13,6 +13,38 @@ public function filters() {
 			'model' => $this->loadModel($id, 'Recinformacionsup'),
 		));
 	}
+	
+	
+	public function actionEditar($id){
+		$model = $this->loadModel($id, 'Recinformacionsup');
+		
+		if (Yii::app()->request->isAjaxRequest)
+        {
+			if($model->controlseguimiento->procesocompra->estado!="FINALIZADO"){
+				echo CJSON::encode(array('status'=>'failure', 'div'=>'EL PROCESO DE COMPRA NO ESTA FINALIZADO'));
+				exit;               
+			}
+        }
+			
+		if (isset($_POST['Recinformacionsup'])) {
+			$model->setAttributes($_POST['Recinformacionsup']);
+			
+			if ($model->save()) {
+				if (Yii::app()->request->isAjaxRequest){
+				        echo CJSON::encode(array(
+                        'status'=>'success', 
+                        'div'=>"LISTA",
+                        ));
+                    exit;               
+                }
+			}			
+		}		
+		if (Yii::app()->request->isAjaxRequest)
+        {
+            echo CJSON::encode(array('status'=>'failure', 'div'=>$this->renderPartial('_crear', array('model' => $model,),true,true)));
+            exit;               
+        }
+	}
 
 	public function actionCreate() {
 		$model = new Recinformacionsup;
