@@ -1,8 +1,8 @@
 <script type="text/javascript">
-function editAsesorjuridico()
+function editAbogadasecretaria()
 {
     <?php echo CHtml::ajax(array(
-            'url'=>Yii::app()->createUrl("asesorjuridico/editar", array("id"=>$model->id)),
+            'url'=>Yii::app()->createUrl("abogadasecretaria/editar", array("id"=>$model->id)),
             'data'=> "js:$(this).serialize()",
             'type'=>'post',
             'dataType'=>'json',
@@ -10,14 +10,14 @@ function editAsesorjuridico()
             {
                 if (data.status == 'failure')
                 {
-                    $('#div_asesorjuridico').html(data.div);
-					$('#div_asesorjuridico').show();
-                    $('#div_asesorjuridico form').submit(editAsesorjuridico);
+                    $('#div_abogadasecretaria').html(data.div);
+					$('#div_abogadasecretaria').show();
+                    $('#div_abogadasecretaria form').submit(editAbogadasecretaria);
                 }
                 else
                 {
-                    $('#div_asesorjuridico').html(data.div);
-					$('#div_asesorjuridico').hide('slow');
+                    $('#div_abogadasecretaria').html(data.div);
+					$('#div_abogadasecretaria').hide('slow');
 				location.reload();	
 		        }
 			
@@ -30,12 +30,14 @@ function editAsesorjuridico()
 </script>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
-	'id'=> 'detalle-asesorjuridico',
+	'id'=> 'detalle-abogadasecretaria',
 	'data' => $model,
 	'attributes' => array(
-		'fechaConfeccionContrato',
+		'tipo',
+		'estado',
+		'fechaCreacion',
+		'fechaRespuesta',
 		'observacion',
-		'fechaRespuesta',	
 		),
 )); 
 
@@ -46,16 +48,16 @@ function editAsesorjuridico()
 <?php 
 $this->widget('zii.widgets.jui.CJuiButton',
 	array(
-		'name'=>'button-asesorjuridico',
+		'name'=>'button-abogadasecretaria',
 		'value'=>'ACTUALIZAR',
 		'caption'=>'ACTUALIZAR',
-		'onclick'=>'js: function(e){e.preventDefault();editAsesorjuridico()}',
+		'onclick'=>'js: function(e){e.preventDefault();editAbogadasecretaria()}',
 		)
 );
 ?>
 
 <br><br>
-<div id="div_asesorjuridico" class="box"> 
+<div id="div_abogadasecretaria" class="box"> 
 </div>
 <br>
 

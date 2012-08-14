@@ -18,7 +18,7 @@
 				'Adjudicacion' => array('id' => 13,'content' => $this->renderPartial('//adjudicacion/ver_adjudicacion', array('model' => $model->adjudicacion,),$this),),
 				'Recopilacion informacion supervisor' => array('id' => 14,'content' => $this->renderPartial('//recinformacionsup/ver_recinformacionsup', array('model' => $model->recinformacionsup,),$this),),
 				'Asesor juridico contrato' => array('id' => 15,'content' => $this->renderPartial('//asesorjuridico/ver_asesorjuridico', array('model' => $model->asesorjuridico,),$this),),
-				'Abogada secretaria' => array('id' => 16,'content' => 'TEST',),
+				'Abogada secretaria' => array('id' => 16,'content' =>$this->renderPartial('//abogadasecretaria/ver_abogadasecretaria', array('model' => $model->abogadasecretaria,),$this),),
 				'Envio contrato firma' => array('id' => 17,'content' => 'TEST',),
 				'Resof contrato VAF' => array('id' => 18,'content' => 'TEST',),				
 				'Resof contrato secr' => array('id' => 19,'content' => 'TEST',),
