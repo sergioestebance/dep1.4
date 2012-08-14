@@ -23,14 +23,40 @@
 		</div><!-- row -->
 		<div class="row">
 		<?php echo $form->labelEx($model,'fechaCreacion'); ?>
-		<?php echo $form->textField($model, 'fechaCreacion'); ?>
+		<?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+			'model'=>$model,
+			'attribute'=>'fechaCreacion',
+			
+			// additional javascript options for the date picker plugin
+			'options'=>array(
+				'showAnim'=>'fold',
+				'dateFormat'=>'yy-mm-dd',
+			),
+			'htmlOptions'=>array(
+				'style'=>'height:20px;'
+			),
+		));?>
 		<?php echo $form->error($model,'fechaCreacion'); ?>
 		</div><!-- row -->
+				
 		<div class="row">
 		<?php echo $form->labelEx($model,'fechaEntregaRes'); ?>
-		<?php echo $form->textField($model, 'fechaEntregaRes'); ?>
+		<?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+			'model'=>$model,
+			'attribute'=>'fechaEntregaRes',
+			
+			// additional javascript options for the date picker plugin
+			'options'=>array(
+				'showAnim'=>'fold',
+				'dateFormat'=>'yy-mm-dd',
+			),
+			'htmlOptions'=>array(
+				'style'=>'height:20px;'
+			),
+		));?>
 		<?php echo $form->error($model,'fechaEntregaRes'); ?>
 		</div><!-- row -->
+		
 		<div class="row">
 		<?php echo $form->labelEx($model,'observacion'); ?>
 		<?php echo $form->textField($model, 'observacion', array('maxlength' => 200)); ?>

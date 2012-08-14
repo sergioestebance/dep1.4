@@ -15,12 +15,37 @@
 		</div><!-- row -->
 		<div class="row">
 		<?php echo $form->labelEx($model,'fecha1'); ?>
-		<?php echo $form->textField($model, 'fecha1'); ?>
+		<?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+			'model'=>$model,
+			'attribute'=>'fecha1',
+			
+			// additional javascript options for the date picker plugin
+			'options'=>array(
+				'showAnim'=>'fold',
+				'dateFormat'=>'yy-mm-dd',
+			),
+			'htmlOptions'=>array(
+				'style'=>'height:20px;'
+			),
+		));?>
 		<?php echo $form->error($model,'fecha1'); ?>
 		</div><!-- row -->
+		
 		<div class="row">
 		<?php echo $form->labelEx($model,'fecha2'); ?>
-		<?php echo $form->textField($model, 'fecha2'); ?>
+		<?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+			'model'=>$model,
+			'attribute'=>'fecha2',
+			
+			// additional javascript options for the date picker plugin
+			'options'=>array(
+				'showAnim'=>'fold',
+				'dateFormat'=>'yy-mm-dd',
+			),
+			'htmlOptions'=>array(
+				'style'=>'height:20px;'
+			),
+		));?>
 		<?php echo $form->error($model,'fecha2'); ?>
 		</div><!-- row -->
 		<div class="row">

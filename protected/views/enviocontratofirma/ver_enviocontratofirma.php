@@ -1,8 +1,8 @@
 <script type="text/javascript">
-function editAbogadasecretaria()
+function editEnviocontratofirma()
 {
     <?php echo CHtml::ajax(array(
-            'url'=>Yii::app()->createUrl("abogadasecretaria/editar", array("id"=>$model->id)),
+            'url'=>Yii::app()->createUrl("enviocontratofirma/editar", array("id"=>$model->id)),
             'data'=> "js:$(this).serialize()",
             'type'=>'post',
             'dataType'=>'json',
@@ -10,14 +10,14 @@ function editAbogadasecretaria()
             {
                 if (data.status == 'failure')
                 {
-                    $('#div_abogadasecretaria').html(data.div);
-					$('#div_abogadasecretaria').show();
-                    $('#div_abogadasecretaria form').submit(editAbogadasecretaria);
+                    $('#div_enviocontratofirma').html(data.div);
+					$('#div_enviocontratofirma').show();
+                    $('#div_enviocontratofirma form').submit(editEnviocontratofirma);
                 }
                 else
                 {
-                    $('#div_abogadasecretaria').html(data.div);
-					$('#div_abogadasecretaria').hide('slow');
+                    $('#div_enviocontratofirma').html(data.div);
+					$('#div_enviocontratofirma').hide('slow');
 				location.reload();	
 		        }
 			
@@ -30,13 +30,13 @@ function editAbogadasecretaria()
 </script>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
-	'id'=> 'detalle-abogadasecretaria',
+	'id'=> 'detalle-enviocontratofirma',
 	'data' => $model,
 	'attributes' => array(
-		'tipo',
-		'estado',
 		'fechaCreacion',
-		'fechaRespuesta',
+		'estado',
+		'fechaProveedor',
+		'fechaFirmaContrato',
 		'observacion',
 		),
 )); 
@@ -48,16 +48,16 @@ function editAbogadasecretaria()
 <?php 
 $this->widget('zii.widgets.jui.CJuiButton',
 	array(
-		'name'=>'button-abogadasecretaria',
+		'name'=>'button-enviocontratofirma',
 		'value'=>'ACTUALIZAR',
 		'caption'=>'ACTUALIZAR',
-		'onclick'=>'js: function(e){e.preventDefault();editAbogadasecretaria()}',
+		'onclick'=>'js: function(e){e.preventDefault();editEnviocontratofirma()}',
 		)
 );
 ?>
 
 <br><br>
-<div id="div_abogadasecretaria" class="box"> 
+<div id="div_enviocontratofirma" class="box"> 
 </div>
 <br>
 

@@ -17,7 +17,19 @@
 		</div><!-- row -->
 		<div class="row">
 		<?php echo $form->labelEx($model,'fechaCreacion'); ?>
-		<?php echo $form->textField($model, 'fechaCreacion'); ?>
+		<?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+			'model'=>$model,
+			'attribute'=>'fechaCreacion',
+			
+			// additional javascript options for the date picker plugin
+			'options'=>array(
+				'showAnim'=>'fold',
+				'dateFormat'=>'yy-mm-dd',
+			),
+			'htmlOptions'=>array(
+				'style'=>'height:20px;'
+			),
+		));?>
 		<?php echo $form->error($model,'fechaCreacion'); ?>
 		</div><!-- row -->
 		<div class="row">
@@ -32,12 +44,36 @@
 		</div><!-- row -->
 		<div class="row">
 		<?php echo $form->labelEx($model,'fechaRes'); ?>
-		<?php echo $form->textField($model, 'fechaRes'); ?>
+		<?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+			'model'=>$model,
+			'attribute'=>'fechaRes',
+			
+			// additional javascript options for the date picker plugin
+			'options'=>array(
+				'showAnim'=>'fold',
+				'dateFormat'=>'yy-mm-dd',
+			),
+			'htmlOptions'=>array(
+				'style'=>'height:20px;'
+			),
+		));?>
 		<?php echo $form->error($model,'fechaRes'); ?>
 		</div><!-- row -->
 		<div class="row">
 		<?php echo $form->labelEx($model,'fechaFirma'); ?>
-		<?php echo $form->textField($model, 'fechaFirma'); ?>
+		<?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+			'model'=>$model,
+			'attribute'=>'fechaFirma',
+			
+			// additional javascript options for the date picker plugin
+			'options'=>array(
+				'showAnim'=>'fold',
+				'dateFormat'=>'yy-mm-dd',
+			),
+			'htmlOptions'=>array(
+				'style'=>'height:20px;'
+			),
+		));?>
 		<?php echo $form->error($model,'fechaFirma'); ?>
 		</div><!-- row -->
 		<div class="row">
@@ -47,7 +83,19 @@
 		</div><!-- row -->
 		<div class="row">
 		<?php echo $form->labelEx($model,'fechaActa'); ?>
-		<?php echo $form->textField($model, 'fechaActa'); ?>
+		<?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+			'model'=>$model,
+			'attribute'=>'fechaActa',
+			
+			// additional javascript options for the date picker plugin
+			'options'=>array(
+				'showAnim'=>'fold',
+				'dateFormat'=>'yy-mm-dd',
+			),
+			'htmlOptions'=>array(
+				'style'=>'height:20px;'
+			),
+		));?>
 		<?php echo $form->error($model,'fechaActa'); ?>
 		</div><!-- row -->
 

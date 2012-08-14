@@ -12,6 +12,7 @@ return array(
 	// preloading 'log' component
 	'preload'=>array(
 		'log',
+		'bootstrap'
 		),
 
 	// autoloading model and component classes
@@ -47,6 +48,10 @@ return array(
 
 	// application components
 	'components'=>array(
+		'bootstrap'=>array(
+				'class'=>'ext.bootstrap.components.Bootstrap', // assuming you extracted bootstrap under extensions
+			),
+	
 		'user'=>array(
 			'class'=>'RWebUser', //YII RIGHTS
 			// enable cookie-based authentication
