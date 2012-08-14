@@ -1,6 +1,6 @@
 <?php
 Yii::import('application.services.procesoseguimiento.ControlseguimientoServices');
-class L1Services extends ControlseguimientoServices{
+class LEServices extends ControlseguimientoServices{
 
 	public function asignarEtapas($model) {
 		
@@ -37,7 +37,7 @@ class L1Services extends ControlseguimientoServices{
 		$model_pub->controlseguimiento_id=$model->id;
 		$model_pub->save(false);
 
-		$model_pub = new Envinformeeva;
+		$model_pub = new Envinformeseva;
 		$model_pub->controlseguimiento_id=$model->id;
 		$model_pub->save(false);
 		
