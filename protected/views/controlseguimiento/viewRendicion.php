@@ -55,6 +55,8 @@ array(
 			'type' => 'raw',
 			'value' => $plantilla->item !== null ? GxHtml::link(GxHtml::encode(GxHtml::valueEx($plantilla->item)), array('item/view', 'id' => GxActiveRecord::extractPkValue($plantilla->item, true))) : null,
 			),
+'agno',
+'mes',
 'tipoDocumento',
 'numDocumento',
 'numComprobanteEI',

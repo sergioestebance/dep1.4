@@ -53,11 +53,11 @@ abstract class BasePlantilla extends GxActiveRecord {
 	public function rules() {
 		return array(
 			array('procesogasto_id, controlseguimiento_id, proyecto_id, item_id', 'numerical', 'integerOnly'=>true),
-			array('tipoDocumento, numDocumento, numComprobanteEI, tipoDocumentoFB, numDocumentoFB, rutProveedor, valorTotal', 'length', 'max'=>45),
+			array('agno, mes, tipoDocumento, numDocumento, numComprobanteEI, tipoDocumentoFB, numDocumentoFB, rutProveedor, valorTotal', 'length', 'max'=>45),
 			array('detalleDoc, observacion', 'length', 'max'=>200),
 			array('fechaEI, fechaEmisionDoc, fechaCancelacionDoc', 'safe'),
-			array('procesogasto_id, controlseguimiento_id, proyecto_id, item_id, tipoDocumento, numDocumento, numComprobanteEI, fechaEI, tipoDocumentoFB, numDocumentoFB, rutProveedor, fechaEmisionDoc, fechaCancelacionDoc, detalleDoc, valorTotal, observacion', 'default', 'setOnEmpty' => true, 'value' => null),
-			array('id, procesogasto_id, controlseguimiento_id, proyecto_id, item_id, tipoDocumento, numDocumento, numComprobanteEI, fechaEI, tipoDocumentoFB, numDocumentoFB, rutProveedor, fechaEmisionDoc, fechaCancelacionDoc, detalleDoc, valorTotal, observacion', 'safe', 'on'=>'search'),
+			array('procesogasto_id, controlseguimiento_id, proyecto_id, item_id, agno, mes, tipoDocumento, numDocumento, numComprobanteEI, fechaEI, tipoDocumentoFB, numDocumentoFB, rutProveedor, fechaEmisionDoc, fechaCancelacionDoc, detalleDoc, valorTotal, observacion', 'default', 'setOnEmpty' => true, 'value' => null),
+			array('id, procesogasto_id, controlseguimiento_id, proyecto_id, item_id, agno, mes, tipoDocumento, numDocumento, numComprobanteEI, fechaEI, tipoDocumentoFB, numDocumentoFB, rutProveedor, fechaEmisionDoc, fechaCancelacionDoc, detalleDoc, valorTotal, observacion', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -82,6 +82,8 @@ abstract class BasePlantilla extends GxActiveRecord {
 			'controlseguimiento_id' => null,
 			'proyecto_id' => null,
 			'item_id' => null,
+			'agno' => Yii::t('app', 'A&ntilde;o'),
+			'mes' => Yii::t('app', 'Mes'),
 			'tipoDocumento' => Yii::t('app', 'Tipo Documento'),
 			'numDocumento' => Yii::t('app', 'Num Documento'),
 			'numComprobanteEI' => Yii::t('app', 'Num Comprobante Ei'),
@@ -109,6 +111,8 @@ abstract class BasePlantilla extends GxActiveRecord {
 		$criteria->compare('controlseguimiento_id', $this->controlseguimiento_id);
 		$criteria->compare('proyecto_id', $this->proyecto_id);
 		$criteria->compare('item_id', $this->item_id);
+		$criteria->compare('agno', $this->agno, true);
+		$criteria->compare('mes', $this->mes, true);
 		$criteria->compare('tipoDocumento', $this->tipoDocumento, true);
 		$criteria->compare('numDocumento', $this->numDocumento, true);
 		$criteria->compare('numComprobanteEI', $this->numComprobanteEI, true);

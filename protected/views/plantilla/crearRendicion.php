@@ -36,7 +36,17 @@ $this->menu = array(
 		<?php echo $form->error($model,'proyecto_id'); ?>
 		</div><!-- row -->
 		
-
+		<div class="row">
+		<?php echo $form->labelEx($model,'agno'); ?>
+		<?php echo $form->dropDownList($model, 'agno',array('2011' => '2011', '2012' => '2012', '2013' => '2013', '2014' => '2014')); ?>
+		<?php echo $form->error($model,'agno'); ?>
+		</div><!-- row -->
+		
+		<div class="row">
+		<?php echo $form->labelEx($model,'mes'); ?>
+		<?php echo $form->dropDownList($model, 'mes',array('Enero' => 'Enero', 'Febrero' => 'Febrero', 'Marzo' => 'Marzo', 'Abril' => 'Abril', 'Mayo' => 'Mayo', 'Junio' => 'Junio', 'Julio' => 'Julio', 'Agosto' => 'Agosto', 'Septiembre' => 'Septiembre', 'Octubre' => 'Octubre', 'Noviembre' => 'Noviembre', 'Diciembre' => 'Diciembre')); ?>
+		<?php echo $form->error($model,'mes'); ?>
+		</div><!-- row -->
 
 		<div class="row">
 		<?php echo $form->labelEx($model,'tipoDocumento'); ?>
@@ -58,7 +68,19 @@ $this->menu = array(
 		
 		<div class="row">
 		<?php echo $form->labelEx($model,'fechaEI'); ?>
-		<?php echo $form->textField($model, 'fechaEI'); ?>
+		<?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+			'model'=>$model,
+			'attribute'=>'fechaEI',
+			
+			// additional javascript options for the date picker plugin
+			'options'=>array(
+				'showAnim'=>'fold',
+				'dateFormat'=>'yy-mm-dd',
+			),
+			'htmlOptions'=>array(
+				'style'=>'height:20px;'
+			),
+		));?>
 		<?php echo $form->error($model,'fechaEI'); ?>
 		</div><!-- row -->
 		
@@ -67,7 +89,6 @@ $this->menu = array(
 		<?php echo $form->textField($model, 'tipoDocumentoFB', array('maxlength' => 45)); ?>
 		<?php echo $form->error($model,'tipoDocumentoFB'); ?>
 		</div><!-- row -->
-		
 		<div class="row">
 		<?php echo $form->labelEx($model,'numDocumentoFB'); ?>
 		<?php echo $form->textField($model, 'numDocumentoFB', array('maxlength' => 45)); ?>
@@ -78,14 +99,40 @@ $this->menu = array(
 		<?php echo $form->textField($model, 'rutProveedor', array('maxlength' => 45)); ?>
 		<?php echo $form->error($model,'rutProveedor'); ?>
 		</div><!-- row -->
+		
 		<div class="row">
 		<?php echo $form->labelEx($model,'fechaEmisionDoc'); ?>
-		<?php echo $form->textField($model, 'fechaEmisionDoc'); ?>
+		<?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+			'model'=>$model,
+			'attribute'=>'fechaEmisionDoc',
+			
+			// additional javascript options for the date picker plugin
+			'options'=>array(
+				'showAnim'=>'fold',
+				'dateFormat'=>'yy-mm-dd',
+			),
+			'htmlOptions'=>array(
+				'style'=>'height:20px;'
+			),
+		));?>
 		<?php echo $form->error($model,'fechaEmisionDoc'); ?>
 		</div><!-- row -->
+			
 		<div class="row">
 		<?php echo $form->labelEx($model,'fechaCancelacionDoc'); ?>
-		<?php echo $form->textField($model, 'fechaCancelacionDoc'); ?>
+		<?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+			'model'=>$model,
+			'attribute'=>'fechaCancelacionDoc',
+			
+			// additional javascript options for the date picker plugin
+			'options'=>array(
+				'showAnim'=>'fold',
+				'dateFormat'=>'yy-mm-dd',
+			),
+			'htmlOptions'=>array(
+				'style'=>'height:20px;'
+			),
+		));?>
 		<?php echo $form->error($model,'fechaCancelacionDoc'); ?>
 		</div><!-- row -->
 		<div class="row">

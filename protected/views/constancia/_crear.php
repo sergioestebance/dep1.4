@@ -6,7 +6,7 @@
 	'enableAjaxValidation' => false,
 ));
 ?>
-
+	<?php echo $form->errorSummary($model); ?>
 
 		<div class="row">
 		<?php echo $form->labelEx($model,'agno'); ?>
@@ -14,7 +14,7 @@
 		<?php echo $form->error($model,'agno'); ?>
 		</div><!-- row -->
 		
-		<?php echo $form->errorSummary($model); ?>
+		
 		<div class="row">
 		<?php echo $form->labelEx($model,'mes'); ?>
 		<?php echo $form->dropDownList($model, 'mes',array('Enero' => 'Enero', 'Febrero' => 'Febrero', 'Marzo' => 'Marzo', 'Abril' => 'Abril', 'Mayo' => 'Mayo', 'Junio' => 'Junio', 'Julio' => 'Julio', 'Agosto' => 'Agosto', 'Septiembre' => 'Septiembre', 'Octubre' => 'Octubre', 'Noviembre' => 'Noviembre', 'Diciembre' => 'Diciembre')); ?>
