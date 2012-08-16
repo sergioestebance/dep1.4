@@ -19,6 +19,7 @@ $this->breadcrumbs = array(
 					'value' => $model->procesocompra !== null ? GxHtml::link(GxHtml::encode(GxHtml::valueEx($model->procesocompra)), array('procesocompra/view', 'id' => GxActiveRecord::extractPkValue($model->procesocompra, true))) : null,
 					),
 		'tipo',
+		'estado',
 	),
 )); ?>
 

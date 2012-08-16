@@ -22,6 +22,12 @@
 		<?php echo $form->error($model,'tipo'); ?>
 		</div><!-- row -->
 
+		<div class="row">
+		<?php echo $form->labelEx($model,'estado'); ?>
+		<?php echo $form->textField($model, 'estado', array('maxlength' => 45)); ?>
+		<?php echo $form->error($model,'estado'); ?>
+		</div><!-- row -->
+		
 <?php
 echo GxHtml::submitButton(Yii::t('app', 'Guardar'));
 $this->endWidget();

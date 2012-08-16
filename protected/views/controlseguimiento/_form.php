@@ -21,6 +21,13 @@
 		<?php echo $form->textField($model, 'tipo', array('maxlength' => 45)); ?>
 		<?php echo $form->error($model,'tipo'); ?>
 		</div><!-- row -->
+		
+		<div class="row">
+		<?php echo $form->labelEx($model,'estado'); ?>
+		<?php echo $form->textField($model, 'estado', array('maxlength' => 45)); ?>
+		<?php echo $form->error($model,'estado'); ?>
+		</div><!-- row -->
+		
 
 		<label><?php echo GxHtml::encode($model->getRelationLabel('abogadasecretarias')); ?></label>
 		<?php echo $form->checkBoxList($model, 'abogadasecretarias', GxHtml::encodeEx(GxHtml::listDataEx(Abogadasecretaria::model()->findAllAttributes(null, true)), false, true)); ?>
