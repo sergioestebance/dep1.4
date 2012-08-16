@@ -30,6 +30,7 @@ function editAJ()
 </script>
 
 <?php
+
  $this->widget('zii.widgets.CDetailView', array(
 	'id'=> 'detalle-aj',
 	'data' => $model->aj,
@@ -45,19 +46,29 @@ function editAJ()
 ?>
 
 <br>
+
+
 <?php 
-$this->widget('zii.widgets.jui.CJuiButton',
-	array(
-		'name'=>'button-aj',
-		'value'=>'ACTUALIZAR',
-		'caption'=>'ACTUALIZAR',
-		'onclick'=>'js: function(e){e.preventDefault(); editAJ()}',
+
+
+$this->widget('bootstrap.widgets.BootButton', array(
+		//'name'=>'button-aj',
+		'label'=>'ACTUALIZAR',
+		'type'=>'primary',
+		//'caption'=>'ACTUALIZAR',
+		 'size'=>'large',
+		 'htmlOptions'=>array(
+			'onclick'=>'js: editAJ()',
+			),
 		)
 );
+
 ?>
 
 <br><br>
+
 <div id="div_aj" class="box"> 
+
 </div>
 <br>
 

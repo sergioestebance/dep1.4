@@ -11,7 +11,7 @@ public function filters() {
 
 	public function actionEditar($id){
 		$model = $this->loadModel($id, 'Aj');
-		
+				
 		if (Yii::app()->request->isAjaxRequest)
         {
 			if($model->controlseguimiento->procesocompra->estado!="FINALIZADO"){
