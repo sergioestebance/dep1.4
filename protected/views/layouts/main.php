@@ -32,7 +32,7 @@
 				array('label'=>'Home', 'url'=>array('/site/index'),
 				),
 				
-				array('label'=>'Mantenedores', 'url'=>array('#'),
+				array('label'=>'Mantenedores',
                   'items'=>array(
                     array('label'=>'SubItem', 'url'=>array('/subitem/admin')),
 					array('label'=>'Item', 'url'=>array('/item/admin')),
@@ -42,32 +42,32 @@
 					),
                 ),
 				
-				array('label'=>'Procesos', 'url'=>array('#'),
+				array('label'=>'Procesos',
 				  'items'=>array(
 					array('label'=>'Compra y Gasto', 'url'=>array('/proyecto/adminProyectoPc')),
 					),
 				),
 				
-				array('label'=>'Control de Seguimiento y Documentacion', 'url'=>array('#'),
+				array('label'=>'Control de Seguimiento y Documentacion',
 				 'items'=>array(
 					array('label'=>'Ver Procesos Compra', 'url'=>array('/procesocompra/adminSeg')),
 					),
 				),
 				
-				array('label'=>'Rendicion', 'url'=>array('#'),
+				array('label'=>'Rendicion',
 				 'items'=>array(
 					array('label'=>'Ver CSDL', 'url'=>array('/controlseguimiento/adminRendicion')),
 					),
 				),	
 
-			   array('label'=>'Informes', 'url'=>array('#'),
+			   array('label'=>'Informes',
 				 'items'=>array(
 					array('label'=>'Graficas', 'url'=>array('/grafica/index')),
 					array('label'=>'Exportar','items'=>array( 
                         array('label'=>'PDF', 'url'=>array('#','view'=>'subsub1')), 
                         array('label'=>'EXCEL', 'url'=>array('#','view'=>'subsub2')), 
                     ),),
-					array('label'=>'Notificaciones', 'url'=>array('#'),
+					array('label'=>'Notificaciones',
 							'items'=>array(
 								array('label'=>'Urgentes', 'url'=>array('#')),
 								array('label'=>'Todos', 'url'=>array('#')),

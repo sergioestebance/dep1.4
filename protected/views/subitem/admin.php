@@ -68,6 +68,7 @@ Se pueden ocupar los operadores de comparacion (&lt;, &lt;=, &gt;, &gt;=, &lt;&g
 				'filter'=>GxHtml::listDataEx(Centrocosto::model()->findAllAttributes(null, true)),
 				),
 		'codigo',
+		'saldo',
 		/*
 		'descripcion',
 		'cantidad',

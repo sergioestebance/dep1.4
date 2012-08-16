@@ -44,6 +44,7 @@ public function filters() {
 					$count = Subitem::model()->count("proyecto_id=:proyecto_id", array("proyecto_id"=>$model->proyecto_id));
 					$model_item = $this->loadModel($model->item_id, 'Item');
 					$model->codigo=$model_proyecto->codigoProyecto.$model_item->codigo.$count;
+					$model->saldo=$model->montos;
 					$model->save();
 					$this->redirect(array('view', 'id' => $model->id));
 					}
@@ -70,6 +71,7 @@ public function filters() {
 				else{
 					$model_item = $this->loadModel($model->item_id, 'Item');
 					$model->codigo=$model_proyecto->codigoProyecto.$model_item->codigo.$count;
+					$model->saldo=$model->montos;
 					$model->save();
 					$this->redirect(array('view', 'id' => $model->id));
 					}

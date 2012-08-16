@@ -49,10 +49,10 @@ abstract class BaseSubitem extends GxActiveRecord {
 	public function rules() {
 		return array(
 			array('proyecto_id, tipoaporte_id, item_id, centrocosto_id, cantidad, correlativo', 'numerical', 'integerOnly'=>true),
-			array('codigo, costoUnitario, montos', 'length', 'max'=>45),
+			array('codigo, costoUnitario, saldo, montos', 'length', 'max'=>45),
 			array('descripcion', 'length', 'max'=>200),
-			array('proyecto_id, tipoaporte_id, item_id, centrocosto_id, codigo, descripcion, cantidad, costoUnitario, montos, correlativo', 'default', 'setOnEmpty' => true, 'value' => null),
-			array('id, proyecto_id, tipoaporte_id, item_id, centrocosto_id, codigo, descripcion, cantidad, costoUnitario, montos, correlativo', 'safe', 'on'=>'search'),
+			array('proyecto_id, tipoaporte_id, item_id, centrocosto_id, saldo, codigo, descripcion, cantidad, costoUnitario, montos, correlativo', 'default', 'setOnEmpty' => true, 'value' => null),
+			array('id, proyecto_id, tipoaporte_id, item_id, centrocosto_id, saldo, codigo, descripcion, cantidad, costoUnitario, montos, correlativo', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -80,6 +80,7 @@ abstract class BaseSubitem extends GxActiveRecord {
 			'item_id' => null,
 			'centrocosto_id' => null,
 			'codigo' => Yii::t('app', 'Codigo'),
+			'saldo' => Yii::t('app', 'Saldo'),
 			'descripcion' => Yii::t('app', 'Descripcion'),
 			'cantidad' => Yii::t('app', 'Cantidad'),
 			'costoUnitario' => Yii::t('app', 'Costo Unitario'),
@@ -103,6 +104,7 @@ abstract class BaseSubitem extends GxActiveRecord {
 		$criteria->compare('item_id', $this->item_id);
 		$criteria->compare('centrocosto_id', $this->centrocosto_id);
 		$criteria->compare('codigo', $this->codigo, true);
+		$criteria->compare('saldo', $this->codigo, true);
 		$criteria->compare('descripcion', $this->descripcion, true);
 		$criteria->compare('cantidad', $this->cantidad);
 		$criteria->compare('costoUnitario', $this->costoUnitario, true);

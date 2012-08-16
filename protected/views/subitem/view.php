@@ -46,6 +46,7 @@ array(
 'costoUnitario',
 'montos',
 'correlativo',
+'saldo',
 	),
 )); ?>
 <br><br>
