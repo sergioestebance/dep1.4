@@ -5,7 +5,7 @@
 				'Asesor juridico' => array('id' => 0,'content' => $this->renderPartial('//aj/ver_aj', array('model' => $model,),$this),),
 				'Secretaria' => array( 'id' => 1,'content' => $this->renderPartial('//secretaria/ver_secretaria_resofl1', array('model' => $model->secretarias[0],),$this),),
 				'Contraloria' => array('id' => 2,'content' => $this->renderPartial('//contraloria/ver_contraloria', array('model' => $model->contralorias[0],),$this),),
-				'Publicacion' => array('id' => 3,'content' => 'TEST',),
+				'Publicacion' => array('id' => 3,'content' => $this->renderPartial('//publicacion/ver_publicacion', array('model' => $model->publicacion,),$this),),
 				
 				if($UTM>100){
 					'Recopilacion informacion' => array('id' => 4,'content' => 'TEST',),
