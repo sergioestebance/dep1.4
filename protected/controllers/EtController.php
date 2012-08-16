@@ -16,7 +16,7 @@ public function filters() {
 
 	public function actionCreate() {
 		$model = new Et;
-
+		Yii::app()->clientScript->scriptMap['jquery.js'] = false;
 
 		if (isset($_POST['Et'])) {
 			$model->setAttributes($_POST['Et']);

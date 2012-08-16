@@ -17,6 +17,8 @@ public function filters() {
 		$model = new Solicitudcompra;
 		$model_pc = $this->loadModel($id, 'Procesocompra');
 		
+		Yii::app()->clientScript->scriptMap['jquery.js'] = false;
+		
 		if (Yii::app()->request->isAjaxRequest)
         {
 			if($model_pc->estado!="ACTIVO"){

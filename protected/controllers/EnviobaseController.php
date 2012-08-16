@@ -17,7 +17,7 @@ public function filters() {
 	public function actionCrear($id){
 		$model = new Enviobase;
 		$model_pc = $this->loadModel($id, 'Procesocompra');
-		
+		Yii::app()->clientScript->scriptMap['jquery.js'] = false;
 		
 		if (Yii::app()->request->isAjaxRequest)
         {
