@@ -17,6 +17,7 @@ public function filters() {
 
 	public function actionEditarBL($id){
 		$model = $this->loadModel($id, 'Procesocompra');
+		Yii::app()->clientScript->scriptMap['jquery.js'] = false;
 		
 		if (Yii::app()->request->isAjaxRequest)
         {
@@ -49,6 +50,7 @@ public function filters() {
 	
 		public function actionEditarTD($id){
 		$model = $this->loadModel($id, 'Procesocompra');
+		Yii::app()->clientScript->scriptMap['jquery.js'] = false;
 		
 		if (Yii::app()->request->isAjaxRequest)
         {
