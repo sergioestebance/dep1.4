@@ -40,8 +40,18 @@ $this->widget('zii.widgets.CDetailView', array(
 ?>
 
 <br>
-<?php echo CHtml::link('ACTUALIZAR', "",array('style'=>'cursor: pointer; text-decoration: underline;', 'onclick'=>"js: editBL();"));
-?>
+
+
+<?php 
+$this->widget('bootstrap.widgets.BootButton', array(
+		'label'=>'ACTUALIZAR',
+		'type'=>'primary',
+		'size'=>'large',
+		 'htmlOptions'=>array(
+			'onclick'=>'js: editBL()',
+			),
+		)
+); ?>
 <br><br>
 <div id="div_bl" class="box"> 
 </div>

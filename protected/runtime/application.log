@@ -3020,3 +3020,40 @@ Stack trace:
 REQUEST_URI=/dep1.4/controlseguimiento/3.html
 HTTP_REFERER=http://localhost:8080/dep1.4/controlseguimiento/
 ---
+2012/08/16 03:23:49 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.BootButton" is invalid. Make sure it points to an existing directory or file.' in C:\AppServ\www\yii\framework\YiiBase.php:343
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CWidgetFactory.php(147): YiiBase::import('bootstrap.widge...', true)
+#1 C:\AppServ\www\yii\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(ProcesocompraController), 'bootstrap.widge...', Array)
+#2 C:\AppServ\www\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\AppServ\www\dep1.4\protected\views\peticionet\ver_peticiones.php(80): CBaseController->widget('bootstrap.widge...', Array)
+#4 C:\AppServ\www\yii\framework\web\CBaseController.php(127): require('C:\AppServ\www\...')
+#5 C:\AppServ\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#6 C:\AppServ\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#7 C:\AppServ\www\dep1.4\protected\views\procesocompra\tabL1EP.php(6): CController->renderPartial('//peticionet/ve...', Array, Object(ProcesocompraController))
+#8 C:\AppServ\www\yii\framework\web\CBaseController.php(127): require('C:\AppServ\www\...')
+#9 C:\AppServ\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#10 C:\AppServ\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#11 C:\AppServ\www\dep1.4\protected\views\procesocompra\view.php(35): CController->renderPartial('tabL1EP', Array)
+#12 C:\AppServ\www\yii\framework\web\CBaseController.php(127): require('C:\AppServ\www\...')
+#13 C:\AppServ\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#14 C:\AppServ\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#15 C:\AppServ\www\yii\framework\web\CController.php(783): CController->renderPartial('view', Array, true)
+#16 C:\AppServ\www\dep1.4\protected\controllers\ProcesocompraController.php(84): CController->render('view', Array)
+#17 [internal function]: ProcesocompraController->actionView('2')
+#18 C:\AppServ\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(ProcesocompraController), Array)
+#19 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(ProcesocompraController), Object(ReflectionMethod), Array)
+#20 C:\AppServ\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#21 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#22 C:\AppServ\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#23 C:\AppServ\www\dep1.4\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#24 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#25 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#26 C:\AppServ\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#27 C:\AppServ\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#28 C:\AppServ\www\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#29 C:\AppServ\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('procesocompra/v...')
+#30 C:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#31 C:\AppServ\www\dep1.4\index.php(13): CApplication->run()
+#32 {main}
+REQUEST_URI=/dep1.4/procesocompra/2.html
+---

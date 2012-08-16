@@ -16,15 +16,14 @@ $this->menu=array(
 
 <h1><?php echo Yii::t('app', 'Ver') . ' ' . GxHtml::encode($model->label()) . ' ' . GxHtml::encode(GxHtml::valueEx($model)); ?></h1>
 
-<?php $this->widget('zii.widgets.CDetailView', array(
+<?php 
+
+
+
+$this->widget('zii.widgets.CDetailView', array(
 	'data' => $model,
 	'attributes' => array(
 'id',
-array(
-			'name' => 'alerta',
-			'type' => 'raw',
-			'value' => $model->alerta !== null ? GxHtml::link(GxHtml::encode(GxHtml::valueEx($model->alerta)), array('alerta/view', 'id' => GxActiveRecord::extractPkValue($model->alerta, true))) : null,
-			),
 array(
 			'name' => 'procesocompra',
 			'type' => 'raw',

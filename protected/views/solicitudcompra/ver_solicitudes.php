@@ -55,8 +55,20 @@ $this->widget('zii.widgets.grid.CGridView', array(
 )); 
 ?>
 <br>
-<?php echo CHtml::link('AGREGAR', "",array('style'=>'cursor: pointer; text-decoration: underline;', 'onclick'=>"js:addSolicitud();"));
-?>
+
+<?php 
+$this->widget('bootstrap.widgets.BootButton', array(
+		'label'=>'AGREGAR',
+		'type'=>'primary',
+		'size'=>'large',
+		 'htmlOptions'=>array(
+			'onclick'=>'js: addSolicitud()',
+			),
+		)
+); ?>
+
+
+
 <br><br>
 <div id="div_solicitudcompra" class="box"> 
 

@@ -49,8 +49,19 @@ function editET()
 ?>
 
 <br>
-<?php echo CHtml::link('ACTUALIZAR', "",array('style'=>'cursor: pointer; text-decoration: underline;', 'onclick'=>"js: editET();"));
-?>
+
+<?php 
+$this->widget('bootstrap.widgets.BootButton', array(
+		'label'=>'ACTUALIZAR',
+		'type'=>'primary',
+		'size'=>'large',
+		 'htmlOptions'=>array(
+			'onclick'=>'js: editET()',
+			),
+		)
+); ?>
+
+
 <br><br>
 <div id="div_et" class="box"> 
 </div>

@@ -56,8 +56,18 @@ $this->widget('zii.widgets.grid.CGridView', array(
 )); 
 ?>
 <br>
-<?php echo CHtml::link('AGREGAR', "",array('style'=>'cursor: pointer; text-decoration: underline;', 'onclick'=>"js:addAdquisicion();"));
-?>
+
+<?php 
+$this->widget('bootstrap.widgets.BootButton', array(
+		'label'=>'AGREGAR',
+		'type'=>'primary',
+		'size'=>'large',
+		 'htmlOptions'=>array(
+			'onclick'=>'js: addAdquisicion()',
+			),
+		)
+); ?>
+
 <br><br>
 <div id="div_adquisicion" class="box"> 
 </div>

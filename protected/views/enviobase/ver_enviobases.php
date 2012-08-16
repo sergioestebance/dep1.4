@@ -55,8 +55,16 @@ $this->widget('zii.widgets.grid.CGridView', array(
 )); 
 ?>
 <br>
-<?php echo CHtml::link('AGREGAR', "",array('style'=>'cursor: pointer; text-decoration: underline;', 'onclick'=>"js:addEnviobase();"));
-?>
+<?php 
+$this->widget('bootstrap.widgets.BootButton', array(
+		'label'=>'AGREGAR',
+		'type'=>'primary',
+		'size'=>'large',
+		 'htmlOptions'=>array(
+			'onclick'=>'js: addEnviobase()',
+			),
+		)
+); ?>
 <br><br>
 <div id="div_enviobase" class="box"> 
 </div>

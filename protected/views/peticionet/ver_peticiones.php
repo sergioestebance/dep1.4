@@ -17,7 +17,6 @@ function addPeticion()
             'dataType'=>'json',
             'success'=>"function(data)
             {
-				test.update('peticionet-grid');
                 if (data.status == 'failure')
                 {
 					
@@ -69,8 +68,17 @@ $this->widget('zii.widgets.grid.CGridView', array(
 )); 
 ?>
 <br>
-<?php echo CHtml::link('AGREGAR', "",array('style'=>'cursor: pointer; text-decoration: underline;', 'onclick'=>"js: addPeticion();"));?><br>
-
+<?php 
+$this->widget('bootstrap.widgets.BootButton', array(
+		'label'=>'AGREGAR',
+		'type'=>'primary',
+		 'size'=>'large',
+		 'htmlOptions'=>array(
+			'onclick'=>'js: addPeticion()',
+			),
+		)
+);
+?>
 <br><br>
 <div id="div_peticionet" class="box"> 
 </div>

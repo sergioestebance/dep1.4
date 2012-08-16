@@ -1,24 +1,14 @@
-
-<?php 	
-	
-
-		$this->widget('zii.widgets.jui.CJuiTabs', array(
-			'id'=> 'tabs_etapas',
-			'tabs' => array(
-				'Peticion ET' => array('id' => 0,'content' => $this->renderPartial('//peticionet/ver_peticiones', array('model_pc' => $model,),$this),),
-				'Ingreso ET' => array('id' => 1,'content' => $this->renderPartial('//et/ver_et', array('model' => $model,),$this),),
-				'Elaboracion Trato directo' => array('content' => $this->renderPartial("//procesocompra/_formTD", array('model' => $model), $this),'id' => 2	),
-				'Solicitud Compra' => array('content' => $this->renderPartial("//solicitudcompra/ver_solicitudes", array('model_pc' => $model,), $this),'id' => 3),
-				'Envio Base' => array('content' => $this->renderPartial("//enviobase/ver_enviobases", array('model_pc' => $model), $this), 'id' => 4),
-				'Adquisicion' => array('content' => $this->renderPartial("//adquisicion/ver_adquisiciones", array('model_pc' => $model), $this), 'id' => 5,),
+<?php 
+		$this->widget('bootstrap.widgets.BootTabbable', array(
+			'type'=>'tabs',
+			'placement'=>'above', // 'above', 'right', 'below' or 'left'
+			'tabs'=>array(
+				array('label'=>'Peticion ET' ,'id' => 0,'content' => $this->renderPartial('//peticionet/ver_peticiones', array('model_pc' => $model,),$this),'active'=>true),
+				array('label'=>'Ingreso ET' ,'id' => 1,'content' => $this->renderPartial('//et/ver_et', array('model' => $model,),$this),),
+				array('label'=>'Elaboracion Trato directo' ,'id' => 2,'content' => $this->renderPartial("//procesocompra/_formTD", array('model' => $model), $this),'id' => 2	),
+				array('label'=>'Solicitud Compra' ,'id' => 3,'content' => $this->renderPartial("//solicitudcompra/ver_solicitudes", array('model_pc' => $model,), $this),'id' => 3),
+				array('label'=>'Envio Base' ,'id' => 4,'content' => $this->renderPartial("//enviobase/ver_enviobases", array('model_pc' => $model), $this), 'id' => 4),
+				array('label'=>'Adquisicion' ,'id' => 5,'content' => $this->renderPartial("//adquisicion/ver_adquisiciones", array('model_pc' => $model), $this), 'id' => 5,),
 			),
-				
-			'options' => array(
-				'collapsible' => false,
-				'selected'=>$model->estado,						
-			),
-			
-		));
-		
-?>
+)); ?>
 

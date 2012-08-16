@@ -19,6 +19,7 @@ public function filters() {
 	
 		$model_peticionet = new Peticionet;
 		$model_pc = $this->loadModel($id, 'Procesocompra');	
+		Yii::app()->clientScript->scriptMap['jquery.js'] = false;
 		
 		if (Yii::app()->request->isAjaxRequest)
         {

@@ -49,21 +49,15 @@ function editAJ()
 
 
 <?php 
-
-
 $this->widget('bootstrap.widgets.BootButton', array(
-		//'name'=>'button-aj',
 		'label'=>'ACTUALIZAR',
 		'type'=>'primary',
-		//'caption'=>'ACTUALIZAR',
-		 'size'=>'large',
+		'size'=>'large',
 		 'htmlOptions'=>array(
 			'onclick'=>'js: editAJ()',
 			),
 		)
-);
-
-?>
+); ?>
 
 <br><br>
 
