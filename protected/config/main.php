@@ -53,7 +53,8 @@ return array(
 			),
 	
 		'user'=>array(
-			'class'=>'RWebUser', //YII RIGHTS
+		//YII RIGHTS
+			'class'=>'RWebUser', 
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
 		),
