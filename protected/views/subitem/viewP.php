@@ -51,20 +51,12 @@ array(
 )); ?>
 <br><br>
 
-<?php 	
-	
-		$this->widget('zii.widgets.jui.CJuiTabs', array(
-			'id'=> 'tabs_etapas',
-			'tabs' => array(
-				'Proceso Compra' => array('id' => 0,'content' => $this->renderPartial('//subitem/viewPc', array('model' => $model_pc,),$this),),
-				'Proceso Gasto' => array('id' => 1,'content' => $this->renderPartial('//subitem/viewPg', array('model' => $model_pg,),$this),),
+		<?php 
+		$this->widget('bootstrap.widgets.BootTabbable', array(
+			'type'=>'tabs',
+			'placement'=>'above', // 'above', 'right', 'below' or 'left'
+			'tabs'=>array(
+				array('label'=>'Proceso Compra' ,'id' => 0,'content' => $this->renderPartial('//subitem/viewPc', array('model' => $model_pc,),$this),'active'=>true),
+				array('label'=>'Proceso Gasto','id' => 1,'content' => $this->renderPartial('//subitem/viewPg', array('model' => $model_pg,),$this),),
 			),
-				
-			'options' => array(
-				'collapsible' => false,
-										
-			),
-			
-		));
-		
-?>
+)); ?>
