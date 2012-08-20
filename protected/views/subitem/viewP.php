@@ -22,7 +22,7 @@ array(
 			'type' => 'raw',
 			'value' => $model->proyecto !== null ? GxHtml::link(GxHtml::encode(GxHtml::valueEx($model->proyecto)), array('proyecto/viewCompletoPc', 'id' => GxActiveRecord::extractPkValue($model->proyecto, true))) : null,
 			),
-/*array(
+array(
 			'name' => 'tipoaporte',
 			'type' => 'raw',
 			'value' => $model->tipoaporte !== null ? GxHtml::link(GxHtml::encode(GxHtml::valueEx($model->tipoaporte)), array('tipoaporte/view', 'id' => GxActiveRecord::extractPkValue($model->tipoaporte, true))) : null,
@@ -36,10 +36,10 @@ array(
 			'name' => 'centrocosto',
 			'type' => 'raw',
 			'value' => $model->centrocosto !== null ? GxHtml::link(GxHtml::encode(GxHtml::valueEx($model->centrocosto)), array('centrocosto/view', 'id' => GxActiveRecord::extractPkValue($model->centrocosto, true))) : null,
-			),*/
-'tipoaporte',
-'item',
-'centrocosto',			
+			),
+//'tipoaporte',
+//'item',
+//'centrocosto',			
 'codigo',
 'descripcion',
 'cantidad',
