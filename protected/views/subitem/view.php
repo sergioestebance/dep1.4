@@ -1,7 +1,7 @@
 <?php
 
 $this->breadcrumbs = array(
-	$model->label(2) => array('index'),
+	$model->label(2) => array('proyecto/view', 'id' => $model->proyecto_id),
 	GxHtml::valueEx($model),
 );
 

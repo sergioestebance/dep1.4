@@ -34,14 +34,16 @@ function editET()
 	'id'=> 'detalle-et',
 	'data' => $model->et,
 	'attributes' => array(
-'id',
-	array(
+
+	/*array(
 			'name' => 'subitem',
 			'type' => 'raw',
 			'value' => $model->subitem !== null ? GxHtml::link(GxHtml::encode(GxHtml::valueEx($model->subitem)), array('subitem/view', 'id' => GxActiveRecord::extractPkValue($model->subitem, true))) : null,
-			),
+			),*/
 'forma',
 'fecha',
+'observacion1',
+'observacion2',
 	),
 )); 
 

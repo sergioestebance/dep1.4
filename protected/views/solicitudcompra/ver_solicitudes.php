@@ -37,6 +37,7 @@ $this->widget('zii.widgets.grid.CGridView', array(
 		'fecha',
 		'descripcion',
 		'monto',
+		'saldo',
 		array(
 			'class' => 'CButtonColumn',
 			'template'=>'{view} {update}',
